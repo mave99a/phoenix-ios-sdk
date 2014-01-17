@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6F20300918FD4BCFA0AB70CB /* libPods-TSPhoenixTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B7BA0A18D8408AB9812782 /* libPods-TSPhoenixTests.a */; };
-		AA1390D1179CDC4F00504D69 /* NSObject+DictionaryRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1390D0179CDC4F00504D69 /* NSObject+DictionaryRepresentation.m */; };
-		AA1390D7179CDDEE00504D69 /* NSArray+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1390D6179CDDEE00504D69 /* NSArray+Mapping.m */; };
-		AA1390D8179CDE7700504D69 /* NSArray+Mapping.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA1390D5179CDDEE00504D69 /* NSArray+Mapping.h */; };
-		AA1390D9179CDE7900504D69 /* NSObject+DictionaryRepresentation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA1390CF179CDC4F00504D69 /* NSObject+DictionaryRepresentation.h */; };
 		AA460EE017A8B89200413BD9 /* TSPhoenixMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = AA460EDF17A8B89200413BD9 /* TSPhoenixMedia.m */; };
 		AA8FAC5E187E68F7004DB18F /* RKDotNetDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8FAC5D187E68F7004DB18F /* RKDotNetDateFormatter.m */; };
 		AAA385E7188522EB0038A36D /* TSModelAbstract.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3856F188522EB0038A36D /* TSModelAbstract.m */; };
@@ -90,6 +86,8 @@
 		AAB74BD0179524B9009CD7C6 /* TSPhoenixClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AAB74BB517951E70009CD7C6 /* TSPhoenixClient.h */; };
 		AAB74BD1179524BC009CD7C6 /* TSPhoenixIdentity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AAB74BB817951E70009CD7C6 /* TSPhoenixIdentity.h */; };
 		AAB74BD2179524BF009CD7C6 /* TSPhoenixSyndicate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AAB74BBC17951E70009CD7C6 /* TSPhoenixSyndicate.h */; };
+		AADC1C64188904E1000F98F2 /* NSArray+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = AADC1C61188904E1000F98F2 /* NSArray+Mapping.m */; };
+		AADC1C65188904E1000F98F2 /* NSObject+DictionaryRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = AADC1C63188904E1000F98F2 /* NSObject+DictionaryRepresentation.m */; };
 		AAF1BE42183F0156004FB517 /* TSPhoenixFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF1BE41183F0156004FB517 /* TSPhoenixFilter.m */; };
 		AAF1BE45183F0160004FB517 /* TSPhoenixParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF1BE44183F0160004FB517 /* TSPhoenixParameter.m */; };
 		AAFDF43C179FC384008F694E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFDF43B179FC384008F694E /* SystemConfiguration.framework */; };
@@ -119,8 +117,6 @@
 				AAB74BD1179524BC009CD7C6 /* TSPhoenixIdentity.h in CopyFiles */,
 				AAA71AD91798F1040006570C /* TSPaginator.h in CopyFiles */,
 				AAB74BD2179524BF009CD7C6 /* TSPhoenixSyndicate.h in CopyFiles */,
-				AA1390D9179CDE7900504D69 /* NSObject+DictionaryRepresentation.h in CopyFiles */,
-				AA1390D8179CDE7700504D69 /* NSArray+Mapping.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,10 +124,6 @@
 
 /* Begin PBXFileReference section */
 		958DC7DE42AC4DD590D0A81B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA1390CF179CDC4F00504D69 /* NSObject+DictionaryRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DictionaryRepresentation.h"; sourceTree = "<group>"; };
-		AA1390D0179CDC4F00504D69 /* NSObject+DictionaryRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DictionaryRepresentation.m"; sourceTree = "<group>"; };
-		AA1390D5179CDDEE00504D69 /* NSArray+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Mapping.h"; sourceTree = "<group>"; };
-		AA1390D6179CDDEE00504D69 /* NSArray+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Mapping.m"; sourceTree = "<group>"; };
 		AA460EDE17A8B89200413BD9 /* TSPhoenixMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPhoenixMedia.h; sourceTree = "<group>"; };
 		AA460EDF17A8B89200413BD9 /* TSPhoenixMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPhoenixMedia.m; sourceTree = "<group>"; };
 		AA8FAC5C187E68F7004DB18F /* RKDotNetDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDotNetDateFormatter.h; sourceTree = "<group>"; };
@@ -276,6 +268,10 @@
 		AAB74BB917951E70009CD7C6 /* TSPhoenixIdentity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TSPhoenixIdentity.m; sourceTree = "<group>"; };
 		AAB74BBC17951E70009CD7C6 /* TSPhoenixSyndicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TSPhoenixSyndicate.h; sourceTree = "<group>"; };
 		AAB74BBD17951E70009CD7C6 /* TSPhoenixSyndicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TSPhoenixSyndicate.m; sourceTree = "<group>"; };
+		AADC1C60188904E1000F98F2 /* NSArray+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Mapping.h"; sourceTree = "<group>"; };
+		AADC1C61188904E1000F98F2 /* NSArray+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Mapping.m"; sourceTree = "<group>"; };
+		AADC1C62188904E1000F98F2 /* NSObject+DictionaryRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DictionaryRepresentation.h"; sourceTree = "<group>"; };
+		AADC1C63188904E1000F98F2 /* NSObject+DictionaryRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DictionaryRepresentation.m"; sourceTree = "<group>"; };
 		AAF1BE40183F0156004FB517 /* TSPhoenixFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPhoenixFilter.h; sourceTree = "<group>"; };
 		AAF1BE41183F0156004FB517 /* TSPhoenixFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPhoenixFilter.m; sourceTree = "<group>"; };
 		AAF1BE43183F0160004FB517 /* TSPhoenixParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPhoenixParameter.h; sourceTree = "<group>"; };
@@ -314,17 +310,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AA1390CE179CDC1E00504D69 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				AA1390CF179CDC4F00504D69 /* NSObject+DictionaryRepresentation.h */,
-				AA1390D0179CDC4F00504D69 /* NSObject+DictionaryRepresentation.m */,
-				AA1390D5179CDDEE00504D69 /* NSArray+Mapping.h */,
-				AA1390D6179CDDEE00504D69 /* NSArray+Mapping.m */,
-			);
-			path = Categories;
-			sourceTree = SOURCE_ROOT;
-		};
 		AA5EA3DD187E3F5C00CAEBA7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -569,7 +554,6 @@
 			isa = PBXGroup;
 			children = (
 				AAF1BE46183F04D1004FB517 /* Models */,
-				AA1390CE179CDC1E00504D69 /* Categories */,
 				AAB74BB117951E70009CD7C6 /* Source */,
 				AAB74B7F17951E4A009CD7C6 /* Supporting Files */,
 			);
@@ -605,6 +589,7 @@
 		AAB74BB117951E70009CD7C6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				AADC1C5F188904E1000F98F2 /* Categories */,
 				AAB74BB417951E70009CD7C6 /* TSPhoenix.h */,
 				AAB74BB517951E70009CD7C6 /* TSPhoenixClient.h */,
 				AAB74BB617951E70009CD7C6 /* TSPhoenixClient.m */,
@@ -614,6 +599,17 @@
 			);
 			path = Source;
 			sourceTree = SOURCE_ROOT;
+		};
+		AADC1C5F188904E1000F98F2 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				AADC1C60188904E1000F98F2 /* NSArray+Mapping.h */,
+				AADC1C61188904E1000F98F2 /* NSArray+Mapping.m */,
+				AADC1C62188904E1000F98F2 /* NSObject+DictionaryRepresentation.h */,
+				AADC1C63188904E1000F98F2 /* NSObject+DictionaryRepresentation.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
 		};
 		AAF1BE46183F04D1004FB517 /* Models */ = {
 			isa = PBXGroup;
@@ -816,6 +812,7 @@
 				AAA385ED188522EB0038A36D /* TSEventLog.m in Sources */,
 				AAA3860F188522EB0038A36D /* TSAggregator.m in Sources */,
 				AAA385F6188522EB0038A36D /* TSCompany.m in Sources */,
+				AADC1C65188904E1000F98F2 /* NSObject+DictionaryRepresentation.m in Sources */,
 				AAA38609188522EB0038A36D /* TSMediaFileType.m in Sources */,
 				AAA385F9188522EB0038A36D /* TSIdentifier.m in Sources */,
 				AAA3861C188522EB0038A36D /* TSEdition.m in Sources */,
@@ -835,13 +832,12 @@
 				AA8FAC5E187E68F7004DB18F /* RKDotNetDateFormatter.m in Sources */,
 				AAA71AD71798D7980006570C /* TSPaginator.m in Sources */,
 				AAA38600188522EB0038A36D /* TSRole.m in Sources */,
-				AA1390D7179CDDEE00504D69 /* NSArray+Mapping.m in Sources */,
 				AAA385F0188522EB0038A36D /* TSTriggerActionMap.m in Sources */,
 				AAA385EA188522EB0038A36D /* TSActivity.m in Sources */,
 				AAA3860E188522EB0038A36D /* TSAccount.m in Sources */,
 				AAA38612188522EB0038A36D /* TSMessageFile.m in Sources */,
+				AADC1C64188904E1000F98F2 /* NSArray+Mapping.m in Sources */,
 				AAA3860D188522EB0038A36D /* TSTag.m in Sources */,
-				AA1390D1179CDC4F00504D69 /* NSObject+DictionaryRepresentation.m in Sources */,
 				AAA385F4188522EB0038A36D /* TSAction.m in Sources */,
 				AAA385FC188522EB0038A36D /* TSModule.m in Sources */,
 				AAA38603188522EB0038A36D /* TSUserPermission.m in Sources */,

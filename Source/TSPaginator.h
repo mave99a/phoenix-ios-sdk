@@ -71,18 +71,6 @@
  */
 @property (nonatomic, strong, readonly) NSError *error;
 
-/**
- Sets the completion block to be invoked when the paginator finishes loading a page of results.
- 
- @param success A block to be executed upon a successful load of a page of objects. The block has no return value and takes three arguments: the paginator object, an array containing the paginated objects, and an integer indicating the page that was loaded.
- @param failure A block to be exected upon a failed load. The block has no return value and takes two arguments: the paginator object and an error indicating the nature of the failure.
- */
-- (void)setCompletionBlockWithSuccess:(void (^)(TSPaginator *paginator, NSArray *objects, NSUInteger page))success
-                              failure:(void (^)(TSPaginator *paginator, NSError *error))failure;
-
-@property (nonatomic, copy) void (^successBlock)(TSPaginator *paginator, NSArray *objects, NSUInteger page);
-@property (nonatomic, copy) void (^failureBlock)(TSPaginator *paginator, NSError *error);
-
 
 
 ///------------------------------------
@@ -179,24 +167,29 @@
 /**
  Loads the next page of data by incrementing the current page, constructing an object loader to fetch the data, and object mapping the results.
  */
-- (void)loadNextPage;
+- (void)loadNextPageWithSuccess:(void (^)(TSPaginator *paginator, NSArray *objects, NSUInteger page))success
+                        failure:(void (^)(TSPaginator *paginator, NSError *error))failure;
 
 /**
  Loads the previous page of data by decrementing the current page, constructing an object loader to fetch the data, and object mapping the results.
  */
-- (void)loadPreviousPage;
+- (void)loadPreviousPageWithSuccess:(void (^)(TSPaginator *paginator, NSArray *objects, NSUInteger page))success
+                            failure:(void (^)(TSPaginator *paginator, NSError *error))failure;
 
 /**
  Loads the fist page of data
  */
-- (void)loadFirstPage;
+- (void)loadFirstPageWithSuccess:(void (^)(TSPaginator *paginator, NSArray *objects, NSUInteger page))success
+                         failure:(void (^)(TSPaginator *paginator, NSError *error))failure;
 
 /**
  Loads a specific page of data by mutating the current page, constructing an object loader to fetch the data, and object mapping the results.
  
  @param pageNumber The page of objects to load from the remote backend
  */
-- (void)loadPage:(NSUInteger)pageNumber;
+- (void)loadPage:(NSUInteger)pageNumber
+         success:(void (^)(TSPaginator *paginator, NSArray *objects, NSUInteger page))success
+         failure:(void (^)(TSPaginator *paginator, NSError *error))failure;
 
 
 /**

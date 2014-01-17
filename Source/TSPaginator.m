@@ -20,6 +20,18 @@ static NSUInteger TSPaginatorDefaultPerPage = 100;
 
 @property (nonatomic, readonly) SOCPattern *pattern;
 
+/**
+ Sets the completion block to be invoked when the paginator finishes loading a page of results.
+ 
+ @param success A block to be executed upon a successful load of a page of objects. The block has no return value and takes three arguments: the paginator object, an array containing the paginated objects, and an integer indicating the page that was loaded.
+ @param failure A block to be exected upon a failed load. The block has no return value and takes two arguments: the paginator object and an error indicating the nature of the failure.
+ */
+- (void)setCompletionBlockWithSuccess:(void (^)(TSPaginator *paginator, NSArray *objects, NSUInteger page))success
+                              failure:(void (^)(TSPaginator *paginator, NSError *error))failure;
+
+@property (nonatomic, copy) void (^successBlock)(TSPaginator *paginator, NSArray *objects, NSUInteger page);
+@property (nonatomic, copy) void (^failureBlock)(TSPaginator *paginator, NSError *error);
+
 @end
 
 @implementation TSPaginator
@@ -86,17 +98,28 @@ static NSUInteger TSPaginatorDefaultPerPage = 100;
 
 #pragma mark - Action methods
 
-- (void)loadNextPage
+- (void)loadNextPageWithSuccess:(void (^)(TSPaginator *, NSArray *, NSUInteger))success
+                        failure:(void (^)(TSPaginator *, NSError *))failure
 {
-    [self loadPage:self.currentPage + 1];
+    [self loadPage:self.currentPage + 1
+           success:success
+           failure:failure];
 }
 
-- (void)loadPreviousPage
+- (void)loadPreviousPageWithSuccess:(void (^)(TSPaginator *, NSArray *, NSUInteger))success
+                            failure:(void (^)(TSPaginator *, NSError *))failure
 {
-    [self loadPage:self.currentPage - 1];
+    [self loadPage:self.currentPage - 1
+           success:success
+           failure:failure];
 }
 
-- (void)loadPage:(NSUInteger)pageNumber {
+- (void)loadPage:(NSUInteger)pageNumber
+         success:(void (^)(TSPaginator *paginator, NSArray *objects, NSUInteger page))success
+         failure:(void (^)(TSPaginator *paginator, NSError *error))failure {
+    
+    [self setCompletionBlockWithSuccess:success
+                                failure:failure];
     
     _currentPage = pageNumber;
 
@@ -158,11 +181,16 @@ static NSUInteger TSPaginatorDefaultPerPage = 100;
 
 }
 
-- (void)loadFirstPage {
+- (void)loadFirstPageWithSuccess:(void (^)(TSPaginator *paginator, NSArray *objects, NSUInteger page))success
+                         failure:(void (^)(TSPaginator *paginator, NSError *error))failure {
     if (self.isZeroIndexed)
-        [self loadPage:0];
+        [self loadPage:0
+         success:success
+               failure:failure];
     else
-        [self loadPage:1];
+        [self loadPage:1
+               success:success
+               failure:failure];
 }
 
 - (NSString *)description
