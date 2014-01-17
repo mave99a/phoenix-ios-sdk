@@ -145,7 +145,7 @@ Because Phoenix has been deployed across many regions (and more coming), we make
     
     __weak typeof(self) refToSelf = self;
     
-    [paginator setCompletionBlockWithSuccess:^(TSPaginator *paginator, NSArray *objects, NSUInteger page) {
+    [paginator loadFirstPageWithSuccess:^(TSPaginator *paginator, NSArray *objects, NSUInteger page) {
 				// Do something about the result objects
 				// e.g. save to database
         [self.client saveObjectsToDatabase:objects];
