@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>TSPhoenix Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">TSPhoenix </a></h1>
+				<a id="developerHome" href="index.html">tigerspike</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">TSPhoenix Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">TSPhoenix Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h2>Overview</h2>
+
+<p>TSPhoenix is an iOS SDK for <a href="http://phoenixplatform.com">Tigerspike Phoenix Platform</a>. By using the SDK instead of the HTTP APIs, you can save massive amount of development time, interface with high-level APIs and focus your energy on the UI.</p>
+
+<ul>
+<li>Native Objective-C APIs</li>
+<li>Seamless integration with Cocoapods</li>
+<li>User management: log in, out, auth tokens, etc.</li>
+<li>Transparent caching via Core Data</li>
+<li>High level models such as Articles and Sections, instead of JSON dictionaries and arrays</li>
+<li>Maintained by Tigerspike Products team, so you don&rsquo;t have to</li>
+<li>Built on solid open-source components you know and love: AFNetworking and MagicalRecord.</li>
+<li>API response pagination is taken care of</li>
+<li>Flexible and extensible</li>
+<li>Fully documented, Appledoc style</li>
+<li>and much more</li>
+</ul>
+
+
+<h2>Modules</h2>
+
+<h3><a href="Classes/TSPhoenixClient.html">TSPhoenixClient</a></h3>
+
+<p>A <strong>singleton</strong> entry to all SDK modules. It is a standard AFHTTPClient subclass which handles all the underlying network traffic.
+    <a href="Classes/TSPhoenixClient.html#//api/name/sharedInstance">[TSPhoenixClient sharedInstance]</a></p>
+
+<p>all modules are a property of the shared instance, i.e.
+    <a href="Classes/TSPhoenixClient.html#//api/name/sharedInstance">[TSPhoenixClient sharedInstance]</a>.identity
+    <a href="Classes/TSPhoenixClient.html#//api/name/sharedInstance">[TSPhoenixClient sharedInstance]</a>.syndicate</p>
+
+<h3><a href="Classes/TSPhoenixIdentity.html">TSPhoenixIdentity</a></h3>
+
+<p>Phoenix Identity module, responsible for OAuth logging in / out, loading memberships, etc.</p>
+
+<h3><a href="Classes/TSPhoenixSyndicate.html">TSPhoenixSyndicate</a></h3>
+
+<p>Phoenix Syndicate module, responsible for loading and caching sections / articles, sending article interactions back to Phoenix.</p>
+
+<h2>How to get started</h2>
+
+<p>Read the <a href="http://developers.phoenixplatform.com/GettingStarted">Phoenix Getting Started Guide</a></p>
+
+<p>To integrate the SDK:</p>
+
+<pre><code>pod 'TSPhoenix'
+</code></pre>
+
+<p>and then
+    #import &lt;TSPhoenix/TSPhoenix.h></p>
+
+<p>in AppDelegate.m -appDidFinishLaunching:
+    [TSPhoenixClient sharedClient] setUpWithClientID:…]</p>
+
+<h2>Example usage</h2>
+
+<h3>Logging in</h3>
+
+<pre><code>TSPhoenixClient *client = [TSPhoenixClient sharedInstance];
+
+[client.identity authenticateWithUsername:self.userField.text
+                                 password:self.passwordField.text
+                                  success:^(AFOAuthCredential *credential) {} failure:^(NSError *error) {}];
+</code></pre>
+
+<h3>Syndicate: list all subscribed sections</h3>
+
+<pre><code>    [[TSPhoenixClient sharedInstance].syndicate loadSubscribedSectionsWithSuccess:^(TSPaginator *paginator, NSArray *objects, NSUInteger page) {
+            // Populate the UI
+    } failure:nil];
+</code></pre>
+
+<h3>Syndicate: list subscribed articles</h3>
+
+<pre><code>[[TSPhoenixClient sharedInstance].syndicate loadArticlesInSection:self.section
+                               fromDate:fromDate
+                                 toDate:[NSDate date]
+                            success:^(TSPaginator *paginator, NSArray *objects, NSUInteger page) {} failure:^(TSPaginator *paginator, NSError *error) {}];
+</code></pre>
+
+<h2>Patches</h2>
+
+<p>MagicalRecord bug on -MR_importFromArray: always returning nil.
+Patch:</p>
+
+<ul>
+<li>importFromArray:
+changed [MagicalRecord saveWithBlock] to [MagicalRecord saveWithBlockAndWait]</li>
+</ul>
+
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/TSArticle.html">TSArticle</a></li>
+							
+							<li><a href="Classes/TSArticleInteraction.html">TSArticleInteraction</a></li>
+							
+							<li><a href="Classes/TSArticlePaginationPlaceholder.html">TSArticlePaginationPlaceholder</a></li>
+							
+							<li><a href="Classes/TSAsset.html">TSAsset</a></li>
+							
+							<li><a href="Classes/TSMembership.html">TSMembership</a></li>
+							
+							<li><a href="Classes/TSPaginator.html">TSPaginator</a></li>
+							
+							<li><a href="Classes/TSPhoenixClient.html">TSPhoenixClient</a></li>
+							
+							<li><a href="Classes/TSPhoenixIdentity.html">TSPhoenixIdentity</a></li>
+							
+							<li><a href="Classes/TSPhoenixParameterHelper.html">TSPhoenixParameterHelper</a></li>
+							
+							<li><a href="Classes/TSPhoenixSyndicate.html">TSPhoenixSyndicate</a></li>
+							
+							<li><a href="Classes/TSPhoenixSyndicateSectionPredicateHelper.html">TSPhoenixSyndicateSectionPredicateHelper</a></li>
+							
+							<li><a href="Classes/TSProject.html">TSProject</a></li>
+							
+							<li><a href="Classes/TSSection.html">TSSection</a></li>
+							
+							<li><a href="Classes/TSUser.html">TSUser</a></li>
+							
+						</ul>
+					</div>
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 tigerspike. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

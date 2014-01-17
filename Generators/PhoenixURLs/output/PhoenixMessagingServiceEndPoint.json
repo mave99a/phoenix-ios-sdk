@@ -1,0 +1,231 @@
+[
+    {
+        "path": "/projects/{projectId}",
+        "verb": "GET",
+        "name": "GetModuleSettings",
+        "ObjCMethod": "- (void)getModuleSettingsWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}",
+        "verb": "POST",
+        "name": "ActivateModule",
+        "ObjCMethod": "- (void)activateModuleWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}",
+        "verb": "PUT",
+        "name": "UpdateModuleSettings",
+        "ObjCMethod": "- (void)updateModuleSettingsWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}",
+        "verb": "DELETE",
+        "name": "DeactivateModule",
+        "ObjCMethod": "- (void)deactivateModuleWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/accounts?accountview={accountview}",
+        "verb": "GET",
+        "name": "ListAccount",
+        "ObjCMethod": "- (void)listAccountWithProjectID: (NSNumber *)projectID projectID: (NSString *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/accounts/{accountid}",
+        "verb": "GET",
+        "name": "GetAccount",
+        "ObjCMethod": "- (void)getAccountWithProjectID: (NSNumber *)projectID accountID: (NSNumber *)accountID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/accounts",
+        "verb": "POST",
+        "name": "CreateAccount",
+        "ObjCMethod": "- (void)createAccountWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/accounts",
+        "verb": "PUT",
+        "name": "UpdateAccount",
+        "ObjCMethod": "- (void)updateAccountWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/accounts/{accountid}",
+        "verb": "DELETE",
+        "name": "DeleteAccount",
+        "ObjCMethod": "- (void)deleteAccountWithProjectID: (NSNumber *)projectID accountID: (NSNumber *)accountID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/accounts/{accountid}/certificate",
+        "verb": "POST",
+        "name": "UploadAccountCertificate",
+        "ObjCMethod": "- (void)uploadAccountCertificateWithProjectID: (NSNumber *)projectID accountID: (NSNumber *)accountID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/projectaccountmaps",
+        "verb": "GET",
+        "name": "ListProjectAccountMap",
+        "ObjCMethod": "- (void)listProjectAccountMapWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/projectaccountmaps",
+        "verb": "PUT",
+        "name": "CreateProjectAccountMap",
+        "ObjCMethod": "- (void)createProjectAccountMapWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/projectaccountmaps",
+        "verb": "PUT",
+        "name": "UpdateProjectAccountMap",
+        "ObjCMethod": "- (void)updateProjectAccountMapWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/projectaccountmaps",
+        "verb": "GET",
+        "name": "DeleteProjectAccountMap",
+        "ObjCMethod": "- (void)deleteProjectAccountMapWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/projectaccountmaps/{accountId}",
+        "verb": "GET",
+        "name": "GetProjectAccountMap",
+        "ObjCMethod": "- (void)getProjectAccountMapWithProjectID: (NSNumber *)projectID accountID: (NSNumber *)accountID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/messages",
+        "verb": "GET",
+        "name": "ListMessage",
+        "ObjCMethod": "- (void)listMessageWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/messages/{id}",
+        "verb": "GET",
+        "name": "GetMessage",
+        "ObjCMethod": "- (void)getMessageWithProjectID: (NSNumber *)projectID messageID: (NSNumber *)messageID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/messages",
+        "verb": "POST",
+        "name": "CreateMessage",
+        "ObjCMethod": "- (void)createMessageWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/messages/send",
+        "verb": "POST",
+        "name": "SendMessage",
+        "ObjCMethod": "- (void)sendMessageWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/messages/{id}",
+        "verb": "DELETE",
+        "name": "DeleteMessage",
+        "ObjCMethod": "- (void)deleteMessageWithProjectID: (NSNumber *)projectID messageID: (NSNumber *)messageID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/broadcasts",
+        "verb": "GET",
+        "name": "ListBroadcast",
+        "ObjCMethod": "- (void)listBroadcastWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/Broadcasts/{id}",
+        "verb": "GET",
+        "name": "GetBroadcast",
+        "ObjCMethod": "- (void)getBroadcastWithProjectID: (NSNumber *)projectID broadcastID: (NSNumber *)broadcastID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/Broadcasts",
+        "verb": "POST",
+        "name": "CreateBroadcast",
+        "ObjCMethod": "- (void)createBroadcastWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/Broadcasts",
+        "verb": "PUT",
+        "name": "UpdateBroadcast",
+        "ObjCMethod": "- (void)updateBroadcastWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/Broadcasts/{id}",
+        "verb": "DELETE",
+        "name": "DeleteBroadcast",
+        "ObjCMethod": "- (void)deleteBroadcastWithProjectID: (NSNumber *)projectID broadcastID: (NSNumber *)broadcastID completion:"
+    },
+    false,
+    {
+        "path": "/projects/{projectid}/messages/{messageid}/recipients",
+        "verb": "GET",
+        "name": "ListRecipient",
+        "ObjCMethod": "- (void)listRecipientWithProjectID: (NSNumber *)projectID messageID: (NSNumber *)messageID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/messages/{messageid}/recipients",
+        "verb": "POST",
+        "name": "CreateRecipient",
+        "ObjCMethod": "- (void)createRecipientWithProjectID: (NSNumber *)projectID messageID: (NSNumber *)messageID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/messages/{messageid}/recipients",
+        "verb": "PUT",
+        "name": "UpdateRecipient",
+        "ObjCMethod": "- (void)updateRecipientWithProjectID: (NSNumber *)projectID messageID: (NSNumber *)messageID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/templates",
+        "verb": "GET",
+        "name": "ListTemplate",
+        "ObjCMethod": "- (void)listTemplateWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/templates/{id}",
+        "verb": "GET",
+        "name": "GetTemplate",
+        "ObjCMethod": "- (void)getTemplateWithProjectID: (NSNumber *)projectID templateID: (NSNumber *)templateID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/templates",
+        "verb": "POST",
+        "name": "CreateTemplate",
+        "ObjCMethod": "- (void)createTemplateWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/templates",
+        "verb": "PUT",
+        "name": "UpdateTemplate",
+        "ObjCMethod": "- (void)updateTemplateWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/templates/{id}",
+        "verb": "DELETE",
+        "name": "DeleteTemplate",
+        "ObjCMethod": "- (void)deleteTemplateWithProjectID: (NSNumber *)projectID templateID: (NSNumber *)templateID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/templategroups",
+        "verb": "GET",
+        "name": "ListTemplateGroup",
+        "ObjCMethod": "- (void)listTemplateGroupWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/templategroups/{id}",
+        "verb": "GET",
+        "name": "GetTemplateGroup",
+        "ObjCMethod": "- (void)getTemplateGroupWithProjectID: (NSNumber *)projectID templateGroupID: (NSNumber *)templateGroupID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/templategroups",
+        "verb": "POST",
+        "name": "CreateTemplateGroup",
+        "ObjCMethod": "- (void)createTemplateGroupWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/templategroups",
+        "verb": "PUT",
+        "name": "UpdateTemplateGroup",
+        "ObjCMethod": "- (void)updateTemplateGroupWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/templategroups/{id}",
+        "verb": "DELETE",
+        "name": "DeleteTemplateGroup",
+        "ObjCMethod": "- (void)deleteTemplateGroupWithProjectID: (NSNumber *)projectID templateGroupID: (NSNumber *)templateGroupID completion:"
+    }
+]

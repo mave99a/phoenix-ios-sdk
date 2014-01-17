@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TSPhoenixClient.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TSPhoenixClient</TokenIdentifier>
+			<Abstract type="html">Tigerspike Phoenix Client.</Abstract>
+			<DeclaredIn>TSPhoenixClient.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TSPhoenixClient/sharedInstance</TokenIdentifier>
+			<Abstract type="html">Singleton design
+Access Phoenix modules with [TSPhoenixClient sharedInstance]</Abstract>
+			<DeclaredIn>TSPhoenixClient.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)sharedInstance</Declaration>
+			
+			
+			<Anchor>//api/name/sharedInstance</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixClient/setUpWithClientID:clientSecret:projectID:forgotPasswordTemplateID:</TokenIdentifier>
+			<Abstract type="html">Set up Phoenix client</Abstract>
+			<DeclaredIn>TSPhoenixClient.h</DeclaredIn>
+			
+			<Declaration>- (void)setUpWithClientID:(NSString *)clientID clientSecret:(NSString *)clientSecret projectID:(NSInteger)projectID forgotPasswordTemplateID:(NSInteger)forgotPasswordTemplateID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>clientID</Name>
+					<Abstract type="html">OAuth2 client id</Abstract>
+				</Parameter><Parameter>
+					<Name>clientSecret</Name>
+					<Abstract type="html">OAuth2 client secret</Abstract>
+				</Parameter><Parameter>
+					<Name>projectID</Name>
+					<Abstract type="html">Phoenix project id</Abstract>
+				</Parameter><Parameter>
+					<Name>forgotPasswordTemplateID</Name>
+					<Abstract type="html">Phoenix forgot password template</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setUpWithClientID:clientSecret:projectID:forgotPasswordTemplateID:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixClient/setIdentity:</TokenIdentifier>
+			<Abstract type="html">Phoenix modules</Abstract>
+			<DeclaredIn>TSPhoenixClient.h</DeclaredIn>
+			
+			<Declaration>@property (strong) TSPhoenixIdentity *identity</Declaration>
+			
+			
+			<Anchor>//api/name/identity</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixClient/identity</TokenIdentifier>
+			<Abstract type="html">Phoenix modules</Abstract>
+			<DeclaredIn>TSPhoenixClient.h</DeclaredIn>
+			
+			<Declaration>@property (strong) TSPhoenixIdentity *identity</Declaration>
+			
+			
+			<Anchor>//api/name/identity</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSPhoenixClient/identity</TokenIdentifier>
+			<Abstract type="html">Phoenix modules</Abstract>
+			<DeclaredIn>TSPhoenixClient.h</DeclaredIn>
+			
+			<Declaration>@property (strong) TSPhoenixIdentity *identity</Declaration>
+			
+			
+			<Anchor>//api/name/identity</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

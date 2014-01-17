@@ -1,0 +1,1059 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F20300918FD4BCFA0AB70CB /* libPods-TSPhoenixTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B7BA0A18D8408AB9812782 /* libPods-TSPhoenixTests.a */; };
+		AA1390D1179CDC4F00504D69 /* NSObject+DictionaryRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1390D0179CDC4F00504D69 /* NSObject+DictionaryRepresentation.m */; };
+		AA1390D7179CDDEE00504D69 /* NSArray+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1390D6179CDDEE00504D69 /* NSArray+Mapping.m */; };
+		AA1390D8179CDE7700504D69 /* NSArray+Mapping.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA1390D5179CDDEE00504D69 /* NSArray+Mapping.h */; };
+		AA1390D9179CDE7900504D69 /* NSObject+DictionaryRepresentation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA1390CF179CDC4F00504D69 /* NSObject+DictionaryRepresentation.h */; };
+		AA460EE017A8B89200413BD9 /* TSPhoenixMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = AA460EDF17A8B89200413BD9 /* TSPhoenixMedia.m */; };
+		AA8FAC5E187E68F7004DB18F /* RKDotNetDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8FAC5D187E68F7004DB18F /* RKDotNetDateFormatter.m */; };
+		AAA385E7188522EB0038A36D /* TSModelAbstract.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3856F188522EB0038A36D /* TSModelAbstract.m */; };
+		AAA385E8188522EB0038A36D /* TSActionType.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA38572188522EB0038A36D /* TSActionType.m */; };
+		AAA385E9188522EB0038A36D /* TSActionTypeGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA38574188522EB0038A36D /* TSActionTypeGroup.m */; };
+		AAA385EA188522EB0038A36D /* TSActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA38576188522EB0038A36D /* TSActivity.m */; };
+		AAA385EB188522EB0038A36D /* TSActivityGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA38578188522EB0038A36D /* TSActivityGroup.m */; };
+		AAA385EC188522EB0038A36D /* TSActivityLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3857A188522EB0038A36D /* TSActivityLog.m */; };
+		AAA385ED188522EB0038A36D /* TSEventLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3857C188522EB0038A36D /* TSEventLog.m */; };
+		AAA385EE188522EB0038A36D /* TSEventType.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3857E188522EB0038A36D /* TSEventType.m */; };
+		AAA385EF188522EB0038A36D /* TSTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA38580188522EB0038A36D /* TSTrigger.m */; };
+		AAA385F0188522EB0038A36D /* TSTriggerActionMap.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA38582188522EB0038A36D /* TSTriggerActionMap.m */; };
+		AAA385F1188522EB0038A36D /* TSWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA38584188522EB0038A36D /* TSWidget.m */; };
+		AAA385F2188522EB0038A36D /* TSProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA38587188522EB0038A36D /* TSProduct.m */; };
+		AAA385F3188522EB0038A36D /* TSTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA38589188522EB0038A36D /* TSTransaction.m */; };
+		AAA385F4188522EB0038A36D /* TSAction.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3858C188522EB0038A36D /* TSAction.m */; };
+		AAA385F5188522EB0038A36D /* TSApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3858E188522EB0038A36D /* TSApplication.m */; };
+		AAA385F6188522EB0038A36D /* TSCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA38590188522EB0038A36D /* TSCompany.m */; };
+		AAA385F7188522EB0038A36D /* TSDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA38592188522EB0038A36D /* TSDomain.m */; };
+		AAA385F8188522EB0038A36D /* TSGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA38594188522EB0038A36D /* TSGroup.m */; };
+		AAA385F9188522EB0038A36D /* TSIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA38596188522EB0038A36D /* TSIdentifier.m */; };
+		AAA385FA188522EB0038A36D /* TSInstallation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA38598188522EB0038A36D /* TSInstallation.m */; };
+		AAA385FB188522EB0038A36D /* TSMembership.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3859A188522EB0038A36D /* TSMembership.m */; };
+		AAA385FC188522EB0038A36D /* TSModule.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3859C188522EB0038A36D /* TSModule.m */; };
+		AAA385FD188522EB0038A36D /* TSProject.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3859E188522EB0038A36D /* TSProject.m */; };
+		AAA385FE188522EB0038A36D /* TSProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385A0188522EB0038A36D /* TSProvider.m */; };
+		AAA385FF188522EB0038A36D /* TSResource.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385A2188522EB0038A36D /* TSResource.m */; };
+		AAA38600188522EB0038A36D /* TSRole.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385A4188522EB0038A36D /* TSRole.m */; };
+		AAA38601188522EB0038A36D /* TSRolePermission.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385A6188522EB0038A36D /* TSRolePermission.m */; };
+		AAA38602188522EB0038A36D /* TSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385A8188522EB0038A36D /* TSUser.m */; };
+		AAA38603188522EB0038A36D /* TSUserPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385AA188522EB0038A36D /* TSUserPermission.m */; };
+		AAA38604188522EB0038A36D /* TSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385AD188522EB0038A36D /* TSCategory.m */; };
+		AAA38605188522EB0038A36D /* TSChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385AF188522EB0038A36D /* TSChannel.m */; };
+		AAA38606188522EB0038A36D /* TSFileExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385B1188522EB0038A36D /* TSFileExtension.m */; };
+		AAA38607188522EB0038A36D /* TSMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385B3188522EB0038A36D /* TSMedia.m */; };
+		AAA38608188522EB0038A36D /* TSMediaFile.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385B5188522EB0038A36D /* TSMediaFile.m */; };
+		AAA38609188522EB0038A36D /* TSMediaFileType.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385B7188522EB0038A36D /* TSMediaFileType.m */; };
+		AAA3860A188522EB0038A36D /* TSPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385B9188522EB0038A36D /* TSPlaylist.m */; };
+		AAA3860B188522EB0038A36D /* TSProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385BB188522EB0038A36D /* TSProfile.m */; };
+		AAA3860C188522EB0038A36D /* TSProjectMediaFileTypeMap.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385BD188522EB0038A36D /* TSProjectMediaFileTypeMap.m */; };
+		AAA3860D188522EB0038A36D /* TSTag.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385BF188522EB0038A36D /* TSTag.m */; };
+		AAA3860E188522EB0038A36D /* TSAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385C2188522EB0038A36D /* TSAccount.m */; };
+		AAA3860F188522EB0038A36D /* TSAggregator.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385C4188522EB0038A36D /* TSAggregator.m */; };
+		AAA38610188522EB0038A36D /* TSBroadcast.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385C6188522EB0038A36D /* TSBroadcast.m */; };
+		AAA38611188522EB0038A36D /* TSMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385C8188522EB0038A36D /* TSMessage.m */; };
+		AAA38612188522EB0038A36D /* TSMessageFile.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385CA188522EB0038A36D /* TSMessageFile.m */; };
+		AAA38613188522EB0038A36D /* TSProjectAccountMap.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385CC188522EB0038A36D /* TSProjectAccountMap.m */; };
+		AAA38614188522EB0038A36D /* TSRecipient.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385CE188522EB0038A36D /* TSRecipient.m */; };
+		AAA38615188522EB0038A36D /* TSTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385D0188522EB0038A36D /* TSTemplate.m */; };
+		AAA38616188522EB0038A36D /* TSTemplateGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385D2188522EB0038A36D /* TSTemplateGroup.m */; };
+		AAA38617188522EB0038A36D /* TSArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385D5188522EB0038A36D /* TSArticle.m */; };
+		AAA38618188522EB0038A36D /* TSArticleCollectionMap.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385D7188522EB0038A36D /* TSArticleCollectionMap.m */; };
+		AAA38619188522EB0038A36D /* TSArticleInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385D9188522EB0038A36D /* TSArticleInteraction.m */; };
+		AAA3861A188522EB0038A36D /* TSAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385DB188522EB0038A36D /* TSAsset.m */; };
+		AAA3861B188522EB0038A36D /* TSCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385DD188522EB0038A36D /* TSCollection.m */; };
+		AAA3861C188522EB0038A36D /* TSEdition.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385DF188522EB0038A36D /* TSEdition.m */; };
+		AAA3861D188522EB0038A36D /* TSFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385E1188522EB0038A36D /* TSFeed.m */; };
+		AAA3861E188522EB0038A36D /* TSFeedLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385E3188522EB0038A36D /* TSFeedLog.m */; };
+		AAA3861F188522EB0038A36D /* TSSection.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA385E5188522EB0038A36D /* TSSection.m */; };
+		AAA3862A188667310038A36D /* TSPhoenixModuleAbastract.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA38629188667310038A36D /* TSPhoenixModuleAbastract.m */; };
+		AAA3862D188668340038A36D /* TSPhoenixAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3862C188668340038A36D /* TSPhoenixAnalytics.m */; };
+		AAA38630188668410038A36D /* TSPhoenixMessaging.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3862F188668410038A36D /* TSPhoenixMessaging.m */; };
+		AAA71AD71798D7980006570C /* TSPaginator.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA71AD61798D7980006570C /* TSPaginator.m */; };
+		AAA71AD91798F1040006570C /* TSPaginator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AAA71AD51798D7980006570C /* TSPaginator.h */; };
+		AAB74B7D17951E4A009CD7C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB74B7C17951E4A009CD7C6 /* Foundation.framework */; };
+		AAB74B8B17951E4A009CD7C6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB74B8A17951E4A009CD7C6 /* XCTest.framework */; };
+		AAB74B8C17951E4A009CD7C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB74B7C17951E4A009CD7C6 /* Foundation.framework */; };
+		AAB74B8E17951E4A009CD7C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB74B8D17951E4A009CD7C6 /* UIKit.framework */; };
+		AAB74B9117951E4A009CD7C6 /* libTSPhoenix.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB74B7917951E4A009CD7C6 /* libTSPhoenix.a */; };
+		AAB74B9717951E4A009CD7C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAB74B9517951E4A009CD7C6 /* InfoPlist.strings */; };
+		AAB74B9917951E4A009CD7C6 /* TSPhoenixTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB74B9817951E4A009CD7C6 /* TSPhoenixTests.m */; };
+		AAB74BC817951E70009CD7C6 /* TSPhoenixClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB74BB617951E70009CD7C6 /* TSPhoenixClient.m */; };
+		AAB74BC917951E70009CD7C6 /* TSPhoenixIdentity.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB74BB917951E70009CD7C6 /* TSPhoenixIdentity.m */; };
+		AAB74BCB17951E70009CD7C6 /* TSPhoenixSyndicate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB74BBD17951E70009CD7C6 /* TSPhoenixSyndicate.m */; };
+		AAB74BCF179524B7009CD7C6 /* TSPhoenix.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AAB74BB417951E70009CD7C6 /* TSPhoenix.h */; };
+		AAB74BD0179524B9009CD7C6 /* TSPhoenixClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AAB74BB517951E70009CD7C6 /* TSPhoenixClient.h */; };
+		AAB74BD1179524BC009CD7C6 /* TSPhoenixIdentity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AAB74BB817951E70009CD7C6 /* TSPhoenixIdentity.h */; };
+		AAB74BD2179524BF009CD7C6 /* TSPhoenixSyndicate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AAB74BBC17951E70009CD7C6 /* TSPhoenixSyndicate.h */; };
+		AAF1BE42183F0156004FB517 /* TSPhoenixFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF1BE41183F0156004FB517 /* TSPhoenixFilter.m */; };
+		AAF1BE45183F0160004FB517 /* TSPhoenixParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF1BE44183F0160004FB517 /* TSPhoenixParameter.m */; };
+		AAFDF43C179FC384008F694E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFDF43B179FC384008F694E /* SystemConfiguration.framework */; };
+		AAFDF43E179FC38A008F694E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFDF43D179FC38A008F694E /* MobileCoreServices.framework */; };
+		F3F12269C3D54312AB7E6AD9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 958DC7DE42AC4DD590D0A81B /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAB74B8F17951E4A009CD7C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAB74B7117951E4A009CD7C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAB74B7817951E4A009CD7C6;
+			remoteInfo = TSPhoenix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AAB74B7717951E4A009CD7C6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				AAB74BCF179524B7009CD7C6 /* TSPhoenix.h in CopyFiles */,
+				AAB74BD0179524B9009CD7C6 /* TSPhoenixClient.h in CopyFiles */,
+				AAB74BD1179524BC009CD7C6 /* TSPhoenixIdentity.h in CopyFiles */,
+				AAA71AD91798F1040006570C /* TSPaginator.h in CopyFiles */,
+				AAB74BD2179524BF009CD7C6 /* TSPhoenixSyndicate.h in CopyFiles */,
+				AA1390D9179CDE7900504D69 /* NSObject+DictionaryRepresentation.h in CopyFiles */,
+				AA1390D8179CDE7700504D69 /* NSArray+Mapping.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		958DC7DE42AC4DD590D0A81B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1390CF179CDC4F00504D69 /* NSObject+DictionaryRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DictionaryRepresentation.h"; sourceTree = "<group>"; };
+		AA1390D0179CDC4F00504D69 /* NSObject+DictionaryRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DictionaryRepresentation.m"; sourceTree = "<group>"; };
+		AA1390D5179CDDEE00504D69 /* NSArray+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Mapping.h"; sourceTree = "<group>"; };
+		AA1390D6179CDDEE00504D69 /* NSArray+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Mapping.m"; sourceTree = "<group>"; };
+		AA460EDE17A8B89200413BD9 /* TSPhoenixMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPhoenixMedia.h; sourceTree = "<group>"; };
+		AA460EDF17A8B89200413BD9 /* TSPhoenixMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPhoenixMedia.m; sourceTree = "<group>"; };
+		AA8FAC5C187E68F7004DB18F /* RKDotNetDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDotNetDateFormatter.h; sourceTree = "<group>"; };
+		AA8FAC5D187E68F7004DB18F /* RKDotNetDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDotNetDateFormatter.m; sourceTree = "<group>"; };
+		AAA3856E188522EB0038A36D /* TSModelAbstract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSModelAbstract.h; sourceTree = "<group>"; };
+		AAA3856F188522EB0038A36D /* TSModelAbstract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSModelAbstract.m; sourceTree = "<group>"; };
+		AAA38571188522EB0038A36D /* TSActionType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSActionType.h; sourceTree = "<group>"; };
+		AAA38572188522EB0038A36D /* TSActionType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSActionType.m; sourceTree = "<group>"; };
+		AAA38573188522EB0038A36D /* TSActionTypeGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSActionTypeGroup.h; sourceTree = "<group>"; };
+		AAA38574188522EB0038A36D /* TSActionTypeGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSActionTypeGroup.m; sourceTree = "<group>"; };
+		AAA38575188522EB0038A36D /* TSActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSActivity.h; sourceTree = "<group>"; };
+		AAA38576188522EB0038A36D /* TSActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSActivity.m; sourceTree = "<group>"; };
+		AAA38577188522EB0038A36D /* TSActivityGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSActivityGroup.h; sourceTree = "<group>"; };
+		AAA38578188522EB0038A36D /* TSActivityGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSActivityGroup.m; sourceTree = "<group>"; };
+		AAA38579188522EB0038A36D /* TSActivityLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSActivityLog.h; sourceTree = "<group>"; };
+		AAA3857A188522EB0038A36D /* TSActivityLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSActivityLog.m; sourceTree = "<group>"; };
+		AAA3857B188522EB0038A36D /* TSEventLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEventLog.h; sourceTree = "<group>"; };
+		AAA3857C188522EB0038A36D /* TSEventLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSEventLog.m; sourceTree = "<group>"; };
+		AAA3857D188522EB0038A36D /* TSEventType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEventType.h; sourceTree = "<group>"; };
+		AAA3857E188522EB0038A36D /* TSEventType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSEventType.m; sourceTree = "<group>"; };
+		AAA3857F188522EB0038A36D /* TSTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTrigger.h; sourceTree = "<group>"; };
+		AAA38580188522EB0038A36D /* TSTrigger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTrigger.m; sourceTree = "<group>"; };
+		AAA38581188522EB0038A36D /* TSTriggerActionMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTriggerActionMap.h; sourceTree = "<group>"; };
+		AAA38582188522EB0038A36D /* TSTriggerActionMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTriggerActionMap.m; sourceTree = "<group>"; };
+		AAA38583188522EB0038A36D /* TSWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSWidget.h; sourceTree = "<group>"; };
+		AAA38584188522EB0038A36D /* TSWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSWidget.m; sourceTree = "<group>"; };
+		AAA38586188522EB0038A36D /* TSProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSProduct.h; sourceTree = "<group>"; };
+		AAA38587188522EB0038A36D /* TSProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSProduct.m; sourceTree = "<group>"; };
+		AAA38588188522EB0038A36D /* TSTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTransaction.h; sourceTree = "<group>"; };
+		AAA38589188522EB0038A36D /* TSTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTransaction.m; sourceTree = "<group>"; };
+		AAA3858B188522EB0038A36D /* TSAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAction.h; sourceTree = "<group>"; };
+		AAA3858C188522EB0038A36D /* TSAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSAction.m; sourceTree = "<group>"; };
+		AAA3858D188522EB0038A36D /* TSApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSApplication.h; sourceTree = "<group>"; };
+		AAA3858E188522EB0038A36D /* TSApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSApplication.m; sourceTree = "<group>"; };
+		AAA3858F188522EB0038A36D /* TSCompany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCompany.h; sourceTree = "<group>"; };
+		AAA38590188522EB0038A36D /* TSCompany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCompany.m; sourceTree = "<group>"; };
+		AAA38591188522EB0038A36D /* TSDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSDomain.h; sourceTree = "<group>"; };
+		AAA38592188522EB0038A36D /* TSDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSDomain.m; sourceTree = "<group>"; };
+		AAA38593188522EB0038A36D /* TSGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSGroup.h; sourceTree = "<group>"; };
+		AAA38594188522EB0038A36D /* TSGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSGroup.m; sourceTree = "<group>"; };
+		AAA38595188522EB0038A36D /* TSIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSIdentifier.h; sourceTree = "<group>"; };
+		AAA38596188522EB0038A36D /* TSIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSIdentifier.m; sourceTree = "<group>"; };
+		AAA38597188522EB0038A36D /* TSInstallation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSInstallation.h; sourceTree = "<group>"; };
+		AAA38598188522EB0038A36D /* TSInstallation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSInstallation.m; sourceTree = "<group>"; };
+		AAA38599188522EB0038A36D /* TSMembership.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMembership.h; sourceTree = "<group>"; };
+		AAA3859A188522EB0038A36D /* TSMembership.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMembership.m; sourceTree = "<group>"; };
+		AAA3859B188522EB0038A36D /* TSModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSModule.h; sourceTree = "<group>"; };
+		AAA3859C188522EB0038A36D /* TSModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSModule.m; sourceTree = "<group>"; };
+		AAA3859D188522EB0038A36D /* TSProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSProject.h; sourceTree = "<group>"; };
+		AAA3859E188522EB0038A36D /* TSProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSProject.m; sourceTree = "<group>"; };
+		AAA3859F188522EB0038A36D /* TSProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSProvider.h; sourceTree = "<group>"; };
+		AAA385A0188522EB0038A36D /* TSProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSProvider.m; sourceTree = "<group>"; };
+		AAA385A1188522EB0038A36D /* TSResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSResource.h; sourceTree = "<group>"; };
+		AAA385A2188522EB0038A36D /* TSResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSResource.m; sourceTree = "<group>"; };
+		AAA385A3188522EB0038A36D /* TSRole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSRole.h; sourceTree = "<group>"; };
+		AAA385A4188522EB0038A36D /* TSRole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSRole.m; sourceTree = "<group>"; };
+		AAA385A5188522EB0038A36D /* TSRolePermission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSRolePermission.h; sourceTree = "<group>"; };
+		AAA385A6188522EB0038A36D /* TSRolePermission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSRolePermission.m; sourceTree = "<group>"; };
+		AAA385A7188522EB0038A36D /* TSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSUser.h; sourceTree = "<group>"; };
+		AAA385A8188522EB0038A36D /* TSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSUser.m; sourceTree = "<group>"; };
+		AAA385A9188522EB0038A36D /* TSUserPermission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSUserPermission.h; sourceTree = "<group>"; };
+		AAA385AA188522EB0038A36D /* TSUserPermission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSUserPermission.m; sourceTree = "<group>"; };
+		AAA385AC188522EB0038A36D /* TSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCategory.h; sourceTree = "<group>"; };
+		AAA385AD188522EB0038A36D /* TSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCategory.m; sourceTree = "<group>"; };
+		AAA385AE188522EB0038A36D /* TSChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSChannel.h; sourceTree = "<group>"; };
+		AAA385AF188522EB0038A36D /* TSChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSChannel.m; sourceTree = "<group>"; };
+		AAA385B0188522EB0038A36D /* TSFileExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSFileExtension.h; sourceTree = "<group>"; };
+		AAA385B1188522EB0038A36D /* TSFileExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSFileExtension.m; sourceTree = "<group>"; };
+		AAA385B2188522EB0038A36D /* TSMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMedia.h; sourceTree = "<group>"; };
+		AAA385B3188522EB0038A36D /* TSMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMedia.m; sourceTree = "<group>"; };
+		AAA385B4188522EB0038A36D /* TSMediaFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMediaFile.h; sourceTree = "<group>"; };
+		AAA385B5188522EB0038A36D /* TSMediaFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMediaFile.m; sourceTree = "<group>"; };
+		AAA385B6188522EB0038A36D /* TSMediaFileType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMediaFileType.h; sourceTree = "<group>"; };
+		AAA385B7188522EB0038A36D /* TSMediaFileType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMediaFileType.m; sourceTree = "<group>"; };
+		AAA385B8188522EB0038A36D /* TSPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPlaylist.h; sourceTree = "<group>"; };
+		AAA385B9188522EB0038A36D /* TSPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPlaylist.m; sourceTree = "<group>"; };
+		AAA385BA188522EB0038A36D /* TSProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSProfile.h; sourceTree = "<group>"; };
+		AAA385BB188522EB0038A36D /* TSProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSProfile.m; sourceTree = "<group>"; };
+		AAA385BC188522EB0038A36D /* TSProjectMediaFileTypeMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSProjectMediaFileTypeMap.h; sourceTree = "<group>"; };
+		AAA385BD188522EB0038A36D /* TSProjectMediaFileTypeMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSProjectMediaFileTypeMap.m; sourceTree = "<group>"; };
+		AAA385BE188522EB0038A36D /* TSTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTag.h; sourceTree = "<group>"; };
+		AAA385BF188522EB0038A36D /* TSTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTag.m; sourceTree = "<group>"; };
+		AAA385C1188522EB0038A36D /* TSAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAccount.h; sourceTree = "<group>"; };
+		AAA385C2188522EB0038A36D /* TSAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSAccount.m; sourceTree = "<group>"; };
+		AAA385C3188522EB0038A36D /* TSAggregator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAggregator.h; sourceTree = "<group>"; };
+		AAA385C4188522EB0038A36D /* TSAggregator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSAggregator.m; sourceTree = "<group>"; };
+		AAA385C5188522EB0038A36D /* TSBroadcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBroadcast.h; sourceTree = "<group>"; };
+		AAA385C6188522EB0038A36D /* TSBroadcast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBroadcast.m; sourceTree = "<group>"; };
+		AAA385C7188522EB0038A36D /* TSMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMessage.h; sourceTree = "<group>"; };
+		AAA385C8188522EB0038A36D /* TSMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMessage.m; sourceTree = "<group>"; };
+		AAA385C9188522EB0038A36D /* TSMessageFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMessageFile.h; sourceTree = "<group>"; };
+		AAA385CA188522EB0038A36D /* TSMessageFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMessageFile.m; sourceTree = "<group>"; };
+		AAA385CB188522EB0038A36D /* TSProjectAccountMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSProjectAccountMap.h; sourceTree = "<group>"; };
+		AAA385CC188522EB0038A36D /* TSProjectAccountMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSProjectAccountMap.m; sourceTree = "<group>"; };
+		AAA385CD188522EB0038A36D /* TSRecipient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSRecipient.h; sourceTree = "<group>"; };
+		AAA385CE188522EB0038A36D /* TSRecipient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSRecipient.m; sourceTree = "<group>"; };
+		AAA385CF188522EB0038A36D /* TSTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTemplate.h; sourceTree = "<group>"; };
+		AAA385D0188522EB0038A36D /* TSTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTemplate.m; sourceTree = "<group>"; };
+		AAA385D1188522EB0038A36D /* TSTemplateGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTemplateGroup.h; sourceTree = "<group>"; };
+		AAA385D2188522EB0038A36D /* TSTemplateGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTemplateGroup.m; sourceTree = "<group>"; };
+		AAA385D4188522EB0038A36D /* TSArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSArticle.h; sourceTree = "<group>"; };
+		AAA385D5188522EB0038A36D /* TSArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSArticle.m; sourceTree = "<group>"; };
+		AAA385D6188522EB0038A36D /* TSArticleCollectionMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSArticleCollectionMap.h; sourceTree = "<group>"; };
+		AAA385D7188522EB0038A36D /* TSArticleCollectionMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSArticleCollectionMap.m; sourceTree = "<group>"; };
+		AAA385D8188522EB0038A36D /* TSArticleInteraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSArticleInteraction.h; sourceTree = "<group>"; };
+		AAA385D9188522EB0038A36D /* TSArticleInteraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSArticleInteraction.m; sourceTree = "<group>"; };
+		AAA385DA188522EB0038A36D /* TSAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAsset.h; sourceTree = "<group>"; };
+		AAA385DB188522EB0038A36D /* TSAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSAsset.m; sourceTree = "<group>"; };
+		AAA385DC188522EB0038A36D /* TSCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCollection.h; sourceTree = "<group>"; };
+		AAA385DD188522EB0038A36D /* TSCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCollection.m; sourceTree = "<group>"; };
+		AAA385DE188522EB0038A36D /* TSEdition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEdition.h; sourceTree = "<group>"; };
+		AAA385DF188522EB0038A36D /* TSEdition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSEdition.m; sourceTree = "<group>"; };
+		AAA385E0188522EB0038A36D /* TSFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSFeed.h; sourceTree = "<group>"; };
+		AAA385E1188522EB0038A36D /* TSFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSFeed.m; sourceTree = "<group>"; };
+		AAA385E2188522EB0038A36D /* TSFeedLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSFeedLog.h; sourceTree = "<group>"; };
+		AAA385E3188522EB0038A36D /* TSFeedLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSFeedLog.m; sourceTree = "<group>"; };
+		AAA385E4188522EB0038A36D /* TSSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSection.h; sourceTree = "<group>"; };
+		AAA385E5188522EB0038A36D /* TSSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSection.m; sourceTree = "<group>"; };
+		AAA385E6188522EB0038A36D /* TSPhoenixModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPhoenixModels.h; sourceTree = "<group>"; };
+		AAA38628188667310038A36D /* TSPhoenixModuleAbastract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPhoenixModuleAbastract.h; sourceTree = "<group>"; };
+		AAA38629188667310038A36D /* TSPhoenixModuleAbastract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPhoenixModuleAbastract.m; sourceTree = "<group>"; };
+		AAA3862B188668340038A36D /* TSPhoenixAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPhoenixAnalytics.h; sourceTree = "<group>"; };
+		AAA3862C188668340038A36D /* TSPhoenixAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPhoenixAnalytics.m; sourceTree = "<group>"; };
+		AAA3862E188668410038A36D /* TSPhoenixMessaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPhoenixMessaging.h; sourceTree = "<group>"; };
+		AAA3862F188668410038A36D /* TSPhoenixMessaging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPhoenixMessaging.m; sourceTree = "<group>"; };
+		AAA71AD51798D7980006570C /* TSPaginator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPaginator.h; sourceTree = "<group>"; };
+		AAA71AD61798D7980006570C /* TSPaginator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPaginator.m; sourceTree = "<group>"; };
+		AAB74B7917951E4A009CD7C6 /* libTSPhoenix.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTSPhoenix.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAB74B7C17951E4A009CD7C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AAB74B8017951E4A009CD7C6 /* TSPhoenix-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TSPhoenix-Prefix.pch"; sourceTree = "<group>"; };
+		AAB74B8917951E4A009CD7C6 /* TSPhoenixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSPhoenixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAB74B8A17951E4A009CD7C6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AAB74B8D17951E4A009CD7C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		AAB74B9417951E4A009CD7C6 /* TSPhoenixTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TSPhoenixTests-Info.plist"; sourceTree = "<group>"; };
+		AAB74B9617951E4A009CD7C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AAB74B9817951E4A009CD7C6 /* TSPhoenixTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSPhoenixTests.m; sourceTree = "<group>"; };
+		AAB74BB417951E70009CD7C6 /* TSPhoenix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPhoenix.h; sourceTree = "<group>"; };
+		AAB74BB517951E70009CD7C6 /* TSPhoenixClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPhoenixClient.h; sourceTree = "<group>"; };
+		AAB74BB617951E70009CD7C6 /* TSPhoenixClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPhoenixClient.m; sourceTree = "<group>"; };
+		AAB74BB717951E70009CD7C6 /* TSPhoenixConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPhoenixConstants.h; sourceTree = "<group>"; };
+		AAB74BB817951E70009CD7C6 /* TSPhoenixIdentity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TSPhoenixIdentity.h; sourceTree = "<group>"; };
+		AAB74BB917951E70009CD7C6 /* TSPhoenixIdentity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TSPhoenixIdentity.m; sourceTree = "<group>"; };
+		AAB74BBC17951E70009CD7C6 /* TSPhoenixSyndicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TSPhoenixSyndicate.h; sourceTree = "<group>"; };
+		AAB74BBD17951E70009CD7C6 /* TSPhoenixSyndicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TSPhoenixSyndicate.m; sourceTree = "<group>"; };
+		AAF1BE40183F0156004FB517 /* TSPhoenixFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPhoenixFilter.h; sourceTree = "<group>"; };
+		AAF1BE41183F0156004FB517 /* TSPhoenixFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPhoenixFilter.m; sourceTree = "<group>"; };
+		AAF1BE43183F0160004FB517 /* TSPhoenixParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPhoenixParameter.h; sourceTree = "<group>"; };
+		AAF1BE44183F0160004FB517 /* TSPhoenixParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPhoenixParameter.m; sourceTree = "<group>"; };
+		AAFDF43B179FC384008F694E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AAFDF43D179FC38A008F694E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BA999997EBA847149C62FCCE /* Pods-TSPhoenixTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSPhoenixTests.xcconfig"; path = "Pods/Pods-TSPhoenixTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		C713E91B63534EC69DE20272 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		E3B7BA0A18D8408AB9812782 /* libPods-TSPhoenixTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TSPhoenixTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAB74B7617951E4A009CD7C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFDF43E179FC38A008F694E /* MobileCoreServices.framework in Frameworks */,
+				AAFDF43C179FC384008F694E /* SystemConfiguration.framework in Frameworks */,
+				AAB74B7D17951E4A009CD7C6 /* Foundation.framework in Frameworks */,
+				F3F12269C3D54312AB7E6AD9 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAB74B8617951E4A009CD7C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAB74B8B17951E4A009CD7C6 /* XCTest.framework in Frameworks */,
+				AAB74B8E17951E4A009CD7C6 /* UIKit.framework in Frameworks */,
+				AAB74B9117951E4A009CD7C6 /* libTSPhoenix.a in Frameworks */,
+				AAB74B8C17951E4A009CD7C6 /* Foundation.framework in Frameworks */,
+				6F20300918FD4BCFA0AB70CB /* libPods-TSPhoenixTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA1390CE179CDC1E00504D69 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				AA1390CF179CDC4F00504D69 /* NSObject+DictionaryRepresentation.h */,
+				AA1390D0179CDC4F00504D69 /* NSObject+DictionaryRepresentation.m */,
+				AA1390D5179CDDEE00504D69 /* NSArray+Mapping.h */,
+				AA1390D6179CDDEE00504D69 /* NSArray+Mapping.m */,
+			);
+			path = Categories;
+			sourceTree = SOURCE_ROOT;
+		};
+		AA5EA3DD187E3F5C00CAEBA7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AAA71AD51798D7980006570C /* TSPaginator.h */,
+				AAA71AD61798D7980006570C /* TSPaginator.m */,
+				AAF1BE40183F0156004FB517 /* TSPhoenixFilter.h */,
+				AAF1BE41183F0156004FB517 /* TSPhoenixFilter.m */,
+				AAF1BE43183F0160004FB517 /* TSPhoenixParameter.h */,
+				AAF1BE44183F0160004FB517 /* TSPhoenixParameter.m */,
+				AA8FAC5C187E68F7004DB18F /* RKDotNetDateFormatter.h */,
+				AA8FAC5D187E68F7004DB18F /* RKDotNetDateFormatter.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		AAA3856D188522EB0038A36D /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				AAA3856E188522EB0038A36D /* TSModelAbstract.h */,
+				AAA3856F188522EB0038A36D /* TSModelAbstract.m */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		AAA38570188522EB0038A36D /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				AAA38571188522EB0038A36D /* TSActionType.h */,
+				AAA38572188522EB0038A36D /* TSActionType.m */,
+				AAA38573188522EB0038A36D /* TSActionTypeGroup.h */,
+				AAA38574188522EB0038A36D /* TSActionTypeGroup.m */,
+				AAA38575188522EB0038A36D /* TSActivity.h */,
+				AAA38576188522EB0038A36D /* TSActivity.m */,
+				AAA38577188522EB0038A36D /* TSActivityGroup.h */,
+				AAA38578188522EB0038A36D /* TSActivityGroup.m */,
+				AAA38579188522EB0038A36D /* TSActivityLog.h */,
+				AAA3857A188522EB0038A36D /* TSActivityLog.m */,
+				AAA3857B188522EB0038A36D /* TSEventLog.h */,
+				AAA3857C188522EB0038A36D /* TSEventLog.m */,
+				AAA3857D188522EB0038A36D /* TSEventType.h */,
+				AAA3857E188522EB0038A36D /* TSEventType.m */,
+				AAA3857F188522EB0038A36D /* TSTrigger.h */,
+				AAA38580188522EB0038A36D /* TSTrigger.m */,
+				AAA38581188522EB0038A36D /* TSTriggerActionMap.h */,
+				AAA38582188522EB0038A36D /* TSTriggerActionMap.m */,
+				AAA38583188522EB0038A36D /* TSWidget.h */,
+				AAA38584188522EB0038A36D /* TSWidget.m */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		AAA38585188522EB0038A36D /* Commerce */ = {
+			isa = PBXGroup;
+			children = (
+				AAA38586188522EB0038A36D /* TSProduct.h */,
+				AAA38587188522EB0038A36D /* TSProduct.m */,
+				AAA38588188522EB0038A36D /* TSTransaction.h */,
+				AAA38589188522EB0038A36D /* TSTransaction.m */,
+			);
+			path = Commerce;
+			sourceTree = "<group>";
+		};
+		AAA3858A188522EB0038A36D /* Identity */ = {
+			isa = PBXGroup;
+			children = (
+				AAA3858B188522EB0038A36D /* TSAction.h */,
+				AAA3858C188522EB0038A36D /* TSAction.m */,
+				AAA3858D188522EB0038A36D /* TSApplication.h */,
+				AAA3858E188522EB0038A36D /* TSApplication.m */,
+				AAA3858F188522EB0038A36D /* TSCompany.h */,
+				AAA38590188522EB0038A36D /* TSCompany.m */,
+				AAA38591188522EB0038A36D /* TSDomain.h */,
+				AAA38592188522EB0038A36D /* TSDomain.m */,
+				AAA38593188522EB0038A36D /* TSGroup.h */,
+				AAA38594188522EB0038A36D /* TSGroup.m */,
+				AAA38595188522EB0038A36D /* TSIdentifier.h */,
+				AAA38596188522EB0038A36D /* TSIdentifier.m */,
+				AAA38597188522EB0038A36D /* TSInstallation.h */,
+				AAA38598188522EB0038A36D /* TSInstallation.m */,
+				AAA38599188522EB0038A36D /* TSMembership.h */,
+				AAA3859A188522EB0038A36D /* TSMembership.m */,
+				AAA3859B188522EB0038A36D /* TSModule.h */,
+				AAA3859C188522EB0038A36D /* TSModule.m */,
+				AAA3859D188522EB0038A36D /* TSProject.h */,
+				AAA3859E188522EB0038A36D /* TSProject.m */,
+				AAA3859F188522EB0038A36D /* TSProvider.h */,
+				AAA385A0188522EB0038A36D /* TSProvider.m */,
+				AAA385A1188522EB0038A36D /* TSResource.h */,
+				AAA385A2188522EB0038A36D /* TSResource.m */,
+				AAA385A3188522EB0038A36D /* TSRole.h */,
+				AAA385A4188522EB0038A36D /* TSRole.m */,
+				AAA385A5188522EB0038A36D /* TSRolePermission.h */,
+				AAA385A6188522EB0038A36D /* TSRolePermission.m */,
+				AAA385A7188522EB0038A36D /* TSUser.h */,
+				AAA385A8188522EB0038A36D /* TSUser.m */,
+				AAA385A9188522EB0038A36D /* TSUserPermission.h */,
+				AAA385AA188522EB0038A36D /* TSUserPermission.m */,
+			);
+			path = Identity;
+			sourceTree = "<group>";
+		};
+		AAA385AB188522EB0038A36D /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				AAA385AC188522EB0038A36D /* TSCategory.h */,
+				AAA385AD188522EB0038A36D /* TSCategory.m */,
+				AAA385AE188522EB0038A36D /* TSChannel.h */,
+				AAA385AF188522EB0038A36D /* TSChannel.m */,
+				AAA385B0188522EB0038A36D /* TSFileExtension.h */,
+				AAA385B1188522EB0038A36D /* TSFileExtension.m */,
+				AAA385B2188522EB0038A36D /* TSMedia.h */,
+				AAA385B3188522EB0038A36D /* TSMedia.m */,
+				AAA385B4188522EB0038A36D /* TSMediaFile.h */,
+				AAA385B5188522EB0038A36D /* TSMediaFile.m */,
+				AAA385B6188522EB0038A36D /* TSMediaFileType.h */,
+				AAA385B7188522EB0038A36D /* TSMediaFileType.m */,
+				AAA385B8188522EB0038A36D /* TSPlaylist.h */,
+				AAA385B9188522EB0038A36D /* TSPlaylist.m */,
+				AAA385BA188522EB0038A36D /* TSProfile.h */,
+				AAA385BB188522EB0038A36D /* TSProfile.m */,
+				AAA385BC188522EB0038A36D /* TSProjectMediaFileTypeMap.h */,
+				AAA385BD188522EB0038A36D /* TSProjectMediaFileTypeMap.m */,
+				AAA385BE188522EB0038A36D /* TSTag.h */,
+				AAA385BF188522EB0038A36D /* TSTag.m */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		AAA385C0188522EB0038A36D /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				AAA385C1188522EB0038A36D /* TSAccount.h */,
+				AAA385C2188522EB0038A36D /* TSAccount.m */,
+				AAA385C3188522EB0038A36D /* TSAggregator.h */,
+				AAA385C4188522EB0038A36D /* TSAggregator.m */,
+				AAA385C5188522EB0038A36D /* TSBroadcast.h */,
+				AAA385C6188522EB0038A36D /* TSBroadcast.m */,
+				AAA385C7188522EB0038A36D /* TSMessage.h */,
+				AAA385C8188522EB0038A36D /* TSMessage.m */,
+				AAA385C9188522EB0038A36D /* TSMessageFile.h */,
+				AAA385CA188522EB0038A36D /* TSMessageFile.m */,
+				AAA385CB188522EB0038A36D /* TSProjectAccountMap.h */,
+				AAA385CC188522EB0038A36D /* TSProjectAccountMap.m */,
+				AAA385CD188522EB0038A36D /* TSRecipient.h */,
+				AAA385CE188522EB0038A36D /* TSRecipient.m */,
+				AAA385CF188522EB0038A36D /* TSTemplate.h */,
+				AAA385D0188522EB0038A36D /* TSTemplate.m */,
+				AAA385D1188522EB0038A36D /* TSTemplateGroup.h */,
+				AAA385D2188522EB0038A36D /* TSTemplateGroup.m */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		AAA385D3188522EB0038A36D /* Syndicate */ = {
+			isa = PBXGroup;
+			children = (
+				AAA385D4188522EB0038A36D /* TSArticle.h */,
+				AAA385D5188522EB0038A36D /* TSArticle.m */,
+				AAA385D6188522EB0038A36D /* TSArticleCollectionMap.h */,
+				AAA385D7188522EB0038A36D /* TSArticleCollectionMap.m */,
+				AAA385D8188522EB0038A36D /* TSArticleInteraction.h */,
+				AAA385D9188522EB0038A36D /* TSArticleInteraction.m */,
+				AAA385DA188522EB0038A36D /* TSAsset.h */,
+				AAA385DB188522EB0038A36D /* TSAsset.m */,
+				AAA385DC188522EB0038A36D /* TSCollection.h */,
+				AAA385DD188522EB0038A36D /* TSCollection.m */,
+				AAA385DE188522EB0038A36D /* TSEdition.h */,
+				AAA385DF188522EB0038A36D /* TSEdition.m */,
+				AAA385E0188522EB0038A36D /* TSFeed.h */,
+				AAA385E1188522EB0038A36D /* TSFeed.m */,
+				AAA385E2188522EB0038A36D /* TSFeedLog.h */,
+				AAA385E3188522EB0038A36D /* TSFeedLog.m */,
+				AAA385E4188522EB0038A36D /* TSSection.h */,
+				AAA385E5188522EB0038A36D /* TSSection.m */,
+			);
+			path = Syndicate;
+			sourceTree = "<group>";
+		};
+		AAA38631188668490038A36D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AAA38632188668510038A36D /* Abstract */,
+				AAB74BBC17951E70009CD7C6 /* TSPhoenixSyndicate.h */,
+				AAB74BBD17951E70009CD7C6 /* TSPhoenixSyndicate.m */,
+				AAB74BB817951E70009CD7C6 /* TSPhoenixIdentity.h */,
+				AAB74BB917951E70009CD7C6 /* TSPhoenixIdentity.m */,
+				AA460EDE17A8B89200413BD9 /* TSPhoenixMedia.h */,
+				AA460EDF17A8B89200413BD9 /* TSPhoenixMedia.m */,
+				AAA3862B188668340038A36D /* TSPhoenixAnalytics.h */,
+				AAA3862C188668340038A36D /* TSPhoenixAnalytics.m */,
+				AAA3862E188668410038A36D /* TSPhoenixMessaging.h */,
+				AAA3862F188668410038A36D /* TSPhoenixMessaging.m */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		AAA38632188668510038A36D /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				AAA38628188667310038A36D /* TSPhoenixModuleAbastract.h */,
+				AAA38629188667310038A36D /* TSPhoenixModuleAbastract.m */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		AAB74B7017951E4A009CD7C6 = {
+			isa = PBXGroup;
+			children = (
+				AAB74B7E17951E4A009CD7C6 /* TSPhoenix */,
+				AAB74B9217951E4A009CD7C6 /* TSPhoenixTests */,
+				AAB74B7B17951E4A009CD7C6 /* Frameworks */,
+				AAB74B7A17951E4A009CD7C6 /* Products */,
+				C713E91B63534EC69DE20272 /* Pods.xcconfig */,
+				BA999997EBA847149C62FCCE /* Pods-TSPhoenixTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		AAB74B7A17951E4A009CD7C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAB74B7917951E4A009CD7C6 /* libTSPhoenix.a */,
+				AAB74B8917951E4A009CD7C6 /* TSPhoenixTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAB74B7B17951E4A009CD7C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAFDF43D179FC38A008F694E /* MobileCoreServices.framework */,
+				AAFDF43B179FC384008F694E /* SystemConfiguration.framework */,
+				AAB74B7C17951E4A009CD7C6 /* Foundation.framework */,
+				AAB74B8A17951E4A009CD7C6 /* XCTest.framework */,
+				AAB74B8D17951E4A009CD7C6 /* UIKit.framework */,
+				958DC7DE42AC4DD590D0A81B /* libPods.a */,
+				E3B7BA0A18D8408AB9812782 /* libPods-TSPhoenixTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAB74B7E17951E4A009CD7C6 /* TSPhoenix */ = {
+			isa = PBXGroup;
+			children = (
+				AAF1BE46183F04D1004FB517 /* Models */,
+				AA1390CE179CDC1E00504D69 /* Categories */,
+				AAB74BB117951E70009CD7C6 /* Source */,
+				AAB74B7F17951E4A009CD7C6 /* Supporting Files */,
+			);
+			path = TSPhoenix;
+			sourceTree = "<group>";
+		};
+		AAB74B7F17951E4A009CD7C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAB74B8017951E4A009CD7C6 /* TSPhoenix-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAB74B9217951E4A009CD7C6 /* TSPhoenixTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAB74B9817951E4A009CD7C6 /* TSPhoenixTests.m */,
+				AAB74B9317951E4A009CD7C6 /* Supporting Files */,
+			);
+			path = TSPhoenixTests;
+			sourceTree = "<group>";
+		};
+		AAB74B9317951E4A009CD7C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAB74B9417951E4A009CD7C6 /* TSPhoenixTests-Info.plist */,
+				AAB74B9517951E4A009CD7C6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAB74BB117951E70009CD7C6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AAB74BB417951E70009CD7C6 /* TSPhoenix.h */,
+				AAB74BB517951E70009CD7C6 /* TSPhoenixClient.h */,
+				AAB74BB617951E70009CD7C6 /* TSPhoenixClient.m */,
+				AAA38631188668490038A36D /* Modules */,
+				AAB74BB717951E70009CD7C6 /* TSPhoenixConstants.h */,
+				AA5EA3DD187E3F5C00CAEBA7 /* Helpers */,
+			);
+			path = Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		AAF1BE46183F04D1004FB517 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AAA3856D188522EB0038A36D /* Abstract */,
+				AAA38570188522EB0038A36D /* Analytics */,
+				AAA38585188522EB0038A36D /* Commerce */,
+				AAA3858A188522EB0038A36D /* Identity */,
+				AAA385AB188522EB0038A36D /* Media */,
+				AAA385C0188522EB0038A36D /* Messaging */,
+				AAA385D3188522EB0038A36D /* Syndicate */,
+				AAA385E6188522EB0038A36D /* TSPhoenixModels.h */,
+			);
+			path = Models;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAB74B7817951E4A009CD7C6 /* TSPhoenix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAB74B9C17951E4A009CD7C6 /* Build configuration list for PBXNativeTarget "TSPhoenix" */;
+			buildPhases = (
+				F4D8264B66834F9D9C131A3C /* Check Pods Manifest.lock */,
+				AAB74B7517951E4A009CD7C6 /* Sources */,
+				AAB74B7617951E4A009CD7C6 /* Frameworks */,
+				AAB74B7717951E4A009CD7C6 /* CopyFiles */,
+				296C6EF8D66749799C1F9379 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TSPhoenix;
+			productName = TSPhoenix;
+			productReference = AAB74B7917951E4A009CD7C6 /* libTSPhoenix.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AAB74B8817951E4A009CD7C6 /* TSPhoenixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAB74B9F17951E4A009CD7C6 /* Build configuration list for PBXNativeTarget "TSPhoenixTests" */;
+			buildPhases = (
+				92294C4A82374702B1F38120 /* Check Pods Manifest.lock */,
+				AAB74B8517951E4A009CD7C6 /* Sources */,
+				AAB74B8617951E4A009CD7C6 /* Frameworks */,
+				AAB74B8717951E4A009CD7C6 /* Resources */,
+				75458C71766A4914821E1F38 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAB74B9017951E4A009CD7C6 /* PBXTargetDependency */,
+			);
+			name = TSPhoenixTests;
+			productName = TSPhoenixTests;
+			productReference = AAB74B8917951E4A009CD7C6 /* TSPhoenixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAB74B7117951E4A009CD7C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Tigerspike;
+			};
+			buildConfigurationList = AAB74B7417951E4A009CD7C6 /* Build configuration list for PBXProject "TSPhoenix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AAB74B7017951E4A009CD7C6;
+			productRefGroup = AAB74B7A17951E4A009CD7C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAB74B7817951E4A009CD7C6 /* TSPhoenix */,
+				AAB74B8817951E4A009CD7C6 /* TSPhoenixTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAB74B8717951E4A009CD7C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAB74B9717951E4A009CD7C6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		296C6EF8D66749799C1F9379 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75458C71766A4914821E1F38 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-TSPhoenixTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92294C4A82374702B1F38120 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4D8264B66834F9D9C131A3C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAB74B7517951E4A009CD7C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAA38614188522EB0038A36D /* TSRecipient.m in Sources */,
+				AAA3860A188522EB0038A36D /* TSPlaylist.m in Sources */,
+				AAA385E9188522EB0038A36D /* TSActionTypeGroup.m in Sources */,
+				AAA385F5188522EB0038A36D /* TSApplication.m in Sources */,
+				AAA385E8188522EB0038A36D /* TSActionType.m in Sources */,
+				AAA385FB188522EB0038A36D /* TSMembership.m in Sources */,
+				AAA38611188522EB0038A36D /* TSMessage.m in Sources */,
+				AAA38630188668410038A36D /* TSPhoenixMessaging.m in Sources */,
+				AAA38619188522EB0038A36D /* TSArticleInteraction.m in Sources */,
+				AAA38607188522EB0038A36D /* TSMedia.m in Sources */,
+				AAB74BC817951E70009CD7C6 /* TSPhoenixClient.m in Sources */,
+				AAA385FE188522EB0038A36D /* TSProvider.m in Sources */,
+				AAA3861A188522EB0038A36D /* TSAsset.m in Sources */,
+				AAA385FA188522EB0038A36D /* TSInstallation.m in Sources */,
+				AAA385EE188522EB0038A36D /* TSEventType.m in Sources */,
+				AAA38605188522EB0038A36D /* TSChannel.m in Sources */,
+				AAA3861E188522EB0038A36D /* TSFeedLog.m in Sources */,
+				AAA385FD188522EB0038A36D /* TSProject.m in Sources */,
+				AAA38602188522EB0038A36D /* TSUser.m in Sources */,
+				AAA3861B188522EB0038A36D /* TSCollection.m in Sources */,
+				AAA38610188522EB0038A36D /* TSBroadcast.m in Sources */,
+				AAA385EC188522EB0038A36D /* TSActivityLog.m in Sources */,
+				AAA385EB188522EB0038A36D /* TSActivityGroup.m in Sources */,
+				AAF1BE45183F0160004FB517 /* TSPhoenixParameter.m in Sources */,
+				AA460EE017A8B89200413BD9 /* TSPhoenixMedia.m in Sources */,
+				AAA385FF188522EB0038A36D /* TSResource.m in Sources */,
+				AAA385F8188522EB0038A36D /* TSGroup.m in Sources */,
+				AAA385F1188522EB0038A36D /* TSWidget.m in Sources */,
+				AAA38617188522EB0038A36D /* TSArticle.m in Sources */,
+				AAA3861F188522EB0038A36D /* TSSection.m in Sources */,
+				AAA38616188522EB0038A36D /* TSTemplateGroup.m in Sources */,
+				AAA38604188522EB0038A36D /* TSCategory.m in Sources */,
+				AAA38613188522EB0038A36D /* TSProjectAccountMap.m in Sources */,
+				AAA3862D188668340038A36D /* TSPhoenixAnalytics.m in Sources */,
+				AAA38615188522EB0038A36D /* TSTemplate.m in Sources */,
+				AAA385ED188522EB0038A36D /* TSEventLog.m in Sources */,
+				AAA3860F188522EB0038A36D /* TSAggregator.m in Sources */,
+				AAA385F6188522EB0038A36D /* TSCompany.m in Sources */,
+				AAA38609188522EB0038A36D /* TSMediaFileType.m in Sources */,
+				AAA385F9188522EB0038A36D /* TSIdentifier.m in Sources */,
+				AAA3861C188522EB0038A36D /* TSEdition.m in Sources */,
+				AAA3860C188522EB0038A36D /* TSProjectMediaFileTypeMap.m in Sources */,
+				AAA385EF188522EB0038A36D /* TSTrigger.m in Sources */,
+				AAA3861D188522EB0038A36D /* TSFeed.m in Sources */,
+				AAA3860B188522EB0038A36D /* TSProfile.m in Sources */,
+				AAA3862A188667310038A36D /* TSPhoenixModuleAbastract.m in Sources */,
+				AAA38608188522EB0038A36D /* TSMediaFile.m in Sources */,
+				AAA38618188522EB0038A36D /* TSArticleCollectionMap.m in Sources */,
+				AAA385F7188522EB0038A36D /* TSDomain.m in Sources */,
+				AAA385E7188522EB0038A36D /* TSModelAbstract.m in Sources */,
+				AAA385F3188522EB0038A36D /* TSTransaction.m in Sources */,
+				AAB74BCB17951E70009CD7C6 /* TSPhoenixSyndicate.m in Sources */,
+				AAA385F2188522EB0038A36D /* TSProduct.m in Sources */,
+				AAA38601188522EB0038A36D /* TSRolePermission.m in Sources */,
+				AA8FAC5E187E68F7004DB18F /* RKDotNetDateFormatter.m in Sources */,
+				AAA71AD71798D7980006570C /* TSPaginator.m in Sources */,
+				AAA38600188522EB0038A36D /* TSRole.m in Sources */,
+				AA1390D7179CDDEE00504D69 /* NSArray+Mapping.m in Sources */,
+				AAA385F0188522EB0038A36D /* TSTriggerActionMap.m in Sources */,
+				AAA385EA188522EB0038A36D /* TSActivity.m in Sources */,
+				AAA3860E188522EB0038A36D /* TSAccount.m in Sources */,
+				AAA38612188522EB0038A36D /* TSMessageFile.m in Sources */,
+				AAA3860D188522EB0038A36D /* TSTag.m in Sources */,
+				AA1390D1179CDC4F00504D69 /* NSObject+DictionaryRepresentation.m in Sources */,
+				AAA385F4188522EB0038A36D /* TSAction.m in Sources */,
+				AAA385FC188522EB0038A36D /* TSModule.m in Sources */,
+				AAA38603188522EB0038A36D /* TSUserPermission.m in Sources */,
+				AAA38606188522EB0038A36D /* TSFileExtension.m in Sources */,
+				AAB74BC917951E70009CD7C6 /* TSPhoenixIdentity.m in Sources */,
+				AAF1BE42183F0156004FB517 /* TSPhoenixFilter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAB74B8517951E4A009CD7C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAB74B9917951E4A009CD7C6 /* TSPhoenixTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAB74B9017951E4A009CD7C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAB74B7817951E4A009CD7C6 /* TSPhoenix */;
+			targetProxy = AAB74B8F17951E4A009CD7C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAB74B9517951E4A009CD7C6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAB74B9617951E4A009CD7C6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAB74B9A17951E4A009CD7C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AAB74B9B17951E4A009CD7C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAB74B9D17951E4A009CD7C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C713E91B63534EC69DE20272 /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/TSPhoenix.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TSPhoenix/TSPhoenix-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AAB74B9E17951E4A009CD7C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C713E91B63534EC69DE20272 /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/TSPhoenix.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TSPhoenix/TSPhoenix-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AAB74BA017951E4A009CD7C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA999997EBA847149C62FCCE /* Pods-TSPhoenixTests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TSPhoenix/TSPhoenix-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TSPhoenixTests/TSPhoenixTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					SenTestingKit,
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AAB74BA117951E4A009CD7C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA999997EBA847149C62FCCE /* Pods-TSPhoenixTests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TSPhoenix/TSPhoenix-Prefix.pch";
+				INFOPLIST_FILE = "TSPhoenixTests/TSPhoenixTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					SenTestingKit,
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAB74B7417951E4A009CD7C6 /* Build configuration list for PBXProject "TSPhoenix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAB74B9A17951E4A009CD7C6 /* Debug */,
+				AAB74B9B17951E4A009CD7C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAB74B9C17951E4A009CD7C6 /* Build configuration list for PBXNativeTarget "TSPhoenix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAB74B9D17951E4A009CD7C6 /* Debug */,
+				AAB74B9E17951E4A009CD7C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAB74B9F17951E4A009CD7C6 /* Build configuration list for PBXNativeTarget "TSPhoenixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAB74BA017951E4A009CD7C6 /* Debug */,
+				AAB74BA117951E4A009CD7C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAB74B7117951E4A009CD7C6 /* Project object */;
+}

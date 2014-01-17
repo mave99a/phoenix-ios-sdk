@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TSPhoenixSyndicate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TSPhoenixSyndicate</TokenIdentifier>
+			<Abstract type="html">Phoenix Syndicate object.</Abstract>
+			<DeclaredIn>TSPhoenixSyndicate.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixSyndicate/initWithPhoenixClient:</TokenIdentifier>
+			<Abstract type="html">PhoenixSyndicate is automatically created by PhoenixClient, which provides networking, database, etc.
+Don&apos;t call this initializer directly. Always use [TSPhoenixClient sharedClient].syndicate</Abstract>
+			<DeclaredIn>TSPhoenixSyndicate.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithPhoenixClient:(TSPhoenixClient *)client</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">an instance of TSPhoenixClient</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithPhoenixClient:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixSyndicate/setSelectedSection:</TokenIdentifier>
+			<Abstract type="html">The currently visible (user selected) section in FeedVC
+Making it a property in PhoenixSyndicate, so that LeftVC and FeedVC are lousely coupled.
+KVO this property for any changes</Abstract>
+			<DeclaredIn>TSPhoenixSyndicate.h</DeclaredIn>
+			
+			<Declaration>@property (strong) TSSection *selectedSection</Declaration>
+			
+			
+			<Anchor>//api/name/selectedSection</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixSyndicate/selectedSection</TokenIdentifier>
+			<Abstract type="html">The currently visible (user selected) section in FeedVC
+Making it a property in PhoenixSyndicate, so that LeftVC and FeedVC are lousely coupled.
+KVO this property for any changes</Abstract>
+			<DeclaredIn>TSPhoenixSyndicate.h</DeclaredIn>
+			
+			<Declaration>@property (strong) TSSection *selectedSection</Declaration>
+			
+			
+			<Anchor>//api/name/selectedSection</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSPhoenixSyndicate/selectedSection</TokenIdentifier>
+			<Abstract type="html">The currently visible (user selected) section in FeedVC
+Making it a property in PhoenixSyndicate, so that LeftVC and FeedVC are lousely coupled.
+KVO this property for any changes</Abstract>
+			<DeclaredIn>TSPhoenixSyndicate.h</DeclaredIn>
+			
+			<Declaration>@property (strong) TSSection *selectedSection</Declaration>
+			
+			
+			<Anchor>//api/name/selectedSection</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixSyndicate/setSectionPaginator:</TokenIdentifier>
+			<Abstract type="html">Retrieves all sections for the current project
+Stores them in Core Data with entity named Section
+Section&apos;s parent projects are automatically connected</Abstract>
+			<DeclaredIn>TSPhoenixSyndicate.h</DeclaredIn>
+			
+			<Declaration>@property (strong) TSPaginator *sectionPaginator</Declaration>
+			
+			
+			<Anchor>//api/name/sectionPaginator</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixSyndicate/sectionPaginator</TokenIdentifier>
+			<Abstract type="html">Retrieves all sections for the current project
+Stores them in Core Data with entity named Section
+Section&apos;s parent projects are automatically connected</Abstract>
+			<DeclaredIn>TSPhoenixSyndicate.h</DeclaredIn>
+			
+			<Declaration>@property (strong) TSPaginator *sectionPaginator</Declaration>
+			
+			
+			<Anchor>//api/name/sectionPaginator</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSPhoenixSyndicate/sectionPaginator</TokenIdentifier>
+			<Abstract type="html">Retrieves all sections for the current project
+Stores them in Core Data with entity named Section
+Section&apos;s parent projects are automatically connected</Abstract>
+			<DeclaredIn>TSPhoenixSyndicate.h</DeclaredIn>
+			
+			<Declaration>@property (strong) TSPaginator *sectionPaginator</Declaration>
+			
+			
+			<Anchor>//api/name/sectionPaginator</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixSyndicate/loadSubscribedSectionsWithSuccess:failure:</TokenIdentifier>
+			<Abstract type="html">* load user subscribed sections, store them in Core Data
+* Use Core Data + NSFetchedResultsController to pull this data out</Abstract>
+			<DeclaredIn>TSPhoenixSyndicate.h</DeclaredIn>
+			
+			<Declaration>- (void)loadSubscribedSectionsWithSuccess:(void ( ^ ) ( TSPaginator *paginator , NSArray *objects , NSUInteger page ))success failure:(void ( ^ ) ( TSPaginator *paginator , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block to be executed upon a successful load of a page of objects. The block has no return value and takes three arguments: the paginator object, an array containing the paginated objects, and an integer indicating the page that was loaded.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block to be exected upon a failed load. The block has no return value and takes two arguments: the paginator object and an error indicating the nature of the failure.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadSubscribedSectionsWithSuccess:failure:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixSyndicate/loadSectionsWithSuccess:failure:</TokenIdentifier>
+			<Abstract type="html">* load all available sections, store them in Core Data
+* Use Core Data + NSFetchedResultsController to pull this data out</Abstract>
+			<DeclaredIn>TSPhoenixSyndicate.h</DeclaredIn>
+			
+			<Declaration>- (void)loadSectionsWithSuccess:(void ( ^ ) ( TSPaginator *paginator , NSArray *objects , NSUInteger page ))success failure:(void ( ^ ) ( TSPaginator *paginator , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block to be executed upon a successful load of a page of objects. The block has no return value and takes three arguments: the paginator object, an array containing the paginated objects, and an integer indicating the page that was loaded.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block to be exected upon a failed load. The block has no return value and takes two arguments: the paginator object and an error indicating the nature of the failure.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadSectionsWithSuccess:failure:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixSyndicate/loadArticlesInSection:fromDate:toDate:success:failure:</TokenIdentifier>
+			<Abstract type="html">Retrieves all articles for the current project
+Stores them in Core Data with entity named Article
+Article&apos;s parent sections are automatically connected
+If there are more than a pageful (100) articles, an ArticlePaginationPlacholder object is inserted into Core Data.
+Consumers should show a &quot;Load more&quot; button with ARticlePaginationPlaceholder</Abstract>
+			<DeclaredIn>TSPhoenixSyndicate.h</DeclaredIn>
+			
+			<Declaration>- (void)loadArticlesInSection:(TSSection *)section fromDate:(NSDate *)fromDate toDate:(NSDate *)toDate success:(void ( ^ ) ( TSPaginator *paginator , NSArray *objects , NSUInteger page ))success failure:(void ( ^ ) ( TSPaginator *paginator , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>section</Name>
+					<Abstract type="html">section</Abstract>
+				</Parameter><Parameter>
+					<Name>fromDate</Name>
+					<Abstract type="html">starting date or nil</Abstract>
+				</Parameter><Parameter>
+					<Name>toDate</Name>
+					<Abstract type="html">ending date or nil. nil implies now.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block to be executed upon a successful load of a page of objects. The block has no return value and takes three arguments: the paginator object, an array containing the paginated objects, and an integer indicating the page that was loaded.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block to be exected upon a failed load. The block has no return value and takes two arguments: the paginator object and an error indicating the nature of the failure.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadArticlesInSection:fromDate:toDate:success:failure:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixSyndicate/loadArticlesInSection:fromDate:toDate:pageIndex:pathPattern:success:failure:</TokenIdentifier>
+			<Abstract type="html">master method for loading articles
+provides fine-grained control, making it possible to load page x in request y</Abstract>
+			<DeclaredIn>TSPhoenixSyndicate.h</DeclaredIn>
+			
+			<Declaration>- (void)loadArticlesInSection:(TSSection *)section fromDate:(NSDate *)fromDate toDate:(NSDate *)toDate pageIndex:(NSInteger)pageIndex pathPattern:(NSString *)pathPattern success:(void ( ^ ) ( TSPaginator *paginator , NSArray *objects , NSUInteger page ))success failure:(void ( ^ ) ( TSPaginator *paginator , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>section</Name>
+					<Abstract type="html">section</Abstract>
+				</Parameter><Parameter>
+					<Name>fromDate</Name>
+					<Abstract type="html">starting date or nil</Abstract>
+				</Parameter><Parameter>
+					<Name>toDate</Name>
+					<Abstract type="html">ending date or nil. nil implies now.</Abstract>
+				</Parameter><Parameter>
+					<Name>pageIndex</Name>
+					<Abstract type="html">response pagination page index, zero indexed.</Abstract>
+				</Parameter><Parameter>
+					<Name>pathPattern</Name>
+					<Abstract type="html">SOCKit path pattern</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block to be executed upon a successful load of a page of objects. The block has no return value and takes three arguments: the paginator object, an array containing the paginated objects, and an integer indicating the page that was loaded.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block to be exected upon a failed load. The block has no return value and takes two arguments: the paginator object and an error indicating the nature of the failure.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadArticlesInSection:fromDate:toDate:pageIndex:pathPattern:success:failure:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixSyndicate/searchForArticlesWithSearchTerm:withSuccess:failure:</TokenIdentifier>
+			<Abstract type="html">* Search
+* load next page of data using the master method -loadArticlesInSection:fromDate:toDate:pageIndex:pathPattern:</Abstract>
+			<DeclaredIn>TSPhoenixSyndicate.h</DeclaredIn>
+			
+			<Declaration>- (void)searchForArticlesWithSearchTerm:(NSString *)searchTerm withSuccess:(void ( ^ ) ( TSPaginator *paginator , NSArray *objects , NSUInteger page ))success failure:(void ( ^ ) ( TSPaginator *paginator , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>searchTerm</Name>
+					<Abstract type="html">Search keyword</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block to be executed upon a successful load of a page of objects. The block has no return value and takes three arguments: the paginator object, an array containing the paginated objects, and an integer indicating the page that was loaded.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block to be exected upon a failed load. The block has no return value and takes two arguments: the paginator object and an error indicating the nature of the failure.
+*</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/searchForArticlesWithSearchTerm:withSuccess:failure:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixSyndicate/sendArticleInteractionsWithArticles:withSuccess:failure:</TokenIdentifier>
+			<Abstract type="html">Send article interactions such as read receipt, stars, etc.</Abstract>
+			<DeclaredIn>TSPhoenixSyndicate.h</DeclaredIn>
+			
+			<Declaration>- (void)sendArticleInteractionsWithArticles:(NSArray *)articles withSuccess:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))success failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>articles</Name>
+					<Abstract type="html">A list of articles</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block to be executed upon a successful request.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block to be exected upon a failed load.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendArticleInteractionsWithArticles:withSuccess:failure:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixSyndicate/deleteArticleInteraction:withSuccess:failure:</TokenIdentifier>
+			<Abstract type="html">Mark as unread, unstar, etc.</Abstract>
+			<DeclaredIn>TSPhoenixSyndicate.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteArticleInteraction:(TSArticleInteraction *)articleInteraction withSuccess:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))success failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>articleInteraction</Name>
+					<Abstract type="html">An ArticleInteraction object</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block to be executed upon a successful request.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block to be exected upon a failed load.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteArticleInteraction:withSuccess:failure:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

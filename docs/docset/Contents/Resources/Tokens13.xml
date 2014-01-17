@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TSSection.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TSSection</TokenIdentifier>
+			<Abstract type="html">Core data model class for Syndicate Section.
+For API reference, please visit http://developers.phoenixplatform.com/Api/Syndicate</Abstract>
+			<DeclaredIn>TSSection.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+        
+	</File>
+</Tokens>

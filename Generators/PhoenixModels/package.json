@@ -1,0 +1,16 @@
+{
+  "name": "GeneratePhoenixModels",
+  "version": "0.0.1",
+  "description": "A set of scripts to aggregate models from developers.phoenixplatform.com and convert them to JSON / Objective-C.",
+  "author": "Steven Zhang",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "underscore": "~1.5.2",
+    "hashes": "~0.1.2",
+    "cheerio": "~0.12.4",
+    "mkdirp": "~0.3.5",
+    "moment": "~2.4.0",
+    "handlebars": "~1.1.2",
+    "async": "~0.2.9"
+  }
+}

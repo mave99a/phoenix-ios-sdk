@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TSPhoenixIdentity.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TSPhoenixIdentity</TokenIdentifier>
+			<Abstract type="html">Phoenix Identity object</Abstract>
+			<DeclaredIn>TSPhoenixIdentity.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixIdentity/initWithPhoenixClient:</TokenIdentifier>
+			<Abstract type="html">PhoenixIdentity is automatically created by PhoenixClient, which provides
+networking, database, etc.
+don&apos;t call this initializer directly. Always use [TSPhoenixClient sharedClient].identity</Abstract>
+			<DeclaredIn>TSPhoenixIdentity.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithPhoenixClient:(TSPhoenixClient *)client</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract type="html">an instance of TSPhoenixClient
+*</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithPhoenixClient:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixIdentity/setOauth2Client:</TokenIdentifier>
+			<Abstract type="html">A dedicated HTTP client for authentication purposes
+Oauth2 only takes form encoded requests, whereas the rest of the requests need to be JSON encoded</Abstract>
+			<DeclaredIn>TSPhoenixIdentity.h</DeclaredIn>
+			
+			<Declaration>@property (strong) AFOAuth2Client *oauth2Client</Declaration>
+			
+			
+			<Anchor>//api/name/oauth2Client</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixIdentity/oauth2Client</TokenIdentifier>
+			<Abstract type="html">A dedicated HTTP client for authentication purposes
+Oauth2 only takes form encoded requests, whereas the rest of the requests need to be JSON encoded</Abstract>
+			<DeclaredIn>TSPhoenixIdentity.h</DeclaredIn>
+			
+			<Declaration>@property (strong) AFOAuth2Client *oauth2Client</Declaration>
+			
+			
+			<Anchor>//api/name/oauth2Client</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSPhoenixIdentity/oauth2Client</TokenIdentifier>
+			<Abstract type="html">A dedicated HTTP client for authentication purposes
+Oauth2 only takes form encoded requests, whereas the rest of the requests need to be JSON encoded</Abstract>
+			<DeclaredIn>TSPhoenixIdentity.h</DeclaredIn>
+			
+			<Declaration>@property (strong) AFOAuth2Client *oauth2Client</Declaration>
+			
+			
+			<Anchor>//api/name/oauth2Client</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixIdentity/setIsClientAuthenticated:</TokenIdentifier>
+			<Abstract type="html">When the user is not logged in, API client still needs to be authenticated
+Use this method to authenticate and automatically put a client Bearer token in the header</Abstract>
+			<DeclaredIn>TSPhoenixIdentity.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) BOOL isClientAuthenticated</Declaration>
+			
+			
+			<Anchor>//api/name/isClientAuthenticated</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixIdentity/isClientAuthenticated</TokenIdentifier>
+			<Abstract type="html">When the user is not logged in, API client still needs to be authenticated
+Use this method to authenticate and automatically put a client Bearer token in the header</Abstract>
+			<DeclaredIn>TSPhoenixIdentity.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) BOOL isClientAuthenticated</Declaration>
+			
+			
+			<Anchor>//api/name/isClientAuthenticated</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSPhoenixIdentity/isClientAuthenticated</TokenIdentifier>
+			<Abstract type="html">When the user is not logged in, API client still needs to be authenticated
+Use this method to authenticate and automatically put a client Bearer token in the header</Abstract>
+			<DeclaredIn>TSPhoenixIdentity.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) BOOL isClientAuthenticated</Declaration>
+			
+			
+			<Anchor>//api/name/isClientAuthenticated</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixIdentity/authenticateClientWithSuccess:failure:</TokenIdentifier>
+			<Abstract type="html">OAuth2 client authentication</Abstract>
+			<DeclaredIn>TSPhoenixIdentity.h</DeclaredIn>
+			
+			<Declaration>- (void)authenticateClientWithSuccess:(void ( ^ ) ( AFOAuthCredential *))success failure:(void ( ^ ) ( NSError *))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block to be executed upon a successful authentication.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block to be exected upon a failed load.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/authenticateClientWithSuccess:failure:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixIdentity/authenticateWithUsername:password:success:failure:</TokenIdentifier>
+			<Abstract type="html">Logs an user into Phoenix Identity
+Upon successful login, automatically does the following:
+Put a Bearer token in the header
+Token is saved across app sessions
+Set up Core Data sqlite for the user</Abstract>
+			<DeclaredIn>TSPhoenixIdentity.h</DeclaredIn>
+			
+			<Declaration>- (void)authenticateWithUsername:(NSString *)username password:(NSString *)password success:(void ( ^ ) ( AFOAuthCredential *credential ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>username</Name>
+					<Abstract type="html">Username.</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract type="html">Password.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block to be executed upon a successful authentication.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block to be exected upon a failed load.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/authenticateWithUsername:password:success:failure:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixIdentity/refreshTokenWithSuccess:failure:</TokenIdentifier>
+			<Abstract type="html">OAuth2 refresh token</Abstract>
+			<DeclaredIn>TSPhoenixIdentity.h</DeclaredIn>
+			
+			<Declaration>- (void)refreshTokenWithSuccess:(void ( ^ ) ( AFOAuthCredential *credential ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block to be executed upon a successful authentication.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block to be exected upon a failed load.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/refreshTokenWithSuccess:failure:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixIdentity/logout</TokenIdentifier>
+			<Abstract type="html">Log out, clear local data</Abstract>
+			<DeclaredIn>TSPhoenixIdentity.h</DeclaredIn>
+			
+			<Declaration>- (void)logout</Declaration>
+			
+			
+			<Anchor>//api/name/logout</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixIdentity/requestPasswordResetWithEmail:success:failure:</TokenIdentifier>
+			<Abstract type="html">* Password reset step 1
+* User inputs an email address. A reset token will be sent to that email.</Abstract>
+			<DeclaredIn>TSPhoenixIdentity.h</DeclaredIn>
+			
+			<Declaration>- (void)requestPasswordResetWithEmail:(NSString *)email success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))success failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>email</Name>
+					<Abstract type="html">The username which is an email.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block to be executed upon a successful request.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block to be exected upon a failed load.
+*</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestPasswordResetWithEmail:success:failure:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixIdentity/resetPasswordWithToken:password:success:failure:</TokenIdentifier>
+			<Abstract type="html">Password reset step 2
+User receives and uses the reset token. Let user set a new passowrd.</Abstract>
+			<DeclaredIn>TSPhoenixIdentity.h</DeclaredIn>
+			
+			<Declaration>- (void)resetPasswordWithToken:(NSString *)token password:(NSString *)password success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))success failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>token</Name>
+					<Abstract type="html">A password reset token which users obtain via email.</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract type="html">A new password</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block to be executed upon a successful authentication.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block to be exected upon a failed load.
+*</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/resetPasswordWithToken:password:success:failure:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixIdentity/setMembershipPaginator:</TokenIdentifier>
+			<Abstract type="html">Membership
+In Fuse, membership is used to identify whether a user is subscribed to a particular section</Abstract>
+			<DeclaredIn>TSPhoenixIdentity.h</DeclaredIn>
+			
+			<Declaration>@property (strong) TSPaginator *membershipPaginator</Declaration>
+			
+			
+			<Anchor>//api/name/membershipPaginator</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPhoenixIdentity/membershipPaginator</TokenIdentifier>
+			<Abstract type="html">Membership
+In Fuse, membership is used to identify whether a user is subscribed to a particular section</Abstract>
+			<DeclaredIn>TSPhoenixIdentity.h</DeclaredIn>
+			
+			<Declaration>@property (strong) TSPaginator *membershipPaginator</Declaration>
+			
+			
+			<Anchor>//api/name/membershipPaginator</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSPhoenixIdentity/membershipPaginator</TokenIdentifier>
+			<Abstract type="html">Membership
+In Fuse, membership is used to identify whether a user is subscribed to a particular section</Abstract>
+			<DeclaredIn>TSPhoenixIdentity.h</DeclaredIn>
+			
+			<Declaration>@property (strong) TSPaginator *membershipPaginator</Declaration>
+			
+			
+			<Anchor>//api/name/membershipPaginator</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

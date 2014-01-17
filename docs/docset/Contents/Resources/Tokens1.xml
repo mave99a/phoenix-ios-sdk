@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TSArticle.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TSArticle</TokenIdentifier>
+			<Abstract type="html">Core data model class for Syndicate Article.</Abstract>
+			<DeclaredIn>TSArticle.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSArticle/setSourceSectionId:</TokenIdentifier>
+			<Abstract type="html">sourceSectionId
+For tracking where this article comes from:
+Was it from the &quot;All&quot; smart section? Or from a concrete section?
+This property allows find the earliest article in this (smart) section.
+From the earliest article, we could construct a paginator and load articles earlier than that.</Abstract>
+			<DeclaredIn>TSArticle.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *sourceSectionId</Declaration>
+			
+			
+			<Anchor>//api/name/sourceSectionId</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSArticle/sourceSectionId</TokenIdentifier>
+			<Abstract type="html">sourceSectionId
+For tracking where this article comes from:
+Was it from the &quot;All&quot; smart section? Or from a concrete section?
+This property allows find the earliest article in this (smart) section.
+From the earliest article, we could construct a paginator and load articles earlier than that.</Abstract>
+			<DeclaredIn>TSArticle.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *sourceSectionId</Declaration>
+			
+			
+			<Anchor>//api/name/sourceSectionId</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSArticle/sourceSectionId</TokenIdentifier>
+			<Abstract type="html">sourceSectionId
+For tracking where this article comes from:
+Was it from the &quot;All&quot; smart section? Or from a concrete section?
+This property allows find the earliest article in this (smart) section.
+From the earliest article, we could construct a paginator and load articles earlier than that.</Abstract>
+			<DeclaredIn>TSArticle.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *sourceSectionId</Declaration>
+			
+			
+			<Anchor>//api/name/sourceSectionId</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

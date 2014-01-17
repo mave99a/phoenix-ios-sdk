@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TSMembership.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TSMembership</TokenIdentifier>
+			<Abstract type="html">Core data model class for Identity Membership.</Abstract>
+			<DeclaredIn>TSMembership.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+        
+	</File>
+</Tokens>

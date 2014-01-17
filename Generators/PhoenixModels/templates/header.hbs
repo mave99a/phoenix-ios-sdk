@@ -1,0 +1,33 @@
+//
+//  TSPhoenix
+//	TS{{{name}}}.h
+//
+//  Created by Steve on {{{date}}}.
+//  Copyright (c) 2013 Tigerspike. All rights reserved.
+//
+
+#import "TSModelAbstract.h"
+
+{{{generate_expandable_properties_class_directives}}}
+
+{{#properties}}{{{generate_enum}}}{{/properties}}
+
+@interface {{{ObjCName}}}: TSModelAbstract <NSCoding>
+
+- (id)initWithDictionary: (NSDictionary *)dict;
+
+- (void)mapFromDictionary: (NSDictionary *)dict;
+
+{{#properties}}{{{generate_properties}}}{{/properties}}
+
+
+// Expanded properties
+// These will be nil, unless specific parameters "expand=propertyname" are set to expand these properties
+
+{{#properties}}{{{generate_expandable_properties}}}{{/properties}}
+
+
+// TODO
++ (NSArray *)expandableProperties;
+
+@end

@@ -1,0 +1,10 @@
+{
+  "urls": [
+	"http://developers.uat.phoenixplatform.com.sg/Api/Identity",
+	"http://developers.uat.phoenixplatform.com.sg/Api/Messaging", 
+	"http://developers.uat.phoenixplatform.com.sg/Api/Media", 
+	"http://developers.uat.phoenixplatform.com.sg/Api/Syndicate",
+	"http://developers.uat.phoenixplatform.com.sg/Api/Commerce",
+	"http://developers.uat.phoenixplatform.com.sg/Api/Analytics"
+]
+}

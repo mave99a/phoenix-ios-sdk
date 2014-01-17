@@ -1,0 +1,254 @@
+[
+    {
+        "path": "/projects/{projectid}/sections",
+        "verb": "GET",
+        "name": "ListSection",
+        "ObjCMethod": "- (void)listSectionWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/sections/{id}",
+        "verb": "GET",
+        "name": "GetSection",
+        "ObjCMethod": "- (void)getSectionWithProjectID: (NSNumber *)projectID sectionID: (NSNumber *)sectionID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/sections",
+        "verb": "POST",
+        "name": "CreateSection",
+        "ObjCMethod": "- (void)createSectionWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/sections",
+        "verb": "PUT",
+        "name": "UpdateSection",
+        "ObjCMethod": "- (void)updateSectionWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/sections/{id}",
+        "verb": "DELETE",
+        "name": "DeleteSection",
+        "ObjCMethod": "- (void)deleteSectionWithProjectID: (NSNumber *)projectID sectionID: (NSNumber *)sectionID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/editions",
+        "verb": "GET",
+        "name": "ListEdition",
+        "ObjCMethod": "- (void)listEditionWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/editions/{id}",
+        "verb": "GET",
+        "name": "GetEdition",
+        "ObjCMethod": "- (void)getEditionWithProjectID: (NSNumber *)projectID editionID: (NSNumber *)editionID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/editions",
+        "verb": "POST",
+        "name": "CreateEdition",
+        "ObjCMethod": "- (void)createEditionWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/editions",
+        "verb": "PUT",
+        "name": "UpdateEdition",
+        "ObjCMethod": "- (void)updateEditionWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/editions/{id}",
+        "verb": "DELETE",
+        "name": "DeleteEdition",
+        "ObjCMethod": "- (void)deleteEditionWithProjectID: (NSNumber *)projectID editionID: (NSNumber *)editionID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/articles",
+        "verb": "GET",
+        "name": "ListArticle",
+        "ObjCMethod": "- (void)listArticleWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/articles/{id}",
+        "verb": "GET",
+        "name": "GetArticle",
+        "ObjCMethod": "- (void)getArticleWithProjectID: (NSNumber *)projectID articleID: (NSNumber *)articleID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/articles",
+        "verb": "POST",
+        "name": "CreateArticle",
+        "ObjCMethod": "- (void)createArticleWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/articles",
+        "verb": "PUT",
+        "name": "UpdateArticle",
+        "ObjCMethod": "- (void)updateArticleWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/articles/{id}",
+        "verb": "DELETE",
+        "name": "DeleteArticle",
+        "ObjCMethod": "- (void)deleteArticleWithProjectID: (NSNumber *)projectID articleID: (NSNumber *)articleID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/articles/{articleId}?fileName={fileName}&fileLength={fileLength}",
+        "verb": "POST",
+        "name": "UploadArticlePreview",
+        "ObjCMethod": "- (void)uploadArticlePreviewWithProjectID: (NSNumber *)projectID articleID: (NSNumber *)articleID articleID: (NSString *)articleID articleID: (NSString *)articleID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/sections/{sectionid}/sectionarticlemaps",
+        "verb": "GET",
+        "name": "ListSectionArticleMap",
+        "ObjCMethod": "- (void)listSectionArticleMapWithProjectID: (NSNumber *)projectID sectionID: (NSNumber *)sectionID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/sections/{sectionid}/sectionarticlemaps/{id}",
+        "verb": "GET",
+        "name": "GetSectionArticleMap",
+        "ObjCMethod": "- (void)getSectionArticleMapWithProjectID: (NSNumber *)projectID sectionID: (NSNumber *)sectionID sectionArticleMapID: (NSNumber *)sectionArticleMapID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/sections/{sectionid}/sectionarticlemaps",
+        "verb": "POST",
+        "name": "CreateSectionArticleMap",
+        "ObjCMethod": "- (void)createSectionArticleMapWithProjectID: (NSNumber *)projectID sectionID: (NSNumber *)sectionID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/sections/{sectionid}/sectionarticlemaps",
+        "verb": "PUT",
+        "name": "UpdateSectionArticleMap",
+        "ObjCMethod": "- (void)updateSectionArticleMapWithProjectID: (NSNumber *)projectID sectionID: (NSNumber *)sectionID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/sections/{sectionid}/sectionarticlemaps/{id}",
+        "verb": "DELETE",
+        "name": "DeleteSectionArticleMap",
+        "ObjCMethod": "- (void)deleteSectionArticleMapWithProjectID: (NSNumber *)projectID sectionID: (NSNumber *)sectionID sectionArticleMapID: (NSNumber *)sectionArticleMapID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/articleinteractions",
+        "verb": "PUT",
+        "name": "ApplyArticleInteraction",
+        "ObjCMethod": "- (void)applyArticleInteractionWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/articles/{articleid}/articleinteractions?interactiontypeid={interactiontypeid}",
+        "verb": "DELETE",
+        "name": "DeleteArticleInteraction",
+        "ObjCMethod": "- (void)deleteArticleInteractionWithProjectID: (NSNumber *)projectID articleID: (NSNumber *)articleID articleID: (NSString *)articleID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/articles/{articleId}/articleinteractions",
+        "verb": "GET",
+        "name": "GetArticleInteraction",
+        "ObjCMethod": "- (void)getArticleInteractionWithProjectID: (NSNumber *)projectID articleID: (NSNumber *)articleID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/articleinteractions",
+        "verb": "GET",
+        "name": "ListArticleInteraction",
+        "ObjCMethod": "- (void)listArticleInteractionWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/feeds",
+        "verb": "GET",
+        "name": "ListFeed",
+        "ObjCMethod": "- (void)listFeedWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/feeds",
+        "verb": "GET",
+        "name": "ListAllPendingFeed",
+        "ObjCMethod": "- (void)listAllPendingFeedWithCompletion:"
+    },
+    {
+        "path": "/projects/{projectid}/feeds/{id}",
+        "verb": "GET",
+        "name": "GetFeed",
+        "ObjCMethod": "- (void)getFeedWithProjectID: (NSNumber *)projectID feedID: (NSNumber *)feedID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/feeds",
+        "verb": "POST",
+        "name": "CreateFeed",
+        "ObjCMethod": "- (void)createFeedWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/feeds",
+        "verb": "PUT",
+        "name": "UpdateFeed",
+        "ObjCMethod": "- (void)updateFeedWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/feeds/{id}",
+        "verb": "DELETE",
+        "name": "DeleteFeed",
+        "ObjCMethod": "- (void)deleteFeedWithProjectID: (NSNumber *)projectID feedID: (NSNumber *)feedID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/feedlogs",
+        "verb": "POST",
+        "name": "CreateFeedLog",
+        "ObjCMethod": "- (void)createFeedLogWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/articles/{articleid}/assets",
+        "verb": "GET",
+        "name": "ListAsset",
+        "ObjCMethod": "- (void)listAssetWithProjectID: (NSNumber *)projectID articleID: (NSNumber *)articleID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/articles/{articleid}/assets/{id}",
+        "verb": "GET",
+        "name": "GetAsset",
+        "ObjCMethod": "- (void)getAssetWithProjectID: (NSNumber *)projectID articleID: (NSNumber *)articleID assetID: (NSNumber *)assetID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/articles/{articleid}/assets",
+        "verb": "POST",
+        "name": "CreateAsset",
+        "ObjCMethod": "- (void)createAssetWithProjectID: (NSNumber *)projectID articleID: (NSNumber *)articleID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/articles/{articleid}/assets",
+        "verb": "PUT",
+        "name": "UpdateAsset",
+        "ObjCMethod": "- (void)updateAssetWithProjectID: (NSNumber *)projectID articleID: (NSNumber *)articleID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/articles/{articleid}/assets/{id}",
+        "verb": "DELETE",
+        "name": "DeleteAsset",
+        "ObjCMethod": "- (void)deleteAssetWithProjectID: (NSNumber *)projectID articleID: (NSNumber *)articleID assetID: (NSNumber *)assetID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/articles/{articleId}/assets/{assetId}?fileName={fileName}&fileLength={fileLength}",
+        "verb": "POST",
+        "name": "UploadAsset",
+        "ObjCMethod": "- (void)uploadAssetWithProjectID: (NSNumber *)projectID articleID: (NSNumber *)articleID assetID: (NSNumber *)assetID assetID: (NSString *)assetID assetID: (NSString *)assetID completion:"
+    },
+    {
+        "path": "/projects/{projectid}",
+        "verb": "POST",
+        "name": "ActivateModule",
+        "ObjCMethod": "- (void)activateModuleWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}",
+        "verb": "GET",
+        "name": "GetModuleSettings",
+        "ObjCMethod": "- (void)getModuleSettingsWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}",
+        "verb": "PUT",
+        "name": "UpdateModuleSettings",
+        "ObjCMethod": "- (void)updateModuleSettingsWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}",
+        "verb": "DELETE",
+        "name": "DeactivateModule",
+        "ObjCMethod": "- (void)deactivateModuleWithProjectID: (NSNumber *)projectID completion:"
+    }
+]

@@ -1,0 +1,10 @@
+{
+  "urls": [
+	"http://developers.phoenixplatform.com/Api/Identity",
+	"http://developers.phoenixplatform.com/Api/Messaging", 
+	"http://developers.phoenixplatform.com/Api/Media", 
+	"http://developers.phoenixplatform.com/Api/Syndicate",
+	"http://developers.phoenixplatform.com/Api/Commerce",
+	"http://developers.phoenixplatform.com/Api/Analytics"
+]
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "path": "/token",
+        "verb": "POST",
+        "name": "GrantToken",
+        "ObjCMethod": "- (void)grantTokenWithCompletion:"
+    },
+    {
+        "path": "/validate",
+        "verb": "GET",
+        "name": "Validate",
+        "ObjCMethod": "- (void)validateWithCompletion:"
+    }
+]

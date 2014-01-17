@@ -1,0 +1,35 @@
+PODS:
+  - AFNetworking (1.3.3)
+  - AFOAuth2Client (0.1.2):
+    - AFNetworking (~> 1.3)
+  - CocoaLumberjack (1.6.5.1):
+    - CocoaLumberjack/Core
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.6.5.1)
+  - CocoaLumberjack/Extensions (1.6.5.1):
+    - CocoaLumberjack/Core
+  - SOCKit (1.1)
+  - TSPhoenix (0.3.2):
+    - AFNetworking (~> 1.3.1)
+    - AFOAuth2Client (~> 0.1.1)
+    - SOCKit (~> 1.1)
+    - YapDatabase (~> 2.3)
+  - YapDatabase (2.3):
+    - CocoaLumberjack (~> 1.6.3)
+
+DEPENDENCIES:
+  - TSPhoenix (from `../`)
+
+EXTERNAL SOURCES:
+  TSPhoenix:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AFNetworking: 61fdd49e2ffe6380378df37b3b6e70630bb9dd66
+  AFOAuth2Client: 579d6f298b0047dfd5a6eec6ab5b28c01f6b4547
+  CocoaLumberjack: 17803afbade3126a377d32b8d23367264b44ced6
+  SOCKit: 2f3bc4d07910de12dcc202815e07db68a3802581
+  TSPhoenix: f38445ba139f48d8cec98a2c6724a564390ce529
+  YapDatabase: b9b58b24092557adc59e3b86a167601c7733b8e7
+
+COCOAPODS: 0.29.0

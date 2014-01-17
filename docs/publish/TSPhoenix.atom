@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
+    <id>http://tigerspike.github.com/TSPhoenix/TSPhoenix.atom/20130827121629</id>
+    <title type="text">TSPhoenix Documentation</title>
+    <rights>Copyright © 2013 tigerspike. All rights reserved.</rights>
+    <link rel="self" href="http://tigerspike.github.com/TSPhoenix/TSPhoenix.atom"></link>
+    <docset:publisherName>tigerspike</docset:publisherName>
+    <docset:publisherID>com.tigerspike.documentation</docset:publisherID>
+    <updated>2013-08-27T12:16:29+08:00</updated>
+    <entry>
+        <id>tag:tigerspike.github.com,2013-08-27:com.tigerspike.TSPhoenix/1.0.0</id>
+        <title type="text">TSPhoenix Documentation</title>
+        <updated>2013-08-27T12:16:29+08:00</updated>
+        <content type="text">TSPhoenix Documentation (v1.0.0)</content>
+        <link rel="enclosure" type="application/octet-stream" href="http:/tigerspike.github.com/TSPhoenix/com.tigerspike.TSPhoenix-1.0.xar" length="102172"></link>
+        <docset:identifier>com.tigerspike.TSPhoenix</docset:identifier>
+        <docset:version>1.0.0</docset:version>
+        <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>
+    </entry>
+</feed>

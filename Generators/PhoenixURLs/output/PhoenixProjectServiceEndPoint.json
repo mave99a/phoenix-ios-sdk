@@ -1,0 +1,452 @@
+[
+    {
+        "path": "/providers",
+        "verb": "GET",
+        "name": "ListProvider",
+        "ObjCMethod": "- (void)listProviderWithCompletion:"
+    },
+    {
+        "path": "/providers/{id}",
+        "verb": "GET",
+        "name": "GetProvider",
+        "ObjCMethod": "- (void)getProviderWithProviderID: (NSNumber *)providerID completion:"
+    },
+    {
+        "path": "/providers",
+        "verb": "POST",
+        "name": "CreateProvider",
+        "ObjCMethod": "- (void)createProviderWithCompletion:"
+    },
+    {
+        "path": "/providers/{providerId}/companies",
+        "verb": "GET",
+        "name": "ListCompany",
+        "ObjCMethod": "- (void)listCompanyWithProvIDerId: (NSNumber *)provIDerId completion:"
+    },
+    {
+        "path": "/providers/{providerId}/companies/{companyId}",
+        "verb": "GET",
+        "name": "GetCompany",
+        "ObjCMethod": "- (void)getCompanyWithProvIDerId: (NSNumber *)provIDerId companyID: (NSNumber *)companyID completion:"
+    },
+    {
+        "path": "/providers/{providerId}/companies",
+        "verb": "POST",
+        "name": "CreateCompany",
+        "ObjCMethod": "- (void)createCompanyWithProvIDerId: (NSNumber *)provIDerId completion:"
+    },
+    {
+        "path": "/providers/{providerId}/domains",
+        "verb": "GET",
+        "name": "ListDomain",
+        "ObjCMethod": "- (void)listDomainWithProvIDerId: (NSNumber *)provIDerId completion:"
+    },
+    {
+        "path": "/providers/{providerId}/domains/{id}",
+        "verb": "GET",
+        "name": "GetDomain",
+        "ObjCMethod": "- (void)getDomainWithProvIDerId: (NSNumber *)provIDerId domainID: (NSNumber *)domainID completion:"
+    },
+    {
+        "path": "/providers/{providerId}/domains",
+        "verb": "POST",
+        "name": "CreateDomain",
+        "ObjCMethod": "- (void)createDomainWithProvIDerId: (NSNumber *)provIDerId completion:"
+    },
+    {
+        "path": "/providers/{providerId}/domains",
+        "verb": "PUT",
+        "name": "UpdateDomain",
+        "ObjCMethod": "- (void)updateDomainWithProvIDerId: (NSNumber *)provIDerId completion:"
+    },
+    {
+        "path": "/providers/{providerId}/domains/{id}",
+        "verb": "DELETE",
+        "name": "DeleteDomain",
+        "ObjCMethod": "- (void)deleteDomainWithProvIDerId: (NSNumber *)provIDerId domainID: (NSNumber *)domainID completion:"
+    },
+    {
+        "path": "/projects/{projectId}",
+        "verb": "GET",
+        "name": "GetProject",
+        "ObjCMethod": "- (void)getProjectWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/providers/{providerid}/projects",
+        "verb": "GET",
+        "name": "ListProject",
+        "ObjCMethod": "- (void)listProjectWithProvIDerid: (NSNumber *)provIDerid completion:"
+    },
+    {
+        "path": "/companies/{companyId}/projects",
+        "verb": "POST",
+        "name": "CreateProject",
+        "ObjCMethod": "- (void)createProjectWithCompanyID: (NSNumber *)companyID completion:"
+    },
+    {
+        "path": "/companies/{companyId}/projects",
+        "verb": "PUT",
+        "name": "UpdateProject",
+        "ObjCMethod": "- (void)updateProjectWithCompanyID: (NSNumber *)companyID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/modules",
+        "verb": "GET",
+        "name": "ListProjectModuleMap",
+        "ObjCMethod": "- (void)listProjectModuleMapWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/users/me",
+        "verb": "GET",
+        "name": "GetMyUser",
+        "ObjCMethod": "- (void)getMyUserWithCompletion:"
+    },
+    {
+        "path": "/projects/{projectid}/users",
+        "verb": "POST",
+        "name": "CreateUser",
+        "ObjCMethod": "- (void)createUserWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/users/{id}",
+        "verb": "PUT",
+        "name": "UpdateUser",
+        "ObjCMethod": "- (void)updateUserWithProjectID: (NSNumber *)projectID userID: (NSNumber *)userID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/users/{id}",
+        "verb": "GET",
+        "name": "GetUser",
+        "ObjCMethod": "- (void)getUserWithProjectID: (NSNumber *)projectID userID: (NSNumber *)userID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/users",
+        "verb": "GET",
+        "name": "ListUser",
+        "ObjCMethod": "- (void)listUserWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/users/retrievepassword?username={username}&target={verificationTarget}&templateId={templateId}",
+        "verb": "GET",
+        "name": "RetrievePassword",
+        "ObjCMethod": "- (void)retrievePasswordWithProjectID: (NSNumber *)projectID projectID: (NSString *)projectID projectID: (NSString *)projectID projectID: (NSString *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/users/resetpassword",
+        "verb": "PUT",
+        "name": "ResetPassword",
+        "ObjCMethod": "- (void)resetPasswordWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/users/me/changepassword",
+        "verb": "PUT",
+        "name": "ChangePassword",
+        "ObjCMethod": "- (void)changePasswordWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/users/{id}?fileName={fileName}&fileLength={fileLength}",
+        "verb": "POST",
+        "name": "UploadUserImage",
+        "ObjCMethod": "- (void)uploadUserImageWithProjectID: (NSNumber *)projectID uploadUserImageID: (NSNumber *)uploadUserImageID uploadUserImageID: (NSString *)uploadUserImageID uploadUserImageID: (NSString *)uploadUserImageID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/users/{userid}/identifiers",
+        "verb": "GET",
+        "name": "ListIdentifier",
+        "ObjCMethod": "- (void)listIdentifierWithProjectID: (NSNumber *)projectID userID: (NSNumber *)userID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/users/{userid}/identifiers/{identifierid}",
+        "verb": "GET",
+        "name": "GetIdentifier",
+        "ObjCMethod": "- (void)getIdentifierWithProjectID: (NSNumber *)projectID userID: (NSNumber *)userID iDentifierid: (NSNumber *)iDentifierid completion:"
+    },
+    {
+        "path": "/projects/{projectid}/users/{userid}/identifiers",
+        "verb": "POST",
+        "name": "CreateIdentifier",
+        "ObjCMethod": "- (void)createIdentifierWithProjectID: (NSNumber *)projectID userID: (NSNumber *)userID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/users/{userid}/identifiers/{identifierid}",
+        "verb": "DELETE",
+        "name": "DeleteIdentifier",
+        "ObjCMethod": "- (void)deleteIdentifierWithProjectID: (NSNumber *)projectID userID: (NSNumber *)userID iDentifierid: (NSNumber *)iDentifierid completion:"
+    },
+    {
+        "path": "/projects/{projectid}/users/identifiers/verify?target={verificationTarget}&tokenId={tokenId}",
+        "verb": "POST",
+        "name": "VerifyIdentifier",
+        "ObjCMethod": "- (void)verifyIdentifierWithProjectID: (NSNumber *)projectID projectID: (NSString *)projectID projectID: (NSString *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/users/{userId}/sendverification?target={verificationTarget}&templateId={templateId}",
+        "verb": "GET",
+        "name": "SendVerification",
+        "ObjCMethod": "- (void)sendVerificationWithProjectID: (NSNumber *)projectID userID: (NSNumber *)userID userID: (NSString *)userID userID: (NSString *)userID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/groups",
+        "verb": "GET",
+        "name": "ListGroup",
+        "ObjCMethod": "- (void)listGroupWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/groups/{id}",
+        "verb": "GET",
+        "name": "GetGroup",
+        "ObjCMethod": "- (void)getGroupWithProjectID: (NSNumber *)projectID groupID: (NSNumber *)groupID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/groups",
+        "verb": "POST",
+        "name": "CreateGroup",
+        "ObjCMethod": "- (void)createGroupWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/groups",
+        "verb": "PUT",
+        "name": "UpdateGroup",
+        "ObjCMethod": "- (void)updateGroupWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/groups/{id}",
+        "verb": "DELETE",
+        "name": "DeleteGroup",
+        "ObjCMethod": "- (void)deleteGroupWithProjectID: (NSNumber *)projectID groupID: (NSNumber *)groupID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/users/{userid}/memberships/{id}",
+        "verb": "GET",
+        "name": "GetMembership",
+        "ObjCMethod": "- (void)getMembershipWithProjectID: (NSNumber *)projectID userID: (NSNumber *)userID membershipID: (NSNumber *)membershipID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/users/{userid}/memberships",
+        "verb": "PUT",
+        "name": "UpdateMembership",
+        "ObjCMethod": "- (void)updateMembershipWithProjectID: (NSNumber *)projectID userID: (NSNumber *)userID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/memberships",
+        "verb": "POST",
+        "name": "CreateMembership",
+        "ObjCMethod": "- (void)createMembershipWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/memberships?userid={userid}&identifierid={identifierid}",
+        "verb": "GET",
+        "name": "ListMembership",
+        "ObjCMethod": "- (void)listMembershipWithProjectID: (NSNumber *)projectID projectID: (NSString *)projectID projectID: (NSString *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/groups/{groupid}/memberships",
+        "verb": "GET",
+        "name": "ListGroupMembers",
+        "ObjCMethod": "- (void)listGroupMembersWithProjectID: (NSNumber *)projectID groupID: (NSNumber *)groupID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/groups/{groupid}/identifiers",
+        "verb": "GET",
+        "name": "ListGroupIdentifiers",
+        "ObjCMethod": "- (void)listGroupIdentifiersWithProjectID: (NSNumber *)projectID groupID: (NSNumber *)groupID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/groups/{groupid}/memberships?userid={userid}&identifierid={identifierid}",
+        "verb": "DELETE",
+        "name": "DeleteMembership",
+        "ObjCMethod": "- (void)deleteMembershipWithProjectID: (NSNumber *)projectID groupID: (NSNumber *)groupID groupID: (NSString *)groupID groupID: (NSString *)groupID completion:"
+    },
+    {
+        "path": "/modules/{moduleid}",
+        "verb": "GET",
+        "name": "GetModule",
+        "ObjCMethod": "- (void)getModuleWithModuleID: (NSNumber *)moduleID completion:"
+    },
+    {
+        "path": "/providers/{providerid}/modules",
+        "verb": "GET",
+        "name": "ListModule",
+        "ObjCMethod": "- (void)listModuleWithProvIDerid: (NSNumber *)provIDerid completion:"
+    },
+    {
+        "path": "/providers/module",
+        "verb": "GET",
+        "name": "ListProviderModule",
+        "ObjCMethod": "- (void)listProviderModuleWithCompletion:"
+    },
+    {
+        "path": "/projects/module",
+        "verb": "GET",
+        "name": "ListProjectModule",
+        "ObjCMethod": "- (void)listProjectModuleWithCompletion:"
+    },
+    {
+        "path": "/modules",
+        "verb": "POST",
+        "name": "CreateModule",
+        "ObjCMethod": "- (void)createModuleWithCompletion:"
+    },
+    {
+        "path": "/modules/{moduleid}",
+        "verb": "PUT",
+        "name": "UpdateModule",
+        "ObjCMethod": "- (void)updateModuleWithModuleID: (NSNumber *)moduleID completion:"
+    },
+    {
+        "path": "/modules/{moduleid}",
+        "verb": "DELETE",
+        "name": "DeleteModule",
+        "ObjCMethod": "- (void)deleteModuleWithModuleID: (NSNumber *)moduleID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/users/{id}/permissions",
+        "verb": "POST",
+        "name": "AssignPermission",
+        "ObjCMethod": "- (void)assignPermissionWithProjectID: (NSNumber *)projectID assignPermissionID: (NSNumber *)assignPermissionID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/users/{id}/permissions",
+        "verb": "DELETE",
+        "name": "RevokePermission",
+        "ObjCMethod": "- (void)revokePermissionWithProjectID: (NSNumber *)projectID revokePermissionID: (NSNumber *)revokePermissionID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/users/{id}/operations",
+        "verb": "GET",
+        "name": "ListUserPermission",
+        "ObjCMethod": "- (void)listUserPermissionWithProjectID: (NSNumber *)projectID userPermissionID: (NSNumber *)userPermissionID completion:"
+    },
+    {
+        "path": "/resources",
+        "verb": "GET",
+        "name": "ListResource",
+        "ObjCMethod": "- (void)listResourceWithCompletion:"
+    },
+    {
+        "path": "/projects/{projectid}/roles",
+        "verb": "POST",
+        "name": "CreateRole",
+        "ObjCMethod": "- (void)createRoleWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/roles",
+        "verb": "GET",
+        "name": "ListRole",
+        "ObjCMethod": "- (void)listRoleWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/roles/{id}",
+        "verb": "GET",
+        "name": "GetRole",
+        "ObjCMethod": "- (void)getRoleWithProjectID: (NSNumber *)projectID roleID: (NSNumber *)roleID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/roles/{id}",
+        "verb": "DELETE",
+        "name": "DeleteRole",
+        "ObjCMethod": "- (void)deleteRoleWithProjectID: (NSNumber *)projectID roleID: (NSNumber *)roleID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/roles",
+        "verb": "PUT",
+        "name": "UpdateRole",
+        "ObjCMethod": "- (void)updateRoleWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/users/{id}/roles",
+        "verb": "GET",
+        "name": "ListUserRoleMap",
+        "ObjCMethod": "- (void)listUserRoleMapWithUserRoleMapID: (NSNumber *)userRoleMapID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/roles/{id}/permissions",
+        "verb": "GET",
+        "name": "ListRolePermission",
+        "ObjCMethod": "- (void)listRolePermissionWithProjectID: (NSNumber *)projectID rolePermissionID: (NSNumber *)rolePermissionID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/roles/{id}/permissions",
+        "verb": "POST",
+        "name": "AddPermissionToRole",
+        "ObjCMethod": "- (void)addPermissionToRoleWithProjectID: (NSNumber *)projectID addPermissionToRoleID: (NSNumber *)addPermissionToRoleID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/users/{id}/roles/{id}",
+        "verb": "POST",
+        "name": "AssignRole",
+        "ObjCMethod": "- (void)assignRoleWithProjectID: (NSNumber *)projectID assignRoleID: (NSNumber *)assignRoleID assignRoleID: (NSNumber *)assignRoleID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/users/{id}/roles/{id}",
+        "verb": "DELETE",
+        "name": "RevokeRole",
+        "ObjCMethod": "- (void)revokeRoleWithProjectID: (NSNumber *)projectID revokeRoleID: (NSNumber *)revokeRoleID revokeRoleID: (NSNumber *)revokeRoleID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/roles/{id}/permissions",
+        "verb": "DELETE",
+        "name": "RemovePermissionFromRole",
+        "ObjCMethod": "- (void)removePermissionFromRoleWithProjectID: (NSNumber *)projectID removePermissionFromRoleID: (NSNumber *)removePermissionFromRoleID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/applications",
+        "verb": "GET",
+        "name": "ListApplication",
+        "ObjCMethod": "- (void)listApplicationWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/applications/{id}",
+        "verb": "GET",
+        "name": "GetApplication",
+        "ObjCMethod": "- (void)getApplicationWithProjectID: (NSNumber *)projectID applicationID: (NSNumber *)applicationID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/applications",
+        "verb": "POST",
+        "name": "CreateApplication",
+        "ObjCMethod": "- (void)createApplicationWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/applications",
+        "verb": "PUT",
+        "name": "UpdateApplication",
+        "ObjCMethod": "- (void)updateApplicationWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/applications/{id}",
+        "verb": "DELETE",
+        "name": "DeleteApplication",
+        "ObjCMethod": "- (void)deleteApplicationWithProjectID: (NSNumber *)projectID applicationID: (NSNumber *)applicationID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/applications/{applicationId}/installations",
+        "verb": "GET",
+        "name": "ListInstallation",
+        "ObjCMethod": "- (void)listInstallationWithProjectID: (NSNumber *)projectID applicationID: (NSNumber *)applicationID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/applications/{applicationId}/installations/{installationId}",
+        "verb": "GET",
+        "name": "GetInstallation",
+        "ObjCMethod": "- (void)getInstallationWithProjectID: (NSNumber *)projectID applicationID: (NSNumber *)applicationID installationID: (NSNumber *)installationID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/applications/{applicationId}/installations",
+        "verb": "POST",
+        "name": "CreateInstallation",
+        "ObjCMethod": "- (void)createInstallationWithProjectID: (NSNumber *)projectID applicationID: (NSNumber *)applicationID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/applications/{applicationId}/installations",
+        "verb": "PUT",
+        "name": "UpdateInstallation",
+        "ObjCMethod": "- (void)updateInstallationWithProjectID: (NSNumber *)projectID applicationID: (NSNumber *)applicationID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/applications/{applicationId}/installations/{installationId}",
+        "verb": "DELETE",
+        "name": "DeleteInstallation",
+        "ObjCMethod": "- (void)deleteInstallationWithProjectID: (NSNumber *)projectID applicationID: (NSNumber *)applicationID installationID: (NSNumber *)installationID completion:"
+    }
+]

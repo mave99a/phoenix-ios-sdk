@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.tigerspike.TSPhoenix</string>
+	<key>CFBundleName</key>
+	<string>TSPhoenix Documentation</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	
+	
+	
+	<key>DocSetFallbackURL</key>
+	<string>http://tigerspike.github.com/TSPhoenix/</string>
+	<key>DocSetFeedName</key>
+	<string>TSPhoenix Documentation</string>
+	<key>DocSetFeedURL</key>
+	<string>http://tigerspike.github.com/TSPhoenix/TSPhoenix.atom</string>
+	<key>DocSetMinimumXcodeVersion</key>
+	<string>3.0</string>
+	
+	<key>DashDocSetFamily</key>
+	<string>appledoc</string>
+	<key>DocSetPublisherIdentifier</key>
+	<string>com.tigerspike.documentation</string>
+	<key>DocSetPublisherName</key>
+	<string>tigerspike</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2013 tigerspike. All rights reserved.</string>
+</dict>
+</plist>

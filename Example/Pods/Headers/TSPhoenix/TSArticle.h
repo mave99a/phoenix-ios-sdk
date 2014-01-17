@@ -1,0 +1,1 @@
+../../../../Models/Syndicate/TSArticle.h

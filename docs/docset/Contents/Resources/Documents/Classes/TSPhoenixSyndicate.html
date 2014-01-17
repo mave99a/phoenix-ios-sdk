@@ -1,0 +1,947 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>TSPhoenixSyndicate Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TSPhoenix </a></h1>
+				<a id="developerHome" href="../index.html">tigerspike</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">TSPhoenixSyndicate Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/sectionPaginator">&nbsp;&nbsp;&nbsp;&nbsp;sectionPaginator</option>
+	
+	<option value="//api/name/selectedSection">&nbsp;&nbsp;&nbsp;&nbsp;selectedSection</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/deleteArticleInteraction:withSuccess:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteArticleInteraction:withSuccess:failure:</option>
+	
+	<option value="//api/name/initWithPhoenixClient:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithPhoenixClient:</option>
+	
+	<option value="//api/name/loadArticlesInSection:fromDate:toDate:pageIndex:pathPattern:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- loadArticlesInSection:fromDate:toDate:pageIndex:pathPattern:success:failure:</option>
+	
+	<option value="//api/name/loadArticlesInSection:fromDate:toDate:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- loadArticlesInSection:fromDate:toDate:success:failure:</option>
+	
+	<option value="//api/name/loadSectionsWithSuccess:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- loadSectionsWithSuccess:failure:</option>
+	
+	<option value="//api/name/loadSubscribedSectionsWithSuccess:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- loadSubscribedSectionsWithSuccess:failure:</option>
+	
+	<option value="//api/name/searchForArticlesWithSearchTerm:withSuccess:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- searchForArticlesWithSearchTerm:withSuccess:failure:</option>
+	
+	<option value="//api/name/sendArticleInteractionsWithArticles:withSuccess:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- sendArticleInteractionsWithArticles:withSuccess:failure:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sectionPaginator">sectionPaginator</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectedSection">selectedSection</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteArticleInteraction:withSuccess:failure:">deleteArticleInteraction:withSuccess:failure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithPhoenixClient:">initWithPhoenixClient:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadArticlesInSection:fromDate:toDate:pageIndex:pathPattern:success:failure:">loadArticlesInSection:fromDate:toDate:pageIndex:pathPattern:success:failure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadArticlesInSection:fromDate:toDate:success:failure:">loadArticlesInSection:fromDate:toDate:success:failure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadSectionsWithSuccess:failure:">loadSectionsWithSuccess:failure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadSubscribedSectionsWithSuccess:failure:">loadSubscribedSectionsWithSuccess:failure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchForArticlesWithSearchTerm:withSuccess:failure:">searchForArticlesWithSearchTerm:withSuccess:failure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendArticleInteractionsWithArticles:withSuccess:failure:">sendArticleInteractionsWithArticles:withSuccess:failure:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="TSPhoenixSyndicate Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">TSPhoenixSyndicate Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">TSPhoenixSyndicate.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Phoenix Syndicate object.</p>
+
+<p>Provides high-level APIs to load sections and articles from Phoenix, send article interactions
+back to Phoenix, etc.</p>
+
+<p>Also abstracts Phoenix API response pagination via <a href="../Classes/TSPaginator.html">TSPaginator</a>, so you can easily load thousands of articles
+without wrestling with URL paths.</p>
+
+<p>Paginators are short-lived in PhoenixSyndicate
+It is released as soon as a URL load succeeds / fails
+Consumers can hold on to it if it wants the next pagefull results
+Or call the master -loadArticleInSection:fromDate:toDate:pageIndex&hellip; method</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithPhoenixClient:">&ndash;&nbsp;initWithPhoenixClient:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectedSection">&nbsp;&nbsp;selectedSection</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sectionPaginator">&nbsp;&nbsp;sectionPaginator</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadSubscribedSectionsWithSuccess:failure:">&ndash;&nbsp;loadSubscribedSectionsWithSuccess:failure:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadSectionsWithSuccess:failure:">&ndash;&nbsp;loadSectionsWithSuccess:failure:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadArticlesInSection:fromDate:toDate:success:failure:">&ndash;&nbsp;loadArticlesInSection:fromDate:toDate:success:failure:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadArticlesInSection:fromDate:toDate:pageIndex:pathPattern:success:failure:">&ndash;&nbsp;loadArticlesInSection:fromDate:toDate:pageIndex:pathPattern:success:failure:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchForArticlesWithSearchTerm:withSuccess:failure:">&ndash;&nbsp;searchForArticlesWithSearchTerm:withSuccess:failure:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendArticleInteractionsWithArticles:withSuccess:failure:">&ndash;&nbsp;sendArticleInteractionsWithArticles:withSuccess:failure:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteArticleInteraction:withSuccess:failure:">&ndash;&nbsp;deleteArticleInteraction:withSuccess:failure:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/sectionPaginator" title="sectionPaginator"></a>
+	<h3 class="subsubtitle method-title">sectionPaginator</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves all sections for the current project
+Stores them in Core Data with entity named Section
+Section&rsquo;s parent projects are automatically connected</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong) TSPaginator *sectionPaginator</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSPhoenixSyndicate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectedSection" title="selectedSection"></a>
+	<h3 class="subsubtitle method-title">selectedSection</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The currently visible (user selected) section in FeedVC
+Making it a property in PhoenixSyndicate, so that LeftVC and FeedVC are lousely coupled.
+KVO this property for any changes</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong) TSSection *selectedSection</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This Core Data entity exists on the main thread</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSPhoenixSyndicate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteArticleInteraction:withSuccess:failure:" title="deleteArticleInteraction:withSuccess:failure:"></a>
+	<h3 class="subsubtitle method-title">deleteArticleInteraction:withSuccess:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Mark as unread, unstar, etc.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)deleteArticleInteraction:(TSArticleInteraction *)<em>articleInteraction</em> withSuccess:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))<em>success</em> failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>articleInteraction</em></dt>
+			<dd><p>An ArticleInteraction object</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>A block to be executed upon a successful request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>A block to be exected upon a failed load.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSPhoenixSyndicate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithPhoenixClient:" title="initWithPhoenixClient:"></a>
+	<h3 class="subsubtitle method-title">initWithPhoenixClient:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>PhoenixSyndicate is automatically created by PhoenixClient, which provides networking, database, etc.
+Don&rsquo;t call this initializer directly. Always use [TSPhoenixClient sharedClient].syndicate</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithPhoenixClient:(TSPhoenixClient *)<em>client</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p>an instance of <a href="../Classes/TSPhoenixClient.html">TSPhoenixClient</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSPhoenixSyndicate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadArticlesInSection:fromDate:toDate:pageIndex:pathPattern:success:failure:" title="loadArticlesInSection:fromDate:toDate:pageIndex:pathPattern:success:failure:"></a>
+	<h3 class="subsubtitle method-title">loadArticlesInSection:fromDate:toDate:pageIndex:pathPattern:success:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>master method for loading articles
+provides fine-grained control, making it possible to load page x in request y</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)loadArticlesInSection:(TSSection *)<em>section</em> fromDate:(NSDate *)<em>fromDate</em> toDate:(NSDate *)<em>toDate</em> pageIndex:(NSInteger)<em>pageIndex</em> pathPattern:(NSString *)<em>pathPattern</em> success:(void ( ^ ) ( TSPaginator *paginator , NSArray *objects , NSUInteger page ))<em>success</em> failure:(void ( ^ ) ( TSPaginator *paginator , NSError *error ))<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>section</em></dt>
+			<dd><p>section</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fromDate</em></dt>
+			<dd><p>starting date or nil</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>toDate</em></dt>
+			<dd><p>ending date or nil. nil implies now.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pageIndex</em></dt>
+			<dd><p>response pagination page index, zero indexed.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pathPattern</em></dt>
+			<dd><p>SOCKit path pattern</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>A block to be executed upon a successful load of a page of objects. The block has no return value and takes three arguments: the paginator object, an array containing the paginated objects, and an integer indicating the page that was loaded.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>A block to be exected upon a failed load. The block has no return value and takes two arguments: the paginator object and an error indicating the nature of the failure.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>example usage:
+this method is used when &ldquo;Load More&rdquo; button is pressed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSPhoenixSyndicate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadArticlesInSection:fromDate:toDate:success:failure:" title="loadArticlesInSection:fromDate:toDate:success:failure:"></a>
+	<h3 class="subsubtitle method-title">loadArticlesInSection:fromDate:toDate:success:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves all articles for the current project
+Stores them in Core Data with entity named Article
+Article&rsquo;s parent sections are automatically connected
+If there are more than a pageful (100) articles, an ArticlePaginationPlacholder object is inserted into Core Data.
+Consumers should show a &ldquo;Load more&rdquo; button with ARticlePaginationPlaceholder</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)loadArticlesInSection:(TSSection *)<em>section</em> fromDate:(NSDate *)<em>fromDate</em> toDate:(NSDate *)<em>toDate</em> success:(void ( ^ ) ( TSPaginator *paginator , NSArray *objects , NSUInteger page ))<em>success</em> failure:(void ( ^ ) ( TSPaginator *paginator , NSError *error ))<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>section</em></dt>
+			<dd><p>section</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fromDate</em></dt>
+			<dd><p>starting date or nil</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>toDate</em></dt>
+			<dd><p>ending date or nil. nil implies now.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>A block to be executed upon a successful load of a page of objects. The block has no return value and takes three arguments: the paginator object, an array containing the paginated objects, and an integer indicating the page that was loaded.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>A block to be exected upon a failed load. The block has no return value and takes two arguments: the paginator object and an error indicating the nature of the failure.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSPhoenixSyndicate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadSectionsWithSuccess:failure:" title="loadSectionsWithSuccess:failure:"></a>
+	<h3 class="subsubtitle method-title">loadSectionsWithSuccess:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<ul>
+<li>load all available sections, store them in Core Data</li>
+<li>Use Core Data + NSFetchedResultsController to pull this data out</li>
+</ul>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)loadSectionsWithSuccess:(void ( ^ ) ( TSPaginator *paginator , NSArray *objects , NSUInteger page ))<em>success</em> failure:(void ( ^ ) ( TSPaginator *paginator , NSError *error ))<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>A block to be executed upon a successful load of a page of objects. The block has no return value and takes three arguments: the paginator object, an array containing the paginated objects, and an integer indicating the page that was loaded.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>A block to be exected upon a failed load. The block has no return value and takes two arguments: the paginator object and an error indicating the nature of the failure.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSPhoenixSyndicate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadSubscribedSectionsWithSuccess:failure:" title="loadSubscribedSectionsWithSuccess:failure:"></a>
+	<h3 class="subsubtitle method-title">loadSubscribedSectionsWithSuccess:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<ul>
+<li>load user subscribed sections, store them in Core Data</li>
+<li>Use Core Data + NSFetchedResultsController to pull this data out</li>
+</ul>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)loadSubscribedSectionsWithSuccess:(void ( ^ ) ( TSPaginator *paginator , NSArray *objects , NSUInteger page ))<em>success</em> failure:(void ( ^ ) ( TSPaginator *paginator , NSError *error ))<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>A block to be executed upon a successful load of a page of objects. The block has no return value and takes three arguments: the paginator object, an array containing the paginated objects, and an integer indicating the page that was loaded.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>A block to be exected upon a failed load. The block has no return value and takes two arguments: the paginator object and an error indicating the nature of the failure.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSPhoenixSyndicate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchForArticlesWithSearchTerm:withSuccess:failure:" title="searchForArticlesWithSearchTerm:withSuccess:failure:"></a>
+	<h3 class="subsubtitle method-title">searchForArticlesWithSearchTerm:withSuccess:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<ul>
+<li>Search</li>
+<li>load next page of data using the master method -loadArticlesInSection:fromDate:toDate:pageIndex:pathPattern:</li>
+</ul>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)searchForArticlesWithSearchTerm:(NSString *)<em>searchTerm</em> withSuccess:(void ( ^ ) ( TSPaginator *paginator , NSArray *objects , NSUInteger page ))<em>success</em> failure:(void ( ^ ) ( TSPaginator *paginator , NSError *error ))<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchTerm</em></dt>
+			<dd><p>Search keyword</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>A block to be executed upon a successful load of a page of objects. The block has no return value and takes three arguments: the paginator object, an array containing the paginated objects, and an integer indicating the page that was loaded.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>A block to be exected upon a failed load. The block has no return value and takes two arguments: the paginator object and an error indicating the nature of the failure.
+*</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSPhoenixSyndicate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendArticleInteractionsWithArticles:withSuccess:failure:" title="sendArticleInteractionsWithArticles:withSuccess:failure:"></a>
+	<h3 class="subsubtitle method-title">sendArticleInteractionsWithArticles:withSuccess:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Send article interactions such as read receipt, stars, etc.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sendArticleInteractionsWithArticles:(NSArray *)<em>articles</em> withSuccess:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))<em>success</em> failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))<em>failure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>articles</em></dt>
+			<dd><p>A list of articles</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>A block to be executed upon a successful request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>A block to be exected upon a failed load.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TSPhoenixSyndicate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 tigerspike. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

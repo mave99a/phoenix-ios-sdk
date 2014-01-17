@@ -1,0 +1,38 @@
+[
+    {
+        "path": "/projects/{projectId}/transactions",
+        "verb": "GET",
+        "name": "ListTransaction",
+        "ObjCMethod": "- (void)listTransactionWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/transactions",
+        "verb": "POST",
+        "name": "CreateTransaction",
+        "ObjCMethod": "- (void)createTransactionWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}",
+        "verb": "POST",
+        "name": "ActivateModule",
+        "ObjCMethod": "- (void)activateModuleWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}",
+        "verb": "GET",
+        "name": "GetModuleSettings",
+        "ObjCMethod": "- (void)getModuleSettingsWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}",
+        "verb": "PUT",
+        "name": "UpdateModuleSettings",
+        "ObjCMethod": "- (void)updateModuleSettingsWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}",
+        "verb": "DELETE",
+        "name": "DeactivateModule",
+        "ObjCMethod": "- (void)deactivateModuleWithProjectID: (NSNumber *)projectID completion:"
+    }
+]

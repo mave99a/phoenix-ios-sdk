@@ -1,0 +1,302 @@
+[
+    {
+        "path": "/projects/{projectId}/media",
+        "verb": "GET",
+        "name": "ListMedia",
+        "ObjCMethod": "- (void)listMediaWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/media/{id}",
+        "verb": "GET",
+        "name": "GetMedia",
+        "ObjCMethod": "- (void)getMediaWithProjectID: (NSNumber *)projectID mediaID: (NSNumber *)mediaID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/media",
+        "verb": "POST",
+        "name": "CreateMedia",
+        "ObjCMethod": "- (void)createMediaWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/media",
+        "verb": "PUT",
+        "name": "UpdateMedia",
+        "ObjCMethod": "- (void)updateMediaWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/media/{mediaId}",
+        "verb": "DELETE",
+        "name": "DeleteMedia",
+        "ObjCMethod": "- (void)deleteMediaWithProjectID: (NSNumber *)projectID mediaID: (NSNumber *)mediaID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/media/{id}/file?fileName={fileName}&fileLength={fileLength}",
+        "verb": "POST",
+        "name": "UploadMediaFile",
+        "ObjCMethod": "- (void)uploadMediaFileWithProjectID: (NSNumber *)projectID uploadMediaFileID: (NSNumber *)uploadMediaFileID uploadMediaFileID: (NSString *)uploadMediaFileID uploadMediaFileID: (NSString *)uploadMediaFileID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/media/{id}?fileName={fileName}&fileLength={fileLength}",
+        "verb": "POST",
+        "name": "UploadMedia",
+        "ObjCMethod": "- (void)uploadMediaWithProjectID: (NSNumber *)projectID uploadMediaID: (NSNumber *)uploadMediaID uploadMediaID: (NSString *)uploadMediaID uploadMediaID: (NSString *)uploadMediaID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/mediafiletype",
+        "verb": "POST",
+        "name": "AddMediaFileType",
+        "ObjCMethod": "- (void)addMediaFileTypeWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/categories",
+        "verb": "GET",
+        "name": "ListCategory",
+        "ObjCMethod": "- (void)listCategoryWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/categories/{id}",
+        "verb": "GET",
+        "name": "GetCategory",
+        "ObjCMethod": "- (void)getCategoryWithProjectID: (NSNumber *)projectID categoryID: (NSNumber *)categoryID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/categories",
+        "verb": "PUT",
+        "name": "UpdateCategory",
+        "ObjCMethod": "- (void)updateCategoryWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/categories",
+        "verb": "POST",
+        "name": "CreateCategory",
+        "ObjCMethod": "- (void)createCategoryWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/categories/{categoryId}",
+        "verb": "DELETE",
+        "name": "DeleteCategory",
+        "ObjCMethod": "- (void)deleteCategoryWithProjectID: (NSNumber *)projectID categoryID: (NSNumber *)categoryID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/tags",
+        "verb": "GET",
+        "name": "ListTag",
+        "ObjCMethod": "- (void)listTagWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/tags/{id}",
+        "verb": "GET",
+        "name": "GetTag",
+        "ObjCMethod": "- (void)getTagWithProjectID: (NSNumber *)projectID tagID: (NSNumber *)tagID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/tags",
+        "verb": "POST",
+        "name": "CreateTag",
+        "ObjCMethod": "- (void)createTagWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/tags/{tagId}",
+        "verb": "DELETE",
+        "name": "DeleteTag",
+        "ObjCMethod": "- (void)deleteTagWithProjectID: (NSNumber *)projectID tagID: (NSNumber *)tagID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/channels",
+        "verb": "GET",
+        "name": "ListChannel",
+        "ObjCMethod": "- (void)listChannelWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/channels/{id}",
+        "verb": "GET",
+        "name": "GetChannel",
+        "ObjCMethod": "- (void)getChannelWithProjectID: (NSNumber *)projectID channelID: (NSNumber *)channelID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/channels",
+        "verb": "POST",
+        "name": "CreateChannel",
+        "ObjCMethod": "- (void)createChannelWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/channels",
+        "verb": "PUT",
+        "name": "UpdateChannel",
+        "ObjCMethod": "- (void)updateChannelWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/channels/{id}",
+        "verb": "DELETE",
+        "name": "DeleteChannel",
+        "ObjCMethod": "- (void)deleteChannelWithProjectID: (NSNumber *)projectID channelID: (NSNumber *)channelID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/channels/{channelId}/media",
+        "verb": "GET",
+        "name": "ListMediaAssignedToChannel",
+        "ObjCMethod": "- (void)listMediaAssignedToChannelWithProjectID: (NSNumber *)projectID channelID: (NSNumber *)channelID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/channels/{channelId}/media/{id}",
+        "verb": "POST",
+        "name": "AddMediaToChannel",
+        "ObjCMethod": "- (void)addMediaToChannelWithProjectID: (NSNumber *)projectID channelID: (NSNumber *)channelID addMediaToChannelID: (NSNumber *)addMediaToChannelID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/channels/{channelId}/media/{id}",
+        "verb": "DELETE",
+        "name": "RemoveMediaFromChannel",
+        "ObjCMethod": "- (void)removeMediaFromChannelWithProjectID: (NSNumber *)projectID channelID: (NSNumber *)channelID removeMediaFromChannelID: (NSNumber *)removeMediaFromChannelID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/channels/{channelId}/subscribers",
+        "verb": "GET",
+        "name": "ListChannelSubscribers",
+        "ObjCMethod": "- (void)listChannelSubscribersWithProjectID: (NSNumber *)projectID channelID: (NSNumber *)channelID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/profiles/{profileId}/subscription",
+        "verb": "POST",
+        "name": "SubscribeToChannel",
+        "ObjCMethod": "- (void)subscribeToChannelWithProjectID: (NSNumber *)projectID profileID: (NSNumber *)profileID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/profiles/{profileId}/subscription/{channelId}",
+        "verb": "DELETE",
+        "name": "UnSubscribeFromChannel",
+        "ObjCMethod": "- (void)unSubscribeFromChannelWithProjectID: (NSNumber *)projectID profileID: (NSNumber *)profileID channelID: (NSNumber *)channelID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/channels/{id}?fileName={fileName}&fileLength={fileLength}",
+        "verb": "POST",
+        "name": "UploadChannelImage",
+        "ObjCMethod": "- (void)uploadChannelImageWithProjectID: (NSNumber *)projectID uploadChannelImageID: (NSNumber *)uploadChannelImageID uploadChannelImageID: (NSString *)uploadChannelImageID uploadChannelImageID: (NSString *)uploadChannelImageID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/profiles",
+        "verb": "GET",
+        "name": "ListProfile",
+        "ObjCMethod": "- (void)listProfileWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/profiles/{id}",
+        "verb": "GET",
+        "name": "GetProfile",
+        "ObjCMethod": "- (void)getProfileWithProjectID: (NSNumber *)projectID profileID: (NSNumber *)profileID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/profiles",
+        "verb": "POST",
+        "name": "CreateProfile",
+        "ObjCMethod": "- (void)createProfileWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/profiles",
+        "verb": "PUT",
+        "name": "UpdateProfile",
+        "ObjCMethod": "- (void)updateProfileWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/profiles/{id}",
+        "verb": "DELETE",
+        "name": "DeleteProfile",
+        "ObjCMethod": "- (void)deleteProfileWithProjectID: (NSNumber *)projectID profileID: (NSNumber *)profileID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/profiles/{id}?fileName={fileName}&fileLength={fileLength}",
+        "verb": "POST",
+        "name": "UploadProfile",
+        "ObjCMethod": "- (void)uploadProfileWithProjectID: (NSNumber *)projectID uploadProfileID: (NSNumber *)uploadProfileID uploadProfileID: (NSString *)uploadProfileID uploadProfileID: (NSString *)uploadProfileID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/profiles/{id}/rate?rate={rate}&ipAddress={ipAddress}",
+        "verb": "POST",
+        "name": "RateProfile",
+        "ObjCMethod": "- (void)rateProfileWithProjectID: (NSNumber *)projectID rateProfileID: (NSNumber *)rateProfileID rateProfileID: (NSString *)rateProfileID rateProfileID: (NSString *)rateProfileID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/media/{id}/rate",
+        "verb": "POST",
+        "name": "RateMedia",
+        "ObjCMethod": "- (void)rateMediaWithProjectID: (NSNumber *)projectID rateMediaID: (NSNumber *)rateMediaID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/media/{id}/view",
+        "verb": "POST",
+        "name": "ViewMedia",
+        "ObjCMethod": "- (void)viewMediaWithProjectID: (NSNumber *)projectID viewMediaID: (NSNumber *)viewMediaID completion:"
+    },
+    {
+        "path": "/projects/{projectId}",
+        "verb": "GET",
+        "name": "GetModuleSettings",
+        "ObjCMethod": "- (void)getModuleSettingsWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects",
+        "verb": "POST",
+        "name": "ActivateModule",
+        "ObjCMethod": "- (void)activateModuleWithCompletion:"
+    },
+    {
+        "path": "/projects/{projectId}",
+        "verb": "PUT",
+        "name": "UpdateModuleSettings",
+        "ObjCMethod": "- (void)updateModuleSettingsWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}",
+        "verb": "DELETE",
+        "name": "DeactivateModule",
+        "ObjCMethod": "- (void)deactivateModuleWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/mediafiletypes",
+        "verb": "GET",
+        "name": "ListMediaFileType",
+        "ObjCMethod": "- (void)listMediaFileTypeWithCompletion:"
+    },
+    {
+        "path": "/mediafiletypes/{id}",
+        "verb": "GET",
+        "name": "GetMediaFileType",
+        "ObjCMethod": "- (void)getMediaFileTypeWithMediaFileTypeID: (NSNumber *)mediaFileTypeID completion:"
+    },
+    {
+        "path": "/mediafiletypes",
+        "verb": "PUT",
+        "name": "UpdateMediaFileType",
+        "ObjCMethod": "- (void)updateMediaFileTypeWithCompletion:"
+    },
+    {
+        "path": "/mediafiletypes",
+        "verb": "POST",
+        "name": "CreateMediaFileType",
+        "ObjCMethod": "- (void)createMediaFileTypeWithCompletion:"
+    },
+    {
+        "path": "/mediafiletypes/{id}",
+        "verb": "DELETE",
+        "name": "DeleteMediaFileType",
+        "ObjCMethod": "- (void)deleteMediaFileTypeWithMediaFileTypeID: (NSNumber *)mediaFileTypeID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/mediafiletypes",
+        "verb": "GET",
+        "name": "ListProjectMediaFileTypeMap",
+        "ObjCMethod": "- (void)listProjectMediaFileTypeMapWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/mediafiletypes",
+        "verb": "POST",
+        "name": "CreateProjectMediaFileTypeMap",
+        "ObjCMethod": "- (void)createProjectMediaFileTypeMapWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/mediafiletypes/{projectMediaFileTypeMapId}",
+        "verb": "DELETE",
+        "name": "DeleteProjectMediaFileTypeMap",
+        "ObjCMethod": "- (void)deleteProjectMediaFileTypeMapWithProjectID: (NSNumber *)projectID projectMediaFileTypeMapID: (NSNumber *)projectMediaFileTypeMapID completion:"
+    }
+]

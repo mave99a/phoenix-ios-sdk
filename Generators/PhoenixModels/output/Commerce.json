@@ -1,0 +1,268 @@
+[
+    {
+        "name": "Application",
+        "properties": [
+            {
+                "name": "Id",
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "applicationID"
+            },
+            {
+                "name": "Reference",
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "reference"
+            },
+            {
+                "name": "Name",
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "name"
+            },
+            {
+                "name": "SharedSecret",
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "sharedSecret"
+            },
+            {
+                "name": "CreateDate",
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
+            },
+            {
+                "name": "ModifyDate",
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
+            },
+            {
+                "name": "ProjectId",
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "projectID"
+            },
+            {
+                "name": "Project",
+                "anchor": "/Api/Commerce#Project",
+                "type": "relationship",
+                "href": "#Project",
+                "ObjCPropertyType": "TSProject",
+                "ObjCPropertyName": "project"
+            }
+        ],
+        "ObjCName": "TSApplication"
+    },
+    {
+        "name": "Product",
+        "properties": [
+            {
+                "name": "Id",
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "productID"
+            },
+            {
+                "name": "ProductIdentifier",
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "productIDentifier"
+            },
+            {
+                "name": "ProductTypeId",
+                "enumList": {
+                    "name": "ProductTypeEnum",
+                    "type": "enum",
+                    "values": [
+                        "IAPConsumable",
+                        "IAPNonConsumable",
+                        "IAPAutoRenewableSubscription",
+                        "IAPFreeSubscription",
+                        "IAPNonRenewingSubscription"
+                    ]
+                },
+                "type": "enumList",
+                "href": "#producttypeenummodal",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "productTypeID"
+            },
+            {
+                "name": "ApplicationId",
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "applicationID"
+            },
+            {
+                "name": "Name",
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "name"
+            },
+            {
+                "name": "Price",
+                "type": "System.Decimal",
+                "ObjCPropertyName": "price"
+            },
+            {
+                "name": "MinMajorVersion",
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "minMajorVersion"
+            },
+            {
+                "name": "MinMinorVersion",
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "minMinorVersion"
+            },
+            {
+                "name": "IsActive",
+                "type": "System.Boolean",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "isActive"
+            },
+            {
+                "name": "MinPointVersion",
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "minPointVersion"
+            },
+            {
+                "name": "Description",
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "productDescription"
+            },
+            {
+                "name": "CreateDate",
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
+            },
+            {
+                "name": "ModifyDate",
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
+            },
+            {
+                "name": "Application",
+                "anchor": "/Api/Commerce#Application",
+                "type": "relationship",
+                "href": "#Application",
+                "ObjCPropertyType": "TSApplication",
+                "ObjCPropertyName": "application"
+            }
+        ],
+        "ObjCName": "TSProduct"
+    },
+    {
+        "name": "Project",
+        "properties": [
+            {
+                "name": "PhoenixIdentity_ProjectId",
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "phoenixIDentity_ProjectId"
+            },
+            {
+                "name": "CreateDate",
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
+            },
+            {
+                "name": "ModifyDate",
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
+            }
+        ],
+        "ObjCName": "TSProject"
+    },
+    {
+        "name": "Transaction",
+        "properties": [
+            {
+                "name": "Id",
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "transactionID"
+            },
+            {
+                "name": "PhoenixIdentity_UserId",
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "phoenixIDentity_UserId"
+            },
+            {
+                "name": "ProductId",
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "productID"
+            },
+            {
+                "name": "Reference",
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "reference"
+            },
+            {
+                "name": "ReceiptData",
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "receiptData"
+            },
+            {
+                "name": "Quantity",
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "quantity"
+            },
+            {
+                "name": "StatusTypeId",
+                "enumList": {
+                    "name": "StatusTypeEnum",
+                    "type": "enum",
+                    "values": [
+                        "Success",
+                        "Error"
+                    ]
+                },
+                "type": "enumList",
+                "href": "#statustypeenummodal",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "statusTypeID"
+            },
+            {
+                "name": "StatusDescription",
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "statusDescription"
+            },
+            {
+                "name": "CreateDate",
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
+            },
+            {
+                "name": "ModifyDate",
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
+            },
+            {
+                "name": "Product",
+                "anchor": "/Api/Commerce#Product",
+                "type": "relationship",
+                "href": "#Product",
+                "ObjCPropertyType": "TSProduct",
+                "ObjCPropertyName": "product"
+            }
+        ],
+        "ObjCName": "TSTransaction"
+    }
+]

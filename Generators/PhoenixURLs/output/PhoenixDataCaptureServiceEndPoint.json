@@ -1,0 +1,170 @@
+[
+    {
+        "path": "/projects/{projectid}/entrysets/{entrysetid}/entries",
+        "verb": "GET",
+        "name": "ListEntry",
+        "ObjCMethod": "- (void)listEntryWithProjectID: (NSNumber *)projectID entrysetID: (NSNumber *)entrysetID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets/{entrysetid}/entries/{id}",
+        "verb": "GET",
+        "name": "GetEntry",
+        "ObjCMethod": "- (void)getEntryWithProjectID: (NSNumber *)projectID entrysetID: (NSNumber *)entrysetID entryID: (NSNumber *)entryID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets/{entrysetid}/entries",
+        "verb": "POST",
+        "name": "CreateEntry",
+        "ObjCMethod": "- (void)createEntryWithProjectID: (NSNumber *)projectID entrysetID: (NSNumber *)entrysetID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets/{entrysetid}/entries",
+        "verb": "PUT",
+        "name": "UpdateEntry",
+        "ObjCMethod": "- (void)updateEntryWithProjectID: (NSNumber *)projectID entrysetID: (NSNumber *)entrysetID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets/{entrysetid}/entries/{id}",
+        "verb": "DELETE",
+        "name": "DeleteEntry",
+        "ObjCMethod": "- (void)deleteEntryWithProjectID: (NSNumber *)projectID entrysetID: (NSNumber *)entrysetID entryID: (NSNumber *)entryID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/params/{paramId}/entryfiles",
+        "verb": "GET",
+        "name": "ListEntryFile",
+        "ObjCMethod": "- (void)listEntryFileWithProjectID: (NSNumber *)projectID paramID: (NSNumber *)paramID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/params/{paramId}/entryfiles/{id}",
+        "verb": "GET",
+        "name": "GetEntryFile",
+        "ObjCMethod": "- (void)getEntryFileWithProjectID: (NSNumber *)projectID paramID: (NSNumber *)paramID entryFileID: (NSNumber *)entryFileID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/params/{paramId}/entryfiles/{id}",
+        "verb": "DELETE",
+        "name": "DeleteEntryFile",
+        "ObjCMethod": "- (void)deleteEntryFileWithProjectID: (NSNumber *)projectID paramID: (NSNumber *)paramID entryFileID: (NSNumber *)entryFileID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/params/{param}/entryfiles?fileName={fileName}&mimeType={mimetype}",
+        "verb": "POST",
+        "name": "UploadEntryFile",
+        "ObjCMethod": "- (void)uploadEntryFileWithProjectID: (NSNumber *)projectID param: (NSNumber *)param param: (NSString *)param param: (NSString *)param completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets",
+        "verb": "GET",
+        "name": "ListEntrySet",
+        "ObjCMethod": "- (void)listEntrySetWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets/{id}",
+        "verb": "GET",
+        "name": "GetEntrySet",
+        "ObjCMethod": "- (void)getEntrySetWithProjectID: (NSNumber *)projectID entrySetID: (NSNumber *)entrySetID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets",
+        "verb": "POST",
+        "name": "CreateEntrySet",
+        "ObjCMethod": "- (void)createEntrySetWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets",
+        "verb": "PUT",
+        "name": "UpdateEntrySet",
+        "ObjCMethod": "- (void)updateEntrySetWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets/{id}",
+        "verb": "DELETE",
+        "name": "DeleteEntrySet",
+        "ObjCMethod": "- (void)deleteEntrySetWithProjectID: (NSNumber *)projectID entrySetID: (NSNumber *)entrySetID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets/{entrysetid}/params",
+        "verb": "GET",
+        "name": "ListParam",
+        "ObjCMethod": "- (void)listParamWithProjectID: (NSNumber *)projectID entrysetID: (NSNumber *)entrysetID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets/{entrysetid}/params/{id}",
+        "verb": "GET",
+        "name": "GetParam",
+        "ObjCMethod": "- (void)getParamWithProjectID: (NSNumber *)projectID entrysetID: (NSNumber *)entrysetID paramID: (NSNumber *)paramID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets/{entrysetid}/params",
+        "verb": "POST",
+        "name": "CreateParam",
+        "ObjCMethod": "- (void)createParamWithProjectID: (NSNumber *)projectID entrysetID: (NSNumber *)entrysetID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets/{entrysetid}/params",
+        "verb": "PUT",
+        "name": "UpdateParam",
+        "ObjCMethod": "- (void)updateParamWithProjectID: (NSNumber *)projectID entrysetID: (NSNumber *)entrysetID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets/{entrysetid}/params/{id}",
+        "verb": "DELETE",
+        "name": "DeleteParam",
+        "ObjCMethod": "- (void)deleteParamWithProjectID: (NSNumber *)projectID entrysetID: (NSNumber *)entrysetID paramID: (NSNumber *)paramID completion:"
+    },
+    {
+        "path": "/projects/{projectId}",
+        "verb": "GET",
+        "name": "GetModuleSettings",
+        "ObjCMethod": "- (void)getModuleSettingsWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}",
+        "verb": "POST",
+        "name": "ActivateModule",
+        "ObjCMethod": "- (void)activateModuleWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}",
+        "verb": "PUT",
+        "name": "UpdateModuleSettings",
+        "ObjCMethod": "- (void)updateModuleSettingsWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}",
+        "verb": "DELETE",
+        "name": "DeactivateModule",
+        "ObjCMethod": "- (void)deactivateModuleWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets/{entrysetid}/reports",
+        "verb": "GET",
+        "name": "ListReport",
+        "ObjCMethod": "- (void)listReportWithProjectID: (NSNumber *)projectID entrysetID: (NSNumber *)entrysetID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets/{entrysetid}/reports/{id}",
+        "verb": "GET",
+        "name": "GetReport",
+        "ObjCMethod": "- (void)getReportWithProjectID: (NSNumber *)projectID entrysetID: (NSNumber *)entrysetID reportID: (NSNumber *)reportID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets/{entrysetid}/reports",
+        "verb": "POST",
+        "name": "CreateReport",
+        "ObjCMethod": "- (void)createReportWithProjectID: (NSNumber *)projectID entrysetID: (NSNumber *)entrysetID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets/{entrysetid}/reports",
+        "verb": "PUT",
+        "name": "UpdateReport",
+        "ObjCMethod": "- (void)updateReportWithProjectID: (NSNumber *)projectID entrysetID: (NSNumber *)entrysetID completion:"
+    },
+    {
+        "path": "/projects/{projectid}/entrysets/{entrysetid}/reports/{id}",
+        "verb": "DELETE",
+        "name": "DeleteReport",
+        "ObjCMethod": "- (void)deleteReportWithProjectID: (NSNumber *)projectID entrysetID: (NSNumber *)entrysetID reportID: (NSNumber *)reportID completion:"
+    }
+]

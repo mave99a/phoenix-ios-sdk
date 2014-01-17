@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TSPaginator.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TSPaginator</TokenIdentifier>
+			<Abstract type="html">TSPaginator</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/initWithRequestPatternPath:httpClient:</TokenIdentifier>
+			<Abstract type="html">Dedicated initializer</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithRequestPatternPath:(NSString *)patternPath httpClient:(AFHTTPClient *)client</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>patternPath</Name>
+					<Abstract type="html">a URL template for SOCKit</Abstract>
+				</Parameter><Parameter>
+					<Name>client</Name>
+					<Abstract type="html">an instance of TSPhoenixClient</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithRequestPatternPath:httpClient:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/setRequestOperation:</TokenIdentifier>
+			<Abstract type="html">The current / last URL load operation.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) AFHTTPRequestOperation *requestOperation</Declaration>
+			
+			
+			<Anchor>//api/name/requestOperation</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/requestOperation</TokenIdentifier>
+			<Abstract type="html">The current / last URL load operation.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) AFHTTPRequestOperation *requestOperation</Declaration>
+			
+			
+			<Anchor>//api/name/requestOperation</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSPaginator/requestOperation</TokenIdentifier>
+			<Abstract type="html">The current / last URL load operation.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) AFHTTPRequestOperation *requestOperation</Declaration>
+			
+			
+			<Anchor>//api/name/requestOperation</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/setError:</TokenIdentifier>
+			<Abstract type="html">The error, if any, that occured during the last load of the paginator.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/error</TokenIdentifier>
+			<Abstract type="html">The error, if any, that occured during the last load of the paginator.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSPaginator/error</TokenIdentifier>
+			<Abstract type="html">The error, if any, that occured during the last load of the paginator.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/setCompletionBlockWithSuccess:failure:</TokenIdentifier>
+			<Abstract type="html">Sets the completion block to be invoked when the paginator finishes loading a page of results.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>- (void)setCompletionBlockWithSuccess:(void ( ^ ) ( TSPaginator *paginator , NSArray *objects , NSUInteger page ))success failure:(void ( ^ ) ( TSPaginator *paginator , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block to be executed upon a successful load of a page of objects. The block has no return value and takes three arguments: the paginator object, an array containing the paginated objects, and an integer indicating the page that was loaded.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block to be exected upon a failed load. The block has no return value and takes two arguments: the paginator object and an error indicating the nature of the failure.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCompletionBlockWithSuccess:failure:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/setIsMetadataLoaded:</TokenIdentifier>
+			<Abstract type="html">Initial page loaded?
+If it&apos;s loaded, we know the number of pages, total object count etc.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readonly) BOOL isMetadataLoaded</Declaration>
+			
+			
+			<Anchor>//api/name/isMetadataLoaded</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/isMetadataLoaded</TokenIdentifier>
+			<Abstract type="html">Initial page loaded?
+If it&apos;s loaded, we know the number of pages, total object count etc.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readonly) BOOL isMetadataLoaded</Declaration>
+			
+			
+			<Anchor>//api/name/isMetadataLoaded</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSPaginator/isMetadataLoaded</TokenIdentifier>
+			<Abstract type="html">Initial page loaded?
+If it&apos;s loaded, we know the number of pages, total object count etc.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (assign, readonly) BOOL isMetadataLoaded</Declaration>
+			
+			
+			<Anchor>//api/name/isMetadataLoaded</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/setPerPage:</TokenIdentifier>
+			<Abstract type="html">The number of objects to load per page</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger perPage</Declaration>
+			
+			
+			<Anchor>//api/name/perPage</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/perPage</TokenIdentifier>
+			<Abstract type="html">The number of objects to load per page</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger perPage</Declaration>
+			
+			
+			<Anchor>//api/name/perPage</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSPaginator/perPage</TokenIdentifier>
+			<Abstract type="html">The number of objects to load per page</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger perPage</Declaration>
+			
+			
+			<Anchor>//api/name/perPage</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/setCurrentPage:</TokenIdentifier>
+			<Abstract type="html">Returns the page number for the most recently loaded page of objects.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger currentPage</Declaration>
+			
+			<ReturnValue><Abstract type="html">The page number for the current page of objects.</Abstract></ReturnValue>
+			<Anchor>//api/name/currentPage</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/currentPage</TokenIdentifier>
+			<Abstract type="html">Returns the page number for the most recently loaded page of objects.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger currentPage</Declaration>
+			
+			<ReturnValue><Abstract type="html">The page number for the current page of objects.</Abstract></ReturnValue>
+			<Anchor>//api/name/currentPage</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSPaginator/currentPage</TokenIdentifier>
+			<Abstract type="html">Returns the page number for the most recently loaded page of objects.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger currentPage</Declaration>
+			
+			<ReturnValue><Abstract type="html">The page number for the current page of objects.</Abstract></ReturnValue>
+			<Anchor>//api/name/currentPage</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/setLoadedPages:</TokenIdentifier>
+			<Abstract type="html">A set of NSNumbers to keep track of pages that were loaded successfully</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSMutableSet *loadedPages</Declaration>
+			
+			
+			<Anchor>//api/name/loadedPages</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/loadedPages</TokenIdentifier>
+			<Abstract type="html">A set of NSNumbers to keep track of pages that were loaded successfully</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSMutableSet *loadedPages</Declaration>
+			
+			
+			<Anchor>//api/name/loadedPages</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSPaginator/loadedPages</TokenIdentifier>
+			<Abstract type="html">A set of NSNumbers to keep track of pages that were loaded successfully</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSMutableSet *loadedPages</Declaration>
+			
+			
+			<Anchor>//api/name/loadedPages</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/setOffset:</TokenIdentifier>
+			<Abstract type="html">Returns the offset based off the page for the most recently loaded objects.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger offset</Declaration>
+			
+			<ReturnValue><Abstract type="html">The offset for the current page of objects.</Abstract></ReturnValue>
+			<Anchor>//api/name/offset</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/offset</TokenIdentifier>
+			<Abstract type="html">Returns the offset based off the page for the most recently loaded objects.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger offset</Declaration>
+			
+			<ReturnValue><Abstract type="html">The offset for the current page of objects.</Abstract></ReturnValue>
+			<Anchor>//api/name/offset</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSPaginator/offset</TokenIdentifier>
+			<Abstract type="html">Returns the offset based off the page for the most recently loaded objects.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger offset</Declaration>
+			
+			<ReturnValue><Abstract type="html">The offset for the current page of objects.</Abstract></ReturnValue>
+			<Anchor>//api/name/offset</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/setPageCount:</TokenIdentifier>
+			<Abstract type="html">Returns the number of pages in the total resource collection.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger pageCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">A count of the number of pages in the resource collection.</Abstract></ReturnValue>
+			<Anchor>//api/name/pageCount</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/pageCount</TokenIdentifier>
+			<Abstract type="html">Returns the number of pages in the total resource collection.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger pageCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">A count of the number of pages in the resource collection.</Abstract></ReturnValue>
+			<Anchor>//api/name/pageCount</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSPaginator/pageCount</TokenIdentifier>
+			<Abstract type="html">Returns the number of pages in the total resource collection.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger pageCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">A count of the number of pages in the resource collection.</Abstract></ReturnValue>
+			<Anchor>//api/name/pageCount</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/setObjectCount:</TokenIdentifier>
+			<Abstract type="html">Returns the total number of objects in the collection</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger objectCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">A count of the number of objects in the resource collection.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectCount</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/objectCount</TokenIdentifier>
+			<Abstract type="html">Returns the total number of objects in the collection</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger objectCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">A count of the number of objects in the resource collection.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectCount</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSPaginator/objectCount</TokenIdentifier>
+			<Abstract type="html">Returns the total number of objects in the collection</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger objectCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">A count of the number of objects in the resource collection.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectCount</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/hasNextPage</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating if there is a next page in the collection.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)hasNextPage</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if there is a next page, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasNextPage</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/hasPreviousPage</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating if there is a previous page in the collection.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)hasPreviousPage</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if there is a previous page, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasPreviousPage</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/loadNextPage</TokenIdentifier>
+			<Abstract type="html">Loads the next page of data by incrementing the current page, constructing an object loader to fetch the data, and object mapping the results.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>- (void)loadNextPage</Declaration>
+			
+			
+			<Anchor>//api/name/loadNextPage</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/loadPreviousPage</TokenIdentifier>
+			<Abstract type="html">Loads the previous page of data by decrementing the current page, constructing an object loader to fetch the data, and object mapping the results.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>- (void)loadPreviousPage</Declaration>
+			
+			
+			<Anchor>//api/name/loadPreviousPage</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/loadFirstPage</TokenIdentifier>
+			<Abstract type="html">Loads the fist page of data</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>- (void)loadFirstPage</Declaration>
+			
+			
+			<Anchor>//api/name/loadFirstPage</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/loadPage:</TokenIdentifier>
+			<Abstract type="html">Loads a specific page of data by mutating the current page, constructing an object loader to fetch the data, and object mapping the results.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>- (void)loadPage:(NSUInteger)pageNumber</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageNumber</Name>
+					<Abstract type="html">The page of objects to load from the remote backend</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadPage:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/cancel</TokenIdentifier>
+			<Abstract type="html">Cancels an in-progress pagination request.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>- (void)cancel</Declaration>
+			
+			
+			<Anchor>//api/name/cancel</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/setUserInfo:</TokenIdentifier>
+			<Abstract type="html">A dictionary to hold context information, such as how the URL pattern is constructed.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (strong) NSDictionary *userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/userInfo</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSPaginator/userInfo</TokenIdentifier>
+			<Abstract type="html">A dictionary to hold context information, such as how the URL pattern is constructed.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (strong) NSDictionary *userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/userInfo</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSPaginator/userInfo</TokenIdentifier>
+			<Abstract type="html">A dictionary to hold context information, such as how the URL pattern is constructed.</Abstract>
+			<DeclaredIn>TSPaginator.h</DeclaredIn>
+			
+			<Declaration>@property (strong) NSDictionary *userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/userInfo</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

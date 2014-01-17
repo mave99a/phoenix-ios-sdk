@@ -1,0 +1,92 @@
+[
+    {
+        "path": "/projects/{projectid}",
+        "verb": "POST",
+        "name": "ActivateModule",
+        "ObjCMethod": "- (void)activateModuleWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/transactions",
+        "verb": "GET",
+        "name": "ListActivityLog",
+        "ObjCMethod": "- (void)listActivityLogWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/transactions",
+        "verb": "POST",
+        "name": "CreateActivityLog",
+        "ObjCMethod": "- (void)createActivityLogWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/log",
+        "verb": "POST",
+        "name": "CreateEventLog",
+        "ObjCMethod": "- (void)createEventLogWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/log",
+        "verb": "GET",
+        "name": "ListEventLog",
+        "ObjCMethod": "- (void)listEventLogWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/log",
+        "verb": "PUT",
+        "name": "UpdateEventLog",
+        "ObjCMethod": "- (void)updateEventLogWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/{projectId}/aggregateLog",
+        "verb": "GET",
+        "name": "ListAggregateEventLog",
+        "ObjCMethod": "- (void)listAggregateEventLogWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/projects/activity",
+        "verb": "POST",
+        "name": "CreateActivity",
+        "ObjCMethod": "- (void)createActivityWithCompletion:"
+    },
+    {
+        "path": "/projects/{projectId}/activity",
+        "verb": "GET",
+        "name": "ListActivity",
+        "ObjCMethod": "- (void)listActivityWithProjectID: (NSNumber *)projectID completion:"
+    },
+    {
+        "path": "/trigger",
+        "verb": "POST",
+        "name": "CreateTrigger",
+        "ObjCMethod": "- (void)createTriggerWithCompletion:"
+    },
+    {
+        "path": "/trigger",
+        "verb": "GET",
+        "name": "ListTrigger",
+        "ObjCMethod": "- (void)listTriggerWithCompletion:"
+    },
+    {
+        "path": "/trigger/{id}",
+        "verb": "GET",
+        "name": "GetTrigger",
+        "ObjCMethod": "- (void)getTriggerWithTriggerID: (NSNumber *)triggerID completion:"
+    },
+    {
+        "path": "/action",
+        "verb": "GET",
+        "name": "ListAction",
+        "ObjCMethod": "- (void)listActionWithCompletion:"
+    },
+    {
+        "path": "/events",
+        "verb": "GET",
+        "name": "ListEventType",
+        "ObjCMethod": "- (void)listEventTypeWithCompletion:"
+    },
+    {
+        "path": "/events",
+        "verb": "POST",
+        "name": "CreateEventType",
+        "ObjCMethod": "- (void)createEventTypeWithCompletion:"
+    }
+]
