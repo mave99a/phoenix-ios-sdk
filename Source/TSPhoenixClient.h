@@ -116,6 +116,7 @@ extern NSString * const TSPhoenixKeyValueDatabaseSQLiteName;
 
 @property (strong) NSMutableSet *paginators;
 
+
 /**
  Phoenix modules
  */
@@ -125,10 +126,17 @@ extern NSString * const TSPhoenixKeyValueDatabaseSQLiteName;
 @property (strong) TSPhoenixMessaging *messaging;
 @property (strong) TSPhoenixAnalytics *analytics;
 
-/* /Date(xxxxxxxxxx)/   */
+/**
+ *  Default .Net date formatter, parses /Date(xxxxxxxxxx)/
+ */
 @property (strong) NSDateFormatter *defaultDateFormatter;
 
 #pragma mark - Convenience
+
+/**
+ *  Convenience methods to access the database
+ *
+ */
 + (YapDatabase *)database;
 + (YapDatabaseConnection *)readOnlyDatabaseConnection;
 + (YapDatabaseConnection *)writeDatabaseConnection;
@@ -141,6 +149,10 @@ extern NSString * const TSPhoenixKeyValueDatabaseSQLiteName;
 + (void)saveObjectsToDatabase: (NSArray *)objects completion:(dispatch_block_t)completionBlock;
 + (void)deleteObjectsInDatabase: (NSArray *)objects completion:(dispatch_block_t)completionBlock;
 
+/**
+ *  Phoenix parameters
+ *
+ */
 - (NSString *)clientID;
 - (NSString *)clientSecret;
 - (NSInteger)projectID;
