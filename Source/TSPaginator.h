@@ -72,6 +72,9 @@
 @property (nonatomic, strong, readonly) NSError *error;
 
 
+@property (nonatomic, copy) void (^successBlock)(TSPaginator *paginator, NSArray *objects, NSUInteger page);
+@property (nonatomic, copy) void (^failureBlock)(TSPaginator *paginator, NSError *error);
+
 
 ///------------------------------------
 /// @name Importing objects with Magical Records

@@ -29,9 +29,6 @@ static NSUInteger TSPaginatorDefaultPerPage = 100;
 - (void)setCompletionBlockWithSuccess:(void (^)(TSPaginator *paginator, NSArray *objects, NSUInteger page))success
                               failure:(void (^)(TSPaginator *paginator, NSError *error))failure;
 
-@property (nonatomic, copy) void (^successBlock)(TSPaginator *paginator, NSArray *objects, NSUInteger page);
-@property (nonatomic, copy) void (^failureBlock)(TSPaginator *paginator, NSError *error);
-
 @end
 
 @implementation TSPaginator
