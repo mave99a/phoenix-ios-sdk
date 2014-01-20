@@ -39,12 +39,6 @@
 // Please contact the author.
 // Version: 1.6.5.1.
 
-// SOCKit
-#define COCOAPODS_POD_AVAILABLE_SOCKit
-#define COCOAPODS_VERSION_MAJOR_SOCKit 1
-#define COCOAPODS_VERSION_MINOR_SOCKit 1
-#define COCOAPODS_VERSION_PATCH_SOCKit 0
-
 // YapDatabase
 #define COCOAPODS_POD_AVAILABLE_YapDatabase
 #define COCOAPODS_VERSION_MAJOR_YapDatabase 2

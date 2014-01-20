@@ -8,21 +8,18 @@ PODS:
   - CocoaLumberjack/Core (1.6.5.1)
   - CocoaLumberjack/Extensions (1.6.5.1):
     - CocoaLumberjack/Core
-  - SOCKit (1.1)
   - YapDatabase (2.3):
     - CocoaLumberjack (~> 1.6.3)
 
 DEPENDENCIES:
-  - AFNetworking (~> 1.3)
+  - AFNetworking
   - AFOAuth2Client
-  - SOCKit
   - YapDatabase
 
 SPEC CHECKSUMS:
   AFNetworking: 61fdd49e2ffe6380378df37b3b6e70630bb9dd66
   AFOAuth2Client: 579d6f298b0047dfd5a6eec6ab5b28c01f6b4547
   CocoaLumberjack: 17803afbade3126a377d32b8d23367264b44ced6
-  SOCKit: 2f3bc4d07910de12dcc202815e07db68a3802581
   YapDatabase: b9b58b24092557adc59e3b86a167601c7733b8e7
 
 COCOAPODS: 0.29.0

@@ -9,7 +9,6 @@
 
 #import "TSPaginator.h"
 #import "TSPhoenix.h"
-#import <SOCKit/SOCKit.h>
 
 static NSUInteger TSPaginatorDefaultPerPage = 100;
 
@@ -18,7 +17,7 @@ static NSUInteger TSPaginatorDefaultPerPage = 100;
 @property (nonatomic, readonly) AFHTTPClient *client;
 
 
-@property (nonatomic, readonly) SOCPattern *pattern;
+@property (nonatomic, copy) NSString *pathPattern;
 
 /**
  Sets the completion block to be invoked when the paginator finishes loading a page of results.
@@ -42,7 +41,7 @@ static NSUInteger TSPaginatorDefaultPerPage = 100;
         NSParameterAssert(patternPath);
         NSParameterAssert(client);
         
-        _pattern = [SOCPattern patternWithString:patternPath];
+        _pathPattern = patternPath;
         _client = client;
 
         _currentPage = NSNotFound;
@@ -120,7 +119,11 @@ static NSUInteger TSPaginatorDefaultPerPage = 100;
     
     _currentPage = pageNumber;
 
-    NSString *path = [self.pattern stringFromObject:self];
+    NSString *path = [self.pathPattern stringByReplacingOccurrencesOfString:@"{currentPage}"
+                                                                 withString:[@(self.currentPage) stringValue]];
+    
+    path = [path stringByReplacingOccurrencesOfString:@"{perPage}"
+                                           withString:[@(self.perPage) stringValue]];
     
     NSURLRequest *request = [self.client requestWithMethod:@"GET"
                                                       path:path
@@ -192,7 +195,7 @@ static NSUInteger TSPaginatorDefaultPerPage = 100;
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"TSPaginator: pattern %@ URL %@", self.pattern, self.URL];
+    return [NSString stringWithFormat:@"TSPaginator: pattern %@ URL %@", self.pathPattern, self.URL];
 }
 
 - (void)cancel

@@ -53,7 +53,7 @@
 /**
  Dedicated initializer
 
- @param patternPath a URL template for SOCKit
+ @param patternPath a URL template
  @param client an instance of TSPhoenixClient
  
  */
