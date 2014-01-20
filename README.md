@@ -68,8 +68,6 @@ The reason is simple: don't re-invent the wheel. We are already using AFNetworki
 
 [afoauth2]:https://github.com/AFNetworking/AFOAuth2Client
 
-SOCKit: tool for building API path. Will be removed in the near future.
-
 ## Full documentation is coming soon. Here are some examples to get you started:
 
 ### Setting up
