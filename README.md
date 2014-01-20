@@ -10,12 +10,12 @@ Tigerspike Phoenix SDK (TSPhoenix) is an iOS SDK for [Tigerspike Phoenix Platfor
 
 ## Design goals
 
-- Plug and play
-- Allow developers to work with familiar Objective-C APIs, without having to worry about modeling / networking / caching
-- Extensibility and modularity
-- Leverage best OSS libraries. Don't reinvent the wheel
-- Significantly reduce the amount of glue code when working with Phoenix API
+- Plug and play, native Objective-C API
+- Significantly less glue code
 - Things that will be done over and over again should be automated
+- Modular design, louse coupling for robustness
+- Easy things easy, complicated things possible
+- Avoid reinventing the wheel
 
 ## Architecture
 
