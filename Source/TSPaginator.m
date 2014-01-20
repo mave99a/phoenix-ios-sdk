@@ -119,10 +119,10 @@ static NSUInteger TSPaginatorDefaultPerPage = 100;
     
     _currentPage = pageNumber;
 
-    NSString *path = [self.pathPattern stringByReplacingOccurrencesOfString:@"{currentPage}"
+    NSString *path = [self.pathPattern stringByReplacingOccurrencesOfString:@":currentPage"
                                                                  withString:[@(self.currentPage) stringValue]];
     
-    path = [path stringByReplacingOccurrencesOfString:@"{perPage}"
+    path = [path stringByReplacingOccurrencesOfString:@":perPage"
                                            withString:[@(self.perPage) stringValue]];
     
     NSURLRequest *request = [self.client requestWithMethod:@"GET"
