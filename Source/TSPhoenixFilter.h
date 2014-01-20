@@ -37,6 +37,12 @@ typedef NS_ENUM(NSUInteger, PhoenixFilterOperands) {
                        value: (NSString *)value
                         type: (PhoenixFilterOperands)type;
 
+
+// Shorthand
++ (NSString *)name: (NSString *)name
+             value: (NSString *)value
+              type: (PhoenixFilterOperands)type;
+
 // Formats date into a Phoenix compatible string
 + (NSString *)dateFilterWithName: (NSString *)name
                             date: (NSDate *)date

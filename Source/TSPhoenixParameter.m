@@ -18,6 +18,12 @@
     return string;
 }
 
++ (NSString *)name: (NSString *)name
+             value: (NSString *)value {
+    return [self parameterWithName:name
+                             value:value];
+}
+
 
 + (NSString *)sortDirectionAscendingParameter {
     return [self parameterWithName:@"sortdir"

@@ -14,6 +14,9 @@
 + (NSString *)parameterWithName: (NSString *)name
                           value: (NSString *)value;
 
++ (NSString *)name: (NSString *)name
+             value: (NSString *)value;
+
 // Flatten array into URL parameter string
 + (NSString *)parameterStringFromParameters: (NSArray *)parameters;
 

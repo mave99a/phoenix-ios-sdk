@@ -52,6 +52,13 @@
     return string;
 }
 
++ (NSString *)name: (NSString *)name
+             value: (NSString *)value
+              type: (PhoenixFilterOperands)type {
+    return [self filterWithName:name
+                          value:value
+                           type:type];
+}
 
 + (NSString *)dateFilterWithName: (NSString *)name
                             date: (NSDate *)date
