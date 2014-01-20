@@ -39,9 +39,7 @@ static NSInteger phoenix_projectID;
     NSAssert(phoenix_clientSecret != nil, @"BaseURL missing. did you call [TSPhoenixClient setUp...]?");
     NSAssert(phoenix_projectID > 0, @"projectID missing. did you call [TSPhoenixClient setUp...]?");
     
-    
     self = [super initWithBaseURL:phoenix_baseURL];
-    
     
     [self registerHTTPOperationClass:[AFJSONRequestOperation class]];
     [self setDefaultHeader:@"Accept" value:@"application/json"];
@@ -56,8 +54,6 @@ static NSInteger phoenix_projectID;
                                                  name:AFNetworkingOperationDidFinishNotification
                                                object:nil];
 
-    
-    
     
     NSFileManager *fm = [NSFileManager defaultManager];
 
@@ -94,7 +90,6 @@ static NSInteger phoenix_projectID;
     self.analytics = [[TSPhoenixAnalytics alloc] initWithPhoenixClient:self];
     
     self.paginators = [NSMutableSet new];
-    
     
     return self;
 }
@@ -206,8 +201,6 @@ static NSInteger phoenix_projectID;
             
             [self.operationQueue cancelAllOperations];
             
-            [self.operationQueue cancelAllOperations];
-            
             // 2. Refresh token
             [self.identity refreshTokenWithSuccess:^(AFOAuthCredential *credential) {
                 
@@ -223,7 +216,10 @@ static NSInteger phoenix_projectID;
                     [request setAllHTTPHeaderFields:headers];
                     
                     AFHTTPRequestOperation *newOp = [self HTTPRequestOperationWithRequest:request
-                                                                                             success:nil failure:nil];
+                                                                                  success:nil
+                                                                                  failure:nil];
+                    
+                    // Restore the success / failure blocks
                     newOp.completionBlock = op.completionBlock;
                     
                     [self enqueueHTTPRequestOperation:newOp];
@@ -263,8 +259,6 @@ static NSInteger phoenix_projectID;
     }];
 }
 
-
-
 - (void)saveObjectsToDatabase: (NSArray *)objects completion:(dispatch_block_t)completionBlock {
     [self.writeDatabaseConnection asyncReadWriteWithBlock:^(YapDatabaseReadWriteTransaction *transaction) {
         [objects enumerateObjectsUsingBlock:^(TSModelAbstract *obj, NSUInteger idx, BOOL *stop) {
@@ -285,10 +279,10 @@ static NSInteger phoenix_projectID;
     } completionBlock:completionBlock];
 }
 
-
 + (YapDatabase *)database {
     return [[self sharedInstance] database];
 }
+
 + (YapDatabaseConnection *)readOnlyDatabaseConnection {
     return [[self sharedInstance] readOnlyDatabaseConnection];
 }

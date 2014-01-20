@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TSModelAbstract : NSObject <NSCoding>
+@interface TSModelAbstract : NSObject <NSCoding, NSCopying>
 
 - (id)initWithDictionary: (NSDictionary *)dict;
 

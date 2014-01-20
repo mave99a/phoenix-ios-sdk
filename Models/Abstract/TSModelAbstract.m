@@ -56,6 +56,23 @@
 
 }
 
+- (id)copyWithZone:(NSZone *)zone
+{
+    id copy = [[[self class] allocWithZone:zone] init];
+    
+    [[[self class] mappingDictionary] enumerateKeysAndObjectsUsingBlock:^(id key, NSDictionary *info, BOOL *stop) {
+        NSString *mappedName = info[@"mappedName"];
+        
+        id value = [self valueForKey:mappedName];
+        if (value)
+            [copy setValue:value
+                    forKey:mappedName];
+        
+    }];
+    
+    return copy;
+}
+
 
 - (NSString *)dbKey {
     NSAssert(NO, @"TSModelAbstract is an abstract super class. Use one of its concrete subclasses");

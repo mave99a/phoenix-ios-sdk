@@ -1,6 +1,6 @@
 ## Overview
 
-Tigerspike Phoenix SDK (TSPhoenix) is an iOS SDK for [Tigerspike Phoenix Platform](http://developers.phoenixplatform.com/GettingStarted). By using the SDK instead of the HTTP APIs, you can save massive amount of development time, interface with objective-level APIs and focus your time and energy on the UI.
+Tigerspike Phoenix SDK (TSPhoenix) is an iOS SDK for [Tigerspike Phoenix Platform](http://developers.phoenixplatform.com/GettingStarted). It allows you to build iPhone / iPad apps on top of Phoenix Platform. By using the SDK instead of the HTTP APIs, you can save massive amount of development effort, interface with objective-level APIs and focus your time and energy on the UI.
 
 - Native Objective-C APIs
 - Native Objective-C models, with 100% coverage of Phoenix server side models
@@ -12,6 +12,7 @@ Tigerspike Phoenix SDK (TSPhoenix) is an iOS SDK for [Tigerspike Phoenix Platfor
 
 - Plug and play
 - Allow developers to work with familiar Objective-C APIs, without having to worry about modeling / networking / caching
+- Extensibility and modularity
 - Leverage best OSS libraries. Don't reinvent the wheel
 - Significantly reduce the amount of glue code when working with Phoenix API
 - Things that will be done over and over again should be automated
@@ -231,6 +232,6 @@ In the past few months, we put YapDatabase under stress, went though many versio
 
 ## Contributing
 
-We're following this [Git branching approach][git-branching-model]. If you'd like to send us a pull request, please follow the same model (I'm sure you already are!)
+We're following this [Git branching approach][git-branching-model]. If you'd like to send us a pull request, please follow the same model.
 
 [git-branching-model]: http://nvie.com/posts/a-successful-git-branching-model/

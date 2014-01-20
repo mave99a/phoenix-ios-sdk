@@ -2,7 +2,7 @@
 //  TSPhoenix
 //	TSCategory.h
 //
-//  Created by Steve on January 14th 2014.
+//  Created by Steve on January 20th 2014.
 //  Copyright (c) 2013 Tigerspike. All rights reserved.
 //
 
