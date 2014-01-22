@@ -7,7 +7,6 @@ add mapping information to the properties in JSON object tree
     Handlebars = require 'handlebars'
     moment = require 'moment'
     async = require 'async'
-    
 
 
 TODO: put this in config.json
@@ -196,21 +195,27 @@ Handlebar.js template helper: generate mapping dictionary, used for deserializin
     	# NSDictionary literal
     	
     	for property,i in this.properties
-    	
-    		if property.type isnt 'relation'
-    			ObjCPropertyName = property.ObjCPropertyName
-    			if ObjCPropertyName
-    				jsonPropertyName = property.name
+    	      
+    		ObjCPropertyName = property.ObjCPropertyName
+    		if ObjCPropertyName
     			
-    				propertyInfoString = '@{@"type": @"DotNetType", @"mappedType":@"ObjCType", @"mappedName": @"ObjCName"}'
-    				propertyInfoString = propertyInfoString.replace 'DotNetType', property.type
-    				propertyInfoString = propertyInfoString.replace 'ObjCType', property.ObjCPropertyType
-    				propertyInfoString = propertyInfoString.replace 'ObjCName', property.ObjCPropertyName 
+          jsonPropertyName = property.name
+          
+    			propertyInfoString = '@{@"type": @"DotNetType", @"mappedType":@"ObjCType", @"mappedName": @"ObjCName"}'
+          
+    			if property.type is 'relationship.array'
+            
+    			  propertyInfoString = '@{@"type": @"DotNetType", @"mappedType":@"ObjCType", @"mappedName": @"ObjCName", @"arrayContentType": @"ObjCArrayContentType"}'
+    			  propertyInfoString = (propertyInfoString.replace 'ObjCArrayContentType', property.ObjCArrayPropertyContentType)
+            
+    			propertyInfoString = propertyInfoString.replace 'DotNetType', property.type
+    			propertyInfoString = propertyInfoString.replace 'ObjCType', property.ObjCPropertyType
+    			propertyInfoString = propertyInfoString.replace 'ObjCName', property.ObjCPropertyName 
     
-    				str += '		@"' + jsonPropertyName+ '" : ' + propertyInfoString  # + '@"' + ObjCPropertyName + '\"'
-    				if i + 1 < this.properties.length
-    					str += ',\n'
-    			
+    			str += '		@"' + jsonPropertyName+ '" : ' + propertyInfoString  # + '@"' + ObjCPropertyName + '\"'
+    			if i + 1 < this.properties.length
+    				str += ',\n'
+    		
     			
     	str
     

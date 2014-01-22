@@ -2,7 +2,7 @@
 //  TSPhoenix
 //	TSChannel.m
 //
-//  Created by Steve on January 20th 2014.
+//  Created by Steve on January 22nd 2014.
 //  Copyright (c) 2013 Tigerspike. All rights reserved.
 //
 
@@ -46,28 +46,50 @@
             return;
         }
 		
-		// expanded properties
-		if ([dotNetType isEqualToString:@"relationship"]) {
-            if ([value isKindOfClass:[NSArray class]]) {
-#warning TODO: expanded array properties in script, mapping
-                
-            } else {
-                if (![value isKindOfClass:[NSDictionary class]])
-                    return;
-                
-                NSString *className = info[@"mappedType"];
-                if (!className)
-                    return;
-                Class MappedClass = NSClassFromString(className);
-                if (!MappedClass)
-                    return;
-                
-                id mappedObject = [[MappedClass alloc] initWithDictionary:value];
-                
-                [self setValue:mappedObject forKey:info[@"mappedName"]];
+        // expanded array properties
+        if ([dotNetType isEqualToString:@"relationship.array"]) {
+            if (![value isKindOfClass:[NSArray class]]) {
+                NSLog(@"Warning: mapping skips array expansion %@ because the value %@ is not an array", info[@"mappedName"], value);
+                return;
             }
+            
+            NSString *className = info[@"arrayContentType"];
+            if (!className)
+                return;
+            
+            Class DestinationClass = NSClassFromString(className);
+            if (!DestinationClass) {
+                NSLog(@"Warning: unsuccessful mapping because class %@ not found", className);
+                return;
+            }
+            
+            NSArray *mappedArray = [value mapObjectsUsingBlock:^id(id obj, NSUInteger idx) {
+                return [[DestinationClass alloc] initWithDictionary:obj];
+            }];
+            
+            [self setValue:mappedArray forKey:info[@"mappedName"]];
+
+            return;
+        }
+		
+        // expanded properties
+        if ([dotNetType isEqualToString:@"relationship"]) {
+            
+            if (![value isKindOfClass:[NSDictionary class]])
+                return;
+            
+            NSString *className = info[@"mappedType"];
+            if (!className)
+                return;
+            Class MappedClass = NSClassFromString(className);
+            if (!MappedClass)
+                return;
+            
+            id mappedObject = [[MappedClass alloc] initWithDictionary:value];
+            
+            [self setValue:mappedObject forKey:info[@"mappedName"]];
 			
-			return;
+		        return;
         }
 
 		

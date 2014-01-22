@@ -2,14 +2,14 @@
 //  TSPhoenix
 //	TSCompany.h
 //
-//  Created by Steve on January 20th 2014.
+//  Created by Steve on January 22nd 2014.
 //  Copyright (c) 2013 Tigerspike. All rights reserved.
 //
 
 #import "TSModelAbstract.h"
 
 @class TSProvider;
-@class TSDomains;
+
 
 
 
@@ -28,6 +28,7 @@
 @property (nonatomic, strong) NSDate *createDate;
 @property (nonatomic, strong) NSDate *modifyDate;
 @property (nonatomic, copy) NSString *metaData;
+@property (nonatomic, strong) NSArray *domains;
 
 
 
@@ -35,7 +36,6 @@
 // These will be nil, unless specific parameters "expand=propertyname" are set to expand these properties
 
 @property (nonatomic, strong) TSProvider *provider;
-@property (nonatomic, strong) TSDomains *domains;
 
 
 

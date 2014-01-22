@@ -4,15 +4,21 @@
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "accountID"
             },
             {
                 "name": "PhoenixIdentity_CompanyId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "phoenixIDentity_CompanyId"
             },
             {
                 "name": "AggregatorId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "aggregatorID"
             },
             {
                 "name": "MessageTypeId",
@@ -28,90 +34,131 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#messagetypeenummodal"
+                "href": "#messagetypeenummodal",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "messageTypeID"
             },
             {
                 "name": "Name",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "name"
             },
             {
                 "name": "SystemName",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "systemName"
             },
             {
                 "name": "Originator",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "originator"
             },
             {
                 "name": "Username",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "username"
             },
             {
                 "name": "Password",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "password"
             },
             {
                 "name": "Token",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "token"
             },
             {
                 "name": "ProviderUrl",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "providerUrl"
             },
             {
                 "name": "SupportsInbound",
-                "type": "System.Boolean"
+                "type": "System.Boolean",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "supportsInbound"
             },
             {
                 "name": "SupportsOutbound",
-                "type": "System.Boolean"
+                "type": "System.Boolean",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "supportsOutbound"
             },
             {
                 "name": "IsProductionGateway",
-                "type": "System.Boolean"
+                "type": "System.Boolean",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "isProductionGateway"
             },
             {
                 "name": "Certificate",
-                "type": "System.Byte"
+                "type": "System.Byte",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "certificate"
             },
             {
                 "name": "IsActive",
-                "type": "System.Boolean"
+                "type": "System.Boolean",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "isActive"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             },
             {
                 "name": "Aggregator",
                 "anchor": "/Api/Messaging#Aggregator",
                 "type": "relationship",
-                "href": "#Aggregator"
+                "href": "#Aggregator",
+                "ObjCPropertyType": "TSAggregator",
+                "ObjCPropertyName": "aggregator"
             }
-        ]
+        ],
+        "ObjCName": "TSAccount"
     },
     {
         "name": "Aggregator",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "aggregatorID"
             },
             {
                 "name": "Name",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "name"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             },
             {
                 "name": "MessageTypeId",
@@ -127,100 +174,143 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#messagetypeenummodal"
+                "href": "#messagetypeenummodal",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "messageTypeID"
             }
-        ]
+        ],
+        "ObjCName": "TSAggregator"
     },
     {
         "name": "Broadcast",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "broadcastID"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "projectID"
             },
             {
                 "name": "PhoenixIdentity_GroupId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "phoenixIDentity_GroupId"
             },
             {
                 "name": "ExcludeRecipientAddress",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "excludeRecipientAddress"
             },
             {
                 "name": "TemplateGroupId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "templateGroupID"
             },
             {
                 "name": "AccountId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "accountID"
             },
             {
                 "name": "Subject",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "subject"
             },
             {
                 "name": "Payload",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "payload"
             },
             {
                 "name": "SenderAddress",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "senderAddress"
             },
             {
                 "name": "DeliverAfterDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "deliverAfterDate"
             },
             {
                 "name": "IsProcessing",
-                "type": "System.Boolean"
+                "type": "System.Boolean",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "isProcessing"
             },
             {
                 "name": "SentDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "sentDate"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             },
             {
                 "name": "Account",
                 "anchor": "/Api/Messaging#Account",
                 "type": "relationship",
-                "href": "#Account"
+                "href": "#Account",
+                "ObjCPropertyType": "TSAccount",
+                "ObjCPropertyName": "account"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Messaging#Project",
                 "type": "relationship",
-                "href": "#Project"
+                "href": "#Project",
+                "ObjCPropertyType": "TSProject",
+                "ObjCPropertyName": "project"
             },
             {
-                "name": "Substitutes"
+                "name": "Substitutes",
+                "ObjCPropertyName": "substitutes"
             }
-        ]
+        ],
+        "ObjCName": "TSBroadcast"
     },
     {
         "name": "Message",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "messageID"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "projectID"
             },
             {
                 "name": "AccountId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "accountID"
             },
             {
                 "name": "MessageTypeId",
@@ -236,7 +326,9 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#messagetypeenummodal"
+                "href": "#messagetypeenummodal",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "messageTypeID"
             },
             {
                 "name": "DirectionTypeId",
@@ -249,11 +341,15 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#directiontypeenummodal"
+                "href": "#directiontypeenummodal",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "directionTypeID"
             },
             {
                 "name": "SenderAddress",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "senderAddress"
             },
             {
                 "name": "StatusTypeId",
@@ -267,179 +363,254 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#statustypeenummodal"
+                "href": "#statustypeenummodal",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "statusTypeID"
             },
             {
                 "name": "StatusDesc",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "statusDesc"
             },
             {
                 "name": "ProcessDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "processDate"
             },
             {
                 "name": "Location",
-                "type": "System.Data.Spatial.DbGeography"
+                "type": "System.Data.Spatial.DbGeography",
+                "ObjCPropertyName": "location"
             },
             {
                 "name": "Payload",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "payload"
             },
             {
                 "name": "RecipientCount",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "recipientCount"
             },
             {
                 "name": "ExpectedRecipientCount",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "expectedRecipientCount"
             },
             {
                 "name": "Subject",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "subject"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             },
             {
                 "name": "Account",
                 "anchor": "/Api/Messaging#Account",
                 "type": "relationship",
-                "href": "#Account"
+                "href": "#Account",
+                "ObjCPropertyType": "TSAccount",
+                "ObjCPropertyName": "account"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Messaging#Project",
                 "type": "relationship",
-                "href": "#Project"
+                "href": "#Project",
+                "ObjCPropertyType": "TSProject",
+                "ObjCPropertyName": "project"
             },
             {
                 "name": "Recipients",
                 "anchor": "/Api/Messaging#Recipient",
                 "type": "relationship.array",
-                "href": "#Recipient"
+                "href": "#Recipient",
+                "ObjCPropertyType": "NSArray",
+                "ObjCPropertyName": "recipients",
+                "ObjCArrayPropertyContentType": "TSRecipient"
             }
-        ]
+        ],
+        "ObjCName": "TSMessage"
     },
     {
         "name": "MessageFile",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "messageFileID"
             },
             {
                 "name": "MessageId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "messageID"
             },
             {
                 "name": "Location",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "location"
             },
             {
                 "name": "FileExtension",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "fileExtension"
             },
             {
                 "name": "MimeType",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "mimeType"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             },
             {
                 "name": "Message",
                 "anchor": "/Api/Messaging#Message",
                 "type": "relationship",
-                "href": "#Message"
+                "href": "#Message",
+                "ObjCPropertyType": "TSMessage",
+                "ObjCPropertyName": "message"
             }
-        ]
+        ],
+        "ObjCName": "TSMessageFile"
     },
     {
         "name": "Project",
         "properties": [
             {
                 "name": "PhoenixIdentity_ProjectId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "phoenixIDentity_ProjectId"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             }
-        ]
+        ],
+        "ObjCName": "TSProject"
     },
     {
         "name": "ProjectAccountMap",
         "properties": [
             {
                 "name": "ProjectId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "projectID"
             },
             {
                 "name": "AccountId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "accountID"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             },
             {
                 "name": "Account",
                 "anchor": "/Api/Messaging#Account",
                 "type": "relationship",
-                "href": "#Account"
+                "href": "#Account",
+                "ObjCPropertyType": "TSAccount",
+                "ObjCPropertyName": "account"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Messaging#Project",
                 "type": "relationship",
-                "href": "#Project"
+                "href": "#Project",
+                "ObjCPropertyType": "TSProject",
+                "ObjCPropertyName": "project"
             }
-        ]
+        ],
+        "ObjCName": "TSProjectAccountMap"
     },
     {
         "name": "Recipient",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "recipientID"
             },
             {
                 "name": "MessageId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "messageID"
             },
             {
                 "name": "RecipientAddress",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "recipientAddress"
             },
             {
                 "name": "SendDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "sendDate"
             },
             {
                 "name": "ReceiveDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "receiveDate"
             },
             {
                 "name": "Location",
-                "type": "System.Data.Spatial.DbGeography"
+                "type": "System.Data.Spatial.DbGeography",
+                "ObjCPropertyName": "location"
             },
             {
                 "name": "StatusTypeId",
@@ -453,126 +624,181 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#statustypeenummodal"
+                "href": "#statustypeenummodal",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "statusTypeID"
             },
             {
                 "name": "StatusDesc",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "statusDesc"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             },
             {
                 "name": "PhoenixIdentity_UserId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "phoenixIDentity_UserId"
             }
-        ]
+        ],
+        "ObjCName": "TSRecipient"
     },
     {
         "name": "Template",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "templateID"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "projectID"
             },
             {
                 "name": "AccountId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "accountID"
             },
             {
                 "name": "Subject",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "subject"
             },
             {
                 "name": "Payload",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "payload"
             },
             {
                 "name": "SenderAddress",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "senderAddress"
             },
             {
                 "name": "Reference",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "reference"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             },
             {
                 "name": "TemplateGroupId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "templateGroupID"
             },
             {
                 "name": "PayloadUrl",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "payloadUrl"
             },
             {
                 "name": "Account",
                 "anchor": "/Api/Messaging#Account",
                 "type": "relationship",
-                "href": "#Account"
+                "href": "#Account",
+                "ObjCPropertyType": "TSAccount",
+                "ObjCPropertyName": "account"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Messaging#Project",
                 "type": "relationship",
-                "href": "#Project"
+                "href": "#Project",
+                "ObjCPropertyType": "TSProject",
+                "ObjCPropertyName": "project"
             },
             {
                 "name": "TemplateGroup",
                 "anchor": "/Api/Messaging#TemplateGroup",
                 "type": "relationship",
-                "href": "#TemplateGroup"
+                "href": "#TemplateGroup",
+                "ObjCPropertyType": "TSTemplateGroup",
+                "ObjCPropertyName": "templateGroup"
             }
-        ]
+        ],
+        "ObjCName": "TSTemplate"
     },
     {
         "name": "TemplateGroup",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "templateGroupID"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "projectID"
             },
             {
                 "name": "Name",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "name"
             },
             {
                 "name": "Reference",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "reference"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Messaging#Project",
                 "type": "relationship",
-                "href": "#Project"
+                "href": "#Project",
+                "ObjCPropertyType": "TSProject",
+                "ObjCPropertyName": "project"
             }
-        ]
+        ],
+        "ObjCName": "TSTemplateGroup"
     }
 ]

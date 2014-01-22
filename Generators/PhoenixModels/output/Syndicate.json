@@ -4,145 +4,208 @@
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "articleID"
             },
             {
                 "name": "Title",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "title"
             },
             {
                 "name": "Description",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "articleDescription"
             },
             {
                 "name": "Author",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "author"
             },
             {
                 "name": "ImageUrl",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "imageUrl"
             },
             {
                 "name": "ContentData",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "contentData"
             },
             {
                 "name": "Link",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "link"
             },
             {
                 "name": "PublishDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "publishDate"
             },
             {
                 "name": "Metadata",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "metadata"
             },
             {
                 "name": "Reference",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "reference"
             },
             {
                 "name": "IsActive",
-                "type": "System.Boolean"
+                "type": "System.Boolean",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "isActive"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "projectID"
             },
             {
                 "name": "Assets",
                 "anchor": "/Api/Syndicate#Asset",
                 "type": "relationship.array",
-                "href": "#Asset"
+                "href": "#Asset",
+                "ObjCPropertyType": "NSArray",
+                "ObjCPropertyName": "assets",
+                "ObjCArrayPropertyContentType": "TSAsset"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Syndicate#Project",
                 "type": "relationship",
-                "href": "#Project"
+                "href": "#Project",
+                "ObjCPropertyType": "TSProject",
+                "ObjCPropertyName": "project"
             }
-        ]
+        ],
+        "ObjCName": "TSArticle"
     },
     {
         "name": "ArticleCollectionMap",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "articleCollectionMapID"
             },
             {
                 "name": "EditionId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "editionID"
             },
             {
                 "name": "SectionId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "sectionID"
             },
             {
                 "name": "ArticleId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "articleID"
             },
             {
                 "name": "Rank",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "rank"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             },
             {
                 "name": "CollectionId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "collectionID"
             },
             {
                 "name": "Article",
                 "anchor": "/Api/Syndicate#Article",
                 "type": "relationship",
-                "href": "#Article"
+                "href": "#Article",
+                "ObjCPropertyType": "TSArticle",
+                "ObjCPropertyName": "article"
             },
             {
                 "name": "Collection",
                 "anchor": "/Api/Syndicate#Collection",
                 "type": "relationship",
-                "href": "#Collection"
+                "href": "#Collection",
+                "ObjCPropertyType": "TSCollection",
+                "ObjCPropertyName": "collection"
             },
             {
                 "name": "Edition",
                 "anchor": "/Api/Syndicate#Edition",
                 "type": "relationship",
-                "href": "#Edition"
+                "href": "#Edition",
+                "ObjCPropertyType": "TSEdition",
+                "ObjCPropertyName": "edition"
             },
             {
                 "name": "Section",
                 "anchor": "/Api/Syndicate#Section",
                 "type": "relationship",
-                "href": "#Section"
+                "href": "#Section",
+                "ObjCPropertyType": "TSSection",
+                "ObjCPropertyName": "section"
             }
-        ]
+        ],
+        "ObjCName": "TSArticleCollectionMap"
     },
     {
         "name": "ArticleInteraction",
         "properties": [
             {
                 "name": "ArticleId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "articleID"
             },
             {
                 "name": "PhoenixIdentity_UserId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "phoenixIDentity_UserId"
             },
             {
                 "name": "InteractionTypeId",
@@ -157,30 +220,42 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#interactiontypeenummodal"
+                "href": "#interactiontypeenummodal",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "interactionTypeID"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             },
             {
                 "name": "Article",
                 "anchor": "/Api/Syndicate#Article",
                 "type": "relationship",
-                "href": "#Article"
+                "href": "#Article",
+                "ObjCPropertyType": "TSArticle",
+                "ObjCPropertyName": "article"
             }
-        ]
+        ],
+        "ObjCName": "TSArticleInteraction",
+        "dbKey": "return [NSString stringWithFormat:@\"Phoenix/Article/%@/ArticleInteraction/%@\", self.articleID, self.interactionTypeID];"
     },
     {
         "name": "Asset",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "assetID"
             },
             {
                 "name": "AssetTypeId",
@@ -195,123 +270,179 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#assettypeenummodal"
+                "href": "#assettypeenummodal",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "assetTypeID"
             },
             {
                 "name": "ArticleId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "articleID"
             },
             {
                 "name": "Name",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "name"
             },
             {
                 "name": "Caption",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "caption"
             },
             {
                 "name": "Author",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "author"
             },
             {
                 "name": "Copyright",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "copyright"
             },
             {
                 "name": "Url",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "url"
             },
             {
                 "name": "ThumbnailUrl",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "thumbnailUrl"
             },
             {
                 "name": "Rank",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "rank"
             },
             {
                 "name": "PublishDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "publishDate"
             },
             {
                 "name": "Duration",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "duration"
             },
             {
                 "name": "FileSize",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "fileSize"
             },
             {
                 "name": "Reference",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "reference"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             }
-        ]
+        ],
+        "ObjCName": "TSAsset"
     },
     {
         "name": "Collection",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "collectionID"
             },
             {
                 "name": "Name",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "name"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "projectID"
             },
             {
                 "name": "HasEdition",
-                "type": "System.Boolean"
+                "type": "System.Boolean",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "hasEdition"
             },
             {
                 "name": "HasSection",
-                "type": "System.Boolean"
+                "type": "System.Boolean",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "hasSection"
             },
             {
                 "name": "HasRank",
-                "type": "System.Boolean"
+                "type": "System.Boolean",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "hasRank"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             },
             {
                 "name": "Reference",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "reference"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Syndicate#Project",
                 "type": "relationship",
-                "href": "#Project"
+                "href": "#Project",
+                "ObjCPropertyType": "TSProject",
+                "ObjCPropertyName": "project"
             }
-        ]
+        ],
+        "ObjCName": "TSCollection"
     },
     {
         "name": "Edition",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "editionID"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "projectID"
             },
             {
                 "name": "StatusTypeId",
@@ -326,70 +457,101 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#statustypeenummodal"
+                "href": "#statustypeenummodal",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "statusTypeID"
             },
             {
                 "name": "Title",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "title"
             },
             {
                 "name": "Description",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "editionDescription"
             },
             {
                 "name": "CoverImageUrl",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "coverImageUrl"
             },
             {
                 "name": "MajorVersion",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "majorVersion"
             },
             {
                 "name": "MinorVersion",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "minorVersion"
             },
             {
                 "name": "PointVersion",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "pointVersion"
             },
             {
                 "name": "LiveDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "liveDate"
             },
             {
                 "name": "Reference",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "reference"
             },
             {
                 "name": "IsActive",
-                "type": "System.Boolean"
+                "type": "System.Boolean",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "isActive"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Syndicate#Project",
                 "type": "relationship",
-                "href": "#Project"
+                "href": "#Project",
+                "ObjCPropertyType": "TSProject",
+                "ObjCPropertyName": "project"
             }
-        ]
+        ],
+        "ObjCName": "TSEdition"
     },
     {
         "name": "Feed",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "feedID"
             },
             {
                 "name": "SectionId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "sectionID"
             },
             {
                 "name": "FeedTypeId",
@@ -403,54 +565,77 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#feedtypeenummodal"
+                "href": "#feedtypeenummodal",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "feedTypeID"
             },
             {
                 "name": "IsActive",
-                "type": "System.Boolean"
+                "type": "System.Boolean",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "isActive"
             },
             {
                 "name": "Title",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "title"
             },
             {
                 "name": "Url",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "url"
             },
             {
                 "name": "NextUpdate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "nextUpdate"
             },
             {
                 "name": "TTL",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "tTL"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             },
             {
                 "name": "Section",
                 "anchor": "/Api/Syndicate#Section",
                 "type": "relationship",
-                "href": "#Section"
+                "href": "#Section",
+                "ObjCPropertyType": "TSSection",
+                "ObjCPropertyName": "section"
             }
-        ]
+        ],
+        "ObjCName": "TSFeed"
     },
     {
         "name": "FeedLog",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "feedLogID"
             },
             {
                 "name": "FeedId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "feedID"
             },
             {
                 "name": "StatusTypeId",
@@ -465,130 +650,189 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#statustypeenummodal"
+                "href": "#statustypeenummodal",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "statusTypeID"
             },
             {
                 "name": "Description",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "feedLogDescription"
             },
             {
                 "name": "StackTrace",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "stackTrace"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             },
             {
                 "name": "Feed",
                 "anchor": "/Api/Syndicate#Feed",
                 "type": "relationship",
-                "href": "#Feed"
+                "href": "#Feed",
+                "ObjCPropertyType": "TSFeed",
+                "ObjCPropertyName": "feed"
             }
-        ]
+        ],
+        "ObjCName": "TSFeedLog"
     },
     {
         "name": "Project",
         "properties": [
             {
                 "name": "PhoenixIdentity_ProjectId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "phoenixIDentity_ProjectId"
             },
             {
                 "name": "HasEditions",
-                "type": "System.Boolean"
+                "type": "System.Boolean",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "hasEditions"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             }
-        ]
+        ],
+        "ObjCName": "TSProject"
     },
     {
         "name": "Section",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "sectionID"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "projectID"
             },
             {
                 "name": "ParentSectionId",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "parentSectionID"
             },
             {
                 "name": "PhoenixIdentity_GroupId_Owner",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "phoenixIDentity_GroupId_Owner"
             },
             {
                 "name": "PhoenixIdentity_GroupId_Subscriber",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "phoenixIDentity_GroupId_Subscriber"
             },
             {
                 "name": "Title",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "title"
             },
             {
                 "name": "Description",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "sectionDescription"
             },
             {
                 "name": "IsActive",
-                "type": "System.Boolean"
+                "type": "System.Boolean",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "isActive"
             },
             {
                 "name": "Rank",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "rank"
             },
             {
                 "name": "ImageUrl",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "imageUrl"
             },
             {
                 "name": "Reference",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "reference"
             },
             {
                 "name": "MajorVersion",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "majorVersion"
             },
             {
                 "name": "MinorVersion",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "minorVersion"
             },
             {
                 "name": "PointVersion",
-                "type": "System.Int32"
+                "type": "System.Int32",
+                "ObjCPropertyType": "NSNumber",
+                "ObjCPropertyName": "pointVersion"
             },
             {
                 "name": "Metadata",
-                "type": "System.String"
+                "type": "System.String",
+                "ObjCPropertyType": "NSString",
+                "ObjCPropertyName": "metadata"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "createDate"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime"
+                "type": "System.DateTime",
+                "ObjCPropertyType": "NSDate",
+                "ObjCPropertyName": "modifyDate"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Syndicate#Project",
                 "type": "relationship",
-                "href": "#Project"
+                "href": "#Project",
+                "ObjCPropertyType": "TSProject",
+                "ObjCPropertyName": "project"
             }
-        ]
+        ],
+        "ObjCName": "TSSection"
     }
 ]

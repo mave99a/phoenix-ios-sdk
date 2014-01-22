@@ -2,14 +2,14 @@
 //  TSPhoenix
 //	TSUser.h
 //
-//  Created by Steve on January 20th 2014.
+//  Created by Steve on January 22nd 2014.
 //  Copyright (c) 2013 Tigerspike. All rights reserved.
 //
 
 #import "TSModelAbstract.h"
 
 @class TSCompany;
-@class TSIdentifiers;
+
 
 #ifndef UserTypeIdEnum
 #define UserTypeIdEnum
@@ -48,6 +48,7 @@ typedef NS_ENUM(NSUInteger, UserTypeId) {
 @property (nonatomic, strong) NSDate *createDate;
 @property (nonatomic, strong) NSDate *modifyDate;
 @property (nonatomic, copy) NSString *metaData;
+@property (nonatomic, strong) NSArray *identifiers;
 
 
 
@@ -55,7 +56,6 @@ typedef NS_ENUM(NSUInteger, UserTypeId) {
 // These will be nil, unless specific parameters "expand=propertyname" are set to expand these properties
 
 @property (nonatomic, strong) TSCompany *company;
-@property (nonatomic, strong) TSIdentifiers *identifiers;
 
 
 

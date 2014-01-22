@@ -112,10 +112,16 @@ if it's a normal type (string, dates, etc.)
         if (typeof type is "string") and (typeMapping.get(type) isnt null)
           property.ObjCPropertyType = typeMapping.get(type)['value']
 
-        
+expandable array
+      
+        if type is 'relationship.array'
+          ObjCPropertyType = (firstToLowerCase name)
+          property.ObjCPropertyType = 'NSArray'
+          property.ObjCArrayPropertyContentType = (property.href.replace /#/,'TS')
+          
 expandable properties
 
-        if type is 'relationship'
+        else if type is 'relationship'
           ObjCPropertyType = 'TS' + name
           property.ObjCPropertyType  = ObjCPropertyType
         
