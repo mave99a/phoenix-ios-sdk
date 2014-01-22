@@ -1,23 +1,10 @@
-## This document is written in [Literate Coffeescript](http://coffeescript.org/#literate)  
-
-### Why use Literate Coffeescript, not Objective-C, JS, .Net, language X
-
-Coffee script **is** javascript -- it compiles one-to-one into the equivalent JS.
-
-Using Javascript to write generators allow both frontend and backend developers to work on this.
-
-Javascript is natural for working with API documentations (HTML DOMs), JSON and text.
-
-Javascript runs on all platforms. No Windows vs. Mac vs. Linux arguments here.
-
-Bonus: literate coffeescript puts Markdown documentation above code. Hence, the code is self explanatory, even to non-developers.
 
 
     request = require 'request'
     cheerio = require 'cheerio'
     fs = require 'fs'
     url = require 'url'
-    
+    async = require 'async'
 
 env.json defines a set of URLs containing Phoenix API documentations.
 
@@ -30,31 +17,27 @@ using different config.json allows us to switch between environments (live, uat,
     
 
 print out all URLs that this script is working with
-    
-    console.log urls
+
+    for aUrl in urls
+      console.log aUrl
 
 this function takes a response which is an API webpage, and extracts content from it.
     
     func = (error, response, body) ->
-      
       if error
         consoloe.log error
         return
-      
-
+  
 DOM magic      
 
       # each section correspond to a class
       $ = cheerio.load(body)
-      sections = $ 'section'
-      
-      
+      sections = $ 'section'    
 
 Each DOM section corresponds to a type, such as "Project", "User" or "Article"
 
 The resulting JSON model is saved in "allModels" array
 
-      
       allModels = []
       
       for aSection in sections
@@ -99,14 +82,26 @@ Otherwise, it is either an enum or relationship
               anchor = $(aRow.children[1]).find('a')[0]
               if (anchor)
                 href = $(anchor).attr('href')
-                if href.match("enum") is null
+
+Is this an array expansion?
+
+                anchorText = $(anchor).text()
+                if anchorText.match(/\[/) isnt null
+                  newProperty.anchor = response.request.uri.path + href
+                  newProperty.type = "relationship.array"
+
+Or a property expansion
+
+                else if href.match("enum") is null
                   # this is a link
                   newProperty.anchor = response.request.uri.path + href
                   newProperty.type = "relationship"
-                else
+
+                
 
 this is a enum
 
+                else
                   enumList = {name:$(anchor).text(), type:"enum"}
                   enumList.values = []
                   
@@ -141,8 +136,7 @@ TODO: extract enum value as well
     
 
 Serialize and save to disk
-    
-        
+            
       serializedText = JSON.stringify allModels,undefined,4
         
       urlparts = url.parse(response.request.uri.path, true)
@@ -150,7 +144,9 @@ Serialize and save to disk
       filename = filename + '.json'
       console.log('writing to ' + filename)
       fs.writeFileSync("output/" + filename, serializedText)
-        
+
+Unleash the workers     
+
+    async.forEach urls, ((apiUrl) -> (request apiUrl,func))
+
     
-    for apiUrl in urls
-      request apiUrl,func

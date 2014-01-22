@@ -4,51 +4,36 @@
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "actionID"
+                "type": "System.Int32"
             },
             {
                 "name": "Name",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "name"
+                "type": "System.String"
             },
             {
                 "name": "Description",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "actionDescription"
+                "type": "System.String"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             }
-        ],
-        "ObjCName": "TSAction"
+        ]
     },
     {
         "name": "Application",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "applicationID"
+                "type": "System.Int32"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "projectID"
+                "type": "System.Int32"
             },
             {
                 "name": "ApplicationTypeId",
@@ -63,303 +48,211 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#applicationtypeenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "applicationTypeID"
+                "href": "#applicationtypeenummodal"
             },
             {
                 "name": "Name",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "name"
+                "type": "System.String"
             },
             {
                 "name": "Description",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "applicationDescription"
+                "type": "System.String"
             },
             {
                 "name": "MetaData",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "metaData"
+                "type": "System.String"
             },
             {
                 "name": "ImageUrl",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "imageUrl"
+                "type": "System.String"
             },
             {
                 "name": "UserId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "userID"
+                "type": "System.Int32"
             },
             {
                 "name": "LatestVersion",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "latestVersion"
+                "type": "System.String"
             },
             {
                 "name": "ForceUpgrade",
-                "type": "System.Boolean",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "forceUpgrade"
+                "type": "System.Boolean"
             },
             {
                 "name": "InstallationUrl",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "installationUrl"
+                "type": "System.String"
             },
             {
                 "name": "InstallationCount",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "installationCount"
+                "type": "System.Int32"
             },
             {
                 "name": "Reference",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "reference"
+                "type": "System.String"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Identity#Project",
                 "type": "relationship",
-                "href": "#Project",
-                "ObjCPropertyType": "TSProject",
-                "ObjCPropertyName": "project"
+                "href": "#Project"
             },
             {
                 "name": "User",
                 "anchor": "/Api/Identity#User",
                 "type": "relationship",
-                "href": "#User",
-                "ObjCPropertyType": "TSUser",
-                "ObjCPropertyName": "user"
+                "href": "#User"
             }
-        ],
-        "ObjCName": "TSApplication"
+        ]
     },
     {
         "name": "Company",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "companyID"
+                "type": "System.Int32"
             },
             {
                 "name": "ProviderId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "providerID"
+                "type": "System.Int32"
             },
             {
                 "name": "Name",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "name"
+                "type": "System.String"
             },
             {
                 "name": "Reference",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "reference"
+                "type": "System.String"
             },
             {
                 "name": "IsActive",
-                "type": "System.Boolean",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "isActive"
+                "type": "System.Boolean"
             },
             {
                 "name": "LogoUrl",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "logoUrl"
+                "type": "System.String"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "MetaData",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "metaData"
+                "type": "System.String"
             },
             {
                 "name": "Provider",
                 "anchor": "/Api/Identity#Provider",
                 "type": "relationship",
-                "href": "#Provider",
-                "ObjCPropertyType": "TSProvider",
-                "ObjCPropertyName": "provider"
+                "href": "#Provider"
             },
             {
                 "name": "Domains",
                 "anchor": "/Api/Identity#Domain",
-                "type": "relationship",
-                "href": "#Domain",
-                "ObjCPropertyType": "TSDomains",
-                "ObjCPropertyName": "domains"
+                "type": "relationship.array",
+                "href": "#Domain"
             }
-        ],
-        "ObjCName": "TSCompany"
+        ]
     },
     {
         "name": "Domain",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "domainID"
+                "type": "System.Int32"
             },
             {
                 "name": "ProviderId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "providerID"
+                "type": "System.Int32"
             },
             {
                 "name": "CompanyId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "companyID"
+                "type": "System.Int32"
             },
             {
                 "name": "Name",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "name"
+                "type": "System.String"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "Provider",
                 "anchor": "/Api/Identity#Provider",
                 "type": "relationship",
-                "href": "#Provider",
-                "ObjCPropertyType": "TSProvider",
-                "ObjCPropertyName": "provider"
+                "href": "#Provider"
             }
-        ],
-        "ObjCName": "TSDomain"
+        ]
     },
     {
         "name": "Group",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "groupID"
+                "type": "System.Int32"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "projectID"
+                "type": "System.Int32"
             },
             {
                 "name": "Title",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "title"
+                "type": "System.String"
             },
             {
                 "name": "Reference",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "reference"
+                "type": "System.String"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "MemberCount",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "memberCount"
+                "type": "System.Int32"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Identity#Project",
                 "type": "relationship",
-                "href": "#Project",
-                "ObjCPropertyType": "TSProject",
-                "ObjCPropertyName": "project"
+                "href": "#Project"
             }
-        ],
-        "ObjCName": "TSGroup"
+        ]
     },
     {
         "name": "Identifier",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "identifierID"
+                "type": "System.Int32"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "projectID"
+                "type": "System.Int32"
             },
             {
                 "name": "UserId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "userID"
+                "type": "System.Int32"
             },
             {
                 "name": "IdentifierTypeId",
@@ -375,75 +268,53 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#identifiertypeenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "identifierTypeID"
+                "href": "#identifiertypeenummodal"
             },
             {
                 "name": "IsConfirmed",
-                "type": "System.Boolean",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "isConfirmed"
+                "type": "System.Boolean"
             },
             {
                 "name": "Value",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "value"
+                "type": "System.String"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Identity#Project",
                 "type": "relationship",
-                "href": "#Project",
-                "ObjCPropertyType": "TSProject",
-                "ObjCPropertyName": "project"
+                "href": "#Project"
             }
-        ],
-        "ObjCName": "TSIdentifier"
+        ]
     },
     {
         "name": "Installation",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "installationID"
+                "type": "System.Int32"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "projectID"
+                "type": "System.Int32"
             },
             {
-                "name": "InstallationId",
-                "ObjCPropertyName": "appInstallationID"
+                "name": "InstallationId"
             },
             {
                 "name": "ApplicationId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "applicationID"
+                "type": "System.Int32"
             },
             {
                 "name": "InstalledVersion",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "installedVersion"
+                "type": "System.String"
             },
             {
                 "name": "DeviceTypeId",
@@ -459,158 +330,112 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#devicetypeenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "deviceTypeID"
+                "href": "#devicetypeenummodal"
             },
             {
                 "name": "UserId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "userID"
+                "type": "System.Int32"
             },
             {
                 "name": "IdentifierId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "identifierID"
+                "type": "System.Int32"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "OperatingSystemVersion",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "operatingSystemVersion"
+                "type": "System.String"
             },
             {
                 "name": "ModelReference",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "modelReference"
+                "type": "System.String"
             },
             {
                 "name": "Identifier",
                 "anchor": "/Api/Identity#Identifier",
                 "type": "relationship",
-                "href": "#Identifier",
-                "ObjCPropertyType": "TSIdentifier",
-                "ObjCPropertyName": "identifier"
+                "href": "#Identifier"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Identity#Project",
                 "type": "relationship",
-                "href": "#Project",
-                "ObjCPropertyType": "TSProject",
-                "ObjCPropertyName": "project"
+                "href": "#Project"
             },
             {
                 "name": "User",
                 "anchor": "/Api/Identity#User",
                 "type": "relationship",
-                "href": "#User",
-                "ObjCPropertyType": "TSUser",
-                "ObjCPropertyName": "user"
+                "href": "#User"
             },
             {
                 "name": "Application",
                 "anchor": "/Api/Identity#Application",
                 "type": "relationship",
-                "href": "#Application",
-                "ObjCPropertyType": "TSApplication",
-                "ObjCPropertyName": "application"
+                "href": "#Application"
             }
-        ],
-        "ObjCName": "TSInstallation"
+        ]
     },
     {
         "name": "Membership",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "membershipID"
+                "type": "System.Int32"
             },
             {
                 "name": "GroupId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "groupID"
+                "type": "System.Int32"
             },
             {
                 "name": "UserId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "userID"
+                "type": "System.Int32"
             },
             {
                 "name": "IdentifierId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "identifierID"
+                "type": "System.Int32"
             },
             {
                 "name": "JoinDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "joinDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ExpiryDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "expiryDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "Group",
                 "anchor": "/Api/Identity#Group",
                 "type": "relationship",
-                "href": "#Group",
-                "ObjCPropertyType": "TSGroup",
-                "ObjCPropertyName": "group"
+                "href": "#Group"
             },
             {
                 "name": "User",
                 "anchor": "/Api/Identity#User",
                 "type": "relationship",
-                "href": "#User",
-                "ObjCPropertyType": "TSUser",
-                "ObjCPropertyName": "user"
+                "href": "#User"
             },
             {
                 "name": "Identifier",
                 "anchor": "/Api/Identity#Identifier",
                 "type": "relationship",
-                "href": "#Identifier",
-                "ObjCPropertyType": "TSIdentifier",
-                "ObjCPropertyName": "identifier"
+                "href": "#Identifier"
             }
-        ],
-        "ObjCName": "TSMembership"
+        ]
     },
     {
         "name": "Module",
@@ -633,179 +458,124 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#moduleenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "moduleID"
+                "href": "#moduleenummodal"
             },
             {
                 "name": "Name",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "name"
+                "type": "System.String"
             },
             {
                 "name": "Reference",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "reference"
+                "type": "System.String"
             },
             {
                 "name": "IsVisibleInPhoenix",
-                "type": "System.Boolean",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "isVisibleInPhoenix"
+                "type": "System.Boolean"
             },
             {
                 "name": "Rank",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "rank"
+                "type": "System.Int32"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             }
-        ],
-        "ObjCName": "TSModule"
+        ]
     },
     {
         "name": "Project",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "projectID"
+                "type": "System.Int32"
             },
             {
                 "name": "CompanyId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "companyID"
+                "type": "System.Int32"
             },
             {
                 "name": "Name",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "name"
+                "type": "System.String"
             },
             {
                 "name": "Reference",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "reference"
+                "type": "System.String"
             },
             {
                 "name": "StartDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "startDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "EndDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "endDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "IsActive",
-                "type": "System.Boolean",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "isActive"
+                "type": "System.Boolean"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "MetaData",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "metaData"
+                "type": "System.String"
             },
             {
                 "name": "Company",
                 "anchor": "/Api/Identity#Company",
                 "type": "relationship",
-                "href": "#Company",
-                "ObjCPropertyType": "TSCompany",
-                "ObjCPropertyName": "company"
+                "href": "#Company"
             }
-        ],
-        "ObjCName": "TSProject"
+        ]
     },
     {
         "name": "Provider",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "providerID"
+                "type": "System.Int32"
             },
             {
                 "name": "Name",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "name"
+                "type": "System.String"
             },
             {
                 "name": "LogoUrl",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "logoUrl"
+                "type": "System.String"
             },
             {
                 "name": "IsActive",
-                "type": "System.Boolean",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "isActive"
+                "type": "System.Boolean"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "MetaData",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "metaData"
+                "type": "System.String"
             }
-        ],
-        "ObjCName": "TSProvider"
+        ]
     },
     {
         "name": "Resource",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "resourceID"
+                "type": "System.Int32"
             },
             {
                 "name": "ModuleId",
@@ -825,167 +595,118 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#moduleenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "moduleID"
+                "href": "#moduleenummodal"
             },
             {
                 "name": "Name",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "name"
+                "type": "System.String"
             },
             {
                 "name": "Reference",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "reference"
+                "type": "System.String"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             }
-        ],
-        "ObjCName": "TSResource"
+        ]
     },
     {
         "name": "Role",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "roleID"
+                "type": "System.Int32"
             },
             {
                 "name": "Name",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "name"
+                "type": "System.String"
             },
             {
                 "name": "CompanyId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "companyID"
+                "type": "System.Int32"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "Company",
                 "anchor": "/Api/Identity#Company",
                 "type": "relationship",
-                "href": "#Company",
-                "ObjCPropertyType": "TSCompany",
-                "ObjCPropertyName": "company"
+                "href": "#Company"
             }
-        ],
-        "ObjCName": "TSRole"
+        ]
     },
     {
         "name": "RolePermission",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "rolePermissionID"
+                "type": "System.Int32"
             },
             {
                 "name": "RoleId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "roleID"
+                "type": "System.Int32"
             },
             {
                 "name": "ResourceId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "resourceID"
+                "type": "System.Int32"
             },
             {
                 "name": "ActionId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "actionID"
+                "type": "System.Int32"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "EntityId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "entityID"
+                "type": "System.Int32"
             },
             {
                 "name": "IsGrant",
-                "type": "System.Boolean",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "isGrant"
+                "type": "System.Boolean"
             },
             {
                 "name": "Action",
                 "anchor": "/Api/Identity#Action",
                 "type": "relationship",
-                "href": "#Action",
-                "ObjCPropertyType": "TSAction",
-                "ObjCPropertyName": "action"
+                "href": "#Action"
             },
             {
                 "name": "Resource",
                 "anchor": "/Api/Identity#Resource",
                 "type": "relationship",
-                "href": "#Resource",
-                "ObjCPropertyType": "TSResource",
-                "ObjCPropertyName": "resource"
+                "href": "#Resource"
             },
             {
                 "name": "Role",
                 "anchor": "/Api/Identity#Role",
                 "type": "relationship",
-                "href": "#Role",
-                "ObjCPropertyType": "TSRole",
-                "ObjCPropertyName": "role"
+                "href": "#Role"
             }
-        ],
-        "ObjCName": "TSRolePermission"
+        ]
     },
     {
         "name": "User",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "userID"
+                "type": "System.Int32"
             },
             {
                 "name": "UserTypeId",
@@ -1002,203 +723,141 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#usertypeenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "userTypeID"
+                "href": "#usertypeenummodal"
             },
             {
                 "name": "CompanyId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "companyID"
+                "type": "System.Int32"
             },
             {
                 "name": "Username",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "username"
+                "type": "System.String"
             },
             {
                 "name": "Password",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "password"
+                "type": "System.String"
             },
             {
                 "name": "ImageUrl",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "imageUrl"
+                "type": "System.String"
             },
             {
                 "name": "FirstName",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "firstName"
+                "type": "System.String"
             },
             {
                 "name": "LastName",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "lastName"
+                "type": "System.String"
             },
             {
                 "name": "LockingCount",
-                "type": "System.Byte",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "lockingCount"
+                "type": "System.Byte"
             },
             {
                 "name": "Reference",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "reference"
+                "type": "System.String"
             },
             {
                 "name": "LastLoginDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "lastLoginDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ExpiryDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "expiryDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "IsActive",
-                "type": "System.Boolean",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "isActive"
+                "type": "System.Boolean"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "MetaData",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "metaData"
+                "type": "System.String"
             },
             {
                 "name": "Company",
                 "anchor": "/Api/Identity#Company",
                 "type": "relationship",
-                "href": "#Company",
-                "ObjCPropertyType": "TSCompany",
-                "ObjCPropertyName": "company"
+                "href": "#Company"
             },
             {
                 "name": "Identifiers",
                 "anchor": "/Api/Identity#Identifier",
-                "type": "relationship",
-                "href": "#Identifier",
-                "ObjCPropertyType": "TSIdentifiers",
-                "ObjCPropertyName": "identifiers"
+                "type": "relationship.array",
+                "href": "#Identifier"
             }
-        ],
-        "ObjCName": "TSUser"
+        ]
     },
     {
         "name": "UserPermission",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "userPermissionID"
+                "type": "System.Int32"
             },
             {
                 "name": "UserId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "userID"
+                "type": "System.Int32"
             },
             {
                 "name": "ResourceId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "resourceID"
+                "type": "System.Int32"
             },
             {
                 "name": "ActionId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "actionID"
+                "type": "System.Int32"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "projectID"
+                "type": "System.Int32"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "EntityId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "entityID"
+                "type": "System.Int32"
             },
             {
                 "name": "IsGrant",
-                "type": "System.Boolean",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "isGrant"
+                "type": "System.Boolean"
             },
             {
                 "name": "Action",
                 "anchor": "/Api/Identity#Action",
                 "type": "relationship",
-                "href": "#Action",
-                "ObjCPropertyType": "TSAction",
-                "ObjCPropertyName": "action"
+                "href": "#Action"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Identity#Project",
                 "type": "relationship",
-                "href": "#Project",
-                "ObjCPropertyType": "TSProject",
-                "ObjCPropertyName": "project"
+                "href": "#Project"
             },
             {
                 "name": "Resource",
                 "anchor": "/Api/Identity#Resource",
                 "type": "relationship",
-                "href": "#Resource",
-                "ObjCPropertyType": "TSResource",
-                "ObjCPropertyName": "resource"
+                "href": "#Resource"
             },
             {
                 "name": "User",
                 "anchor": "/Api/Identity#User",
                 "type": "relationship",
-                "href": "#User",
-                "ObjCPropertyType": "TSUser",
-                "ObjCPropertyName": "user"
+                "href": "#User"
             }
-        ],
-        "ObjCName": "TSUserPermission"
+        ]
     }
 ]

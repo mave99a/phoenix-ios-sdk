@@ -4,15 +4,11 @@
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "categoryID"
+                "type": "System.Int32"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "projectID"
+                "type": "System.Int32"
             },
             {
                 "name": "EntityTypeId",
@@ -26,202 +22,141 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#entitytypeenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "entityTypeID"
+                "href": "#entitytypeenummodal"
             },
             {
                 "name": "Name",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "name"
+                "type": "System.String"
             },
             {
                 "name": "Description",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "categoryDescription"
+                "type": "System.String"
             },
             {
                 "name": "Reference",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "reference"
+                "type": "System.String"
             },
             {
                 "name": "IsActive",
-                "type": "System.Boolean",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "isActive"
+                "type": "System.Boolean"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Media#Project",
                 "type": "relationship",
-                "href": "#Project",
-                "ObjCPropertyType": "TSProject",
-                "ObjCPropertyName": "project"
+                "href": "#Project"
             }
-        ],
-        "ObjCName": "TSCategory"
+        ]
     },
     {
         "name": "Channel",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "channelID"
+                "type": "System.Int32"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "projectID"
+                "type": "System.Int32"
             },
             {
                 "name": "OwnerProfileId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "ownerProfileID"
+                "type": "System.Int32"
             },
             {
                 "name": "CategoryId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "categoryID"
+                "type": "System.Int32"
             },
             {
                 "name": "Name",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "name"
+                "type": "System.String"
             },
             {
                 "name": "Reference",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "reference"
+                "type": "System.String"
             },
             {
                 "name": "Description",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "channelDescription"
+                "type": "System.String"
             },
             {
                 "name": "ImageUrl",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "imageUrl"
+                "type": "System.String"
             },
             {
                 "name": "VoteCount_Overall",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "voteCount_Overall"
+                "type": "System.Int32"
             },
             {
                 "name": "Rating_Overall",
-                "type": "System.Double",
-                "ObjCPropertyName": "rating_Overall"
+                "type": "System.Double"
             },
             {
                 "name": "ViewCount_Overall",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "viewCount_Overall"
+                "type": "System.Int32"
             },
             {
                 "name": "MediaCount_Overall",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "mediaCount_Overall"
+                "type": "System.Int32"
             },
             {
                 "name": "LastMediaCreatedDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "lastMediaCreatedDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "IsActive",
-                "type": "System.Boolean",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "isActive"
+                "type": "System.Boolean"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "PhoenixIdentity_GroupId_Subscribers",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "phoenixIDentity_GroupId_Subscribers"
+                "type": "System.Int32"
             },
             {
                 "name": "PhoenixIdentity_GroupId_Editors",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "phoenixIDentity_GroupId_Editors"
+                "type": "System.Int32"
             },
             {
                 "name": "OwnerProfile",
                 "anchor": "/Api/Media#Profile",
                 "type": "relationship",
-                "href": "#Profile",
-                "ObjCPropertyType": "TSOwnerProfile",
-                "ObjCPropertyName": "ownerProfile"
+                "href": "#Profile"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Media#Project",
                 "type": "relationship",
-                "href": "#Project",
-                "ObjCPropertyType": "TSProject",
-                "ObjCPropertyName": "project"
+                "href": "#Project"
             },
             {
                 "name": "Category",
                 "anchor": "/Api/Media#Category",
                 "type": "relationship",
-                "href": "#Category",
-                "ObjCPropertyType": "TSCategory",
-                "ObjCPropertyName": "category"
+                "href": "#Category"
             }
-        ],
-        "ObjCName": "TSChannel"
+        ]
     },
     {
         "name": "FileExtension",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "fileExtensionID"
+                "type": "System.Int32"
             },
             {
                 "name": "MediaTypeId",
@@ -236,57 +171,40 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#mediatypeenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "mediaTypeID"
+                "href": "#mediatypeenummodal"
             },
             {
                 "name": "Extension",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "extension"
+                "type": "System.String"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             }
-        ],
-        "ObjCName": "TSFileExtension"
+        ]
     },
     {
         "name": "Media",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "mediaID"
+                "type": "System.Int32"
             },
             {
                 "name": "ParentMediaId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "parentMediaID"
+                "type": "System.Int32"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "projectID"
+                "type": "System.Int32"
             },
             {
                 "name": "ProfileId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "profileID"
+                "type": "System.Int32"
             },
             {
                 "name": "StatusTypeId",
@@ -300,27 +218,19 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#statustypeenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "statusTypeID"
+                "href": "#statustypeenummodal"
             },
             {
                 "name": "CategoryId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "categoryID"
+                "type": "System.Int32"
             },
             {
                 "name": "CategoryName",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "categoryName"
+                "type": "System.String"
             },
             {
                 "name": "Tags",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "tags"
+                "type": "System.String"
             },
             {
                 "name": "MediaTypeId",
@@ -335,9 +245,7 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#mediatypeenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "mediaTypeID"
+                "href": "#mediatypeenummodal"
             },
             {
                 "name": "PrivacyTypeId",
@@ -350,184 +258,127 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#privacytypeenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "privacyTypeID"
+                "href": "#privacytypeenummodal"
             },
             {
                 "name": "DurationInSeconds",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "durationInSeconds"
+                "type": "System.Int32"
             },
             {
                 "name": "Name",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "name"
+                "type": "System.String"
             },
             {
                 "name": "Description",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "mediaDescription"
+                "type": "System.String"
             },
             {
                 "name": "Reference",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "reference"
+                "type": "System.String"
             },
             {
                 "name": "Location",
-                "type": "System.Data.Spatial.DbGeography",
-                "ObjCPropertyName": "location"
+                "type": "System.Data.Spatial.DbGeography"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "LastViewedDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "lastViewedDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "LastVotedDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "lastVotedDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "LastSharedDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "lastSharedDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "LastCommentedDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "lastCommentedDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ViewCount_Daily",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "viewCount_Daily"
+                "type": "System.Int32"
             },
             {
                 "name": "ViewCount_Weekly",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "viewCount_Weekly"
+                "type": "System.Int32"
             },
             {
                 "name": "ViewCount_Monthly",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "viewCount_Monthly"
+                "type": "System.Int32"
             },
             {
                 "name": "ViewCount_Overall",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "viewCount_Overall"
+                "type": "System.Int32"
             },
             {
                 "name": "VoteCount_Daily",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "voteCount_Daily"
+                "type": "System.Int32"
             },
             {
                 "name": "VoteCount_Weekly",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "voteCount_Weekly"
+                "type": "System.Int32"
             },
             {
                 "name": "VoteCount_Monthly",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "voteCount_Monthly"
+                "type": "System.Int32"
             },
             {
                 "name": "VoteCount_Overall",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "voteCount_Overall"
+                "type": "System.Int32"
             },
             {
                 "name": "Rating_Daily",
-                "type": "System.Double",
-                "ObjCPropertyName": "rating_Daily"
+                "type": "System.Double"
             },
             {
                 "name": "Rating_Weekly",
-                "type": "System.Double",
-                "ObjCPropertyName": "rating_Weekly"
+                "type": "System.Double"
             },
             {
                 "name": "Rating_Monthly",
-                "type": "System.Double",
-                "ObjCPropertyName": "rating_Monthly"
+                "type": "System.Double"
             },
             {
                 "name": "Rating_Overall",
-                "type": "System.Double",
-                "ObjCPropertyName": "rating_Overall"
+                "type": "System.Double"
             },
             {
                 "name": "ShareCount_Daily",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "shareCount_Daily"
+                "type": "System.Int32"
             },
             {
                 "name": "ShareCount_Weekly",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "shareCount_Weekly"
+                "type": "System.Int32"
             },
             {
                 "name": "ShareCount_Monthly",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "shareCount_Monthly"
+                "type": "System.Int32"
             },
             {
                 "name": "ShareCount_Overall",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "shareCount_Overall"
+                "type": "System.Int32"
             },
             {
                 "name": "CommentCount_Daily",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "commentCount_Daily"
+                "type": "System.Int32"
             },
             {
                 "name": "CommentCount_Weekly",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "commentCount_Weekly"
+                "type": "System.Int32"
             },
             {
                 "name": "CommentCount_Monthly",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "commentCount_Monthly"
+                "type": "System.Int32"
             },
             {
                 "name": "CommentCount_Overall",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "commentCount_Overall"
+                "type": "System.Int32"
             },
             {
                 "name": "ProcessedTypeId",
@@ -542,115 +393,82 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#processedtypeenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "processedTypeID"
+                "href": "#processedtypeenummodal"
             },
             {
                 "name": "SourceFilePath",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "sourceFilePath"
+                "type": "System.String"
             },
             {
                 "name": "PreviewFilePath",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "previewFilePath"
+                "type": "System.String"
             },
             {
                 "name": "MetaData",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "metaData"
+                "type": "System.String"
             },
             {
                 "name": "ReplyCount_Daily",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "replyCount_Daily"
+                "type": "System.Int32"
             },
             {
                 "name": "ReplyCount_Weekly",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "replyCount_Weekly"
+                "type": "System.Int32"
             },
             {
                 "name": "ReplyCount_Monthly",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "replyCount_Monthly"
+                "type": "System.Int32"
             },
             {
                 "name": "ReplyCount_Overall",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "replyCount_Overall"
+                "type": "System.Int32"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "Category",
                 "anchor": "/Api/Media#Category",
                 "type": "relationship",
-                "href": "#Category",
-                "ObjCPropertyType": "TSCategory",
-                "ObjCPropertyName": "category"
+                "href": "#Category"
             },
             {
                 "name": "ParentMedia",
                 "anchor": "/Api/Media#Media",
                 "type": "relationship",
-                "href": "#Media",
-                "ObjCPropertyType": "TSParentMedia",
-                "ObjCPropertyName": "parentMedia"
+                "href": "#Media"
             },
             {
                 "name": "Profile",
                 "anchor": "/Api/Media#Profile",
                 "type": "relationship",
-                "href": "#Profile",
-                "ObjCPropertyType": "TSProfile",
-                "ObjCPropertyName": "profile"
+                "href": "#Profile"
             },
             {
                 "name": "MediaFiles",
                 "anchor": "/Api/Media#MediaFile",
-                "type": "relationship",
-                "href": "#MediaFile",
-                "ObjCPropertyType": "TSMediaFiles",
-                "ObjCPropertyName": "mediaFiles"
+                "type": "relationship.array",
+                "href": "#MediaFile"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Media#Project",
                 "type": "relationship",
-                "href": "#Project",
-                "ObjCPropertyType": "TSProject",
-                "ObjCPropertyName": "project"
+                "href": "#Project"
             }
-        ],
-        "ObjCName": "TSMedia"
+        ]
     },
     {
         "name": "MediaFile",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "mediaFileID"
+                "type": "System.Int32"
             },
             {
                 "name": "MediaId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "mediaID"
+                "type": "System.Int32"
             },
             {
                 "name": "ProcessedTypeId",
@@ -665,83 +483,58 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#processedtypeenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "processedTypeID"
+                "href": "#processedtypeenummodal"
             },
             {
                 "name": "MediaFileTypeId",
-                "type": "System.Byte",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "mediaFileTypeID"
+                "type": "System.Byte"
             },
             {
                 "name": "FilePath",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "filePath"
+                "type": "System.String"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "MediaFileType",
                 "anchor": "/Api/Media#MediaFileType",
                 "type": "relationship",
-                "href": "#MediaFileType",
-                "ObjCPropertyType": "TSMediaFileType",
-                "ObjCPropertyName": "mediaFileType"
+                "href": "#MediaFileType"
             }
-        ],
-        "ObjCName": "TSMediaFile"
+        ]
     },
     {
         "name": "MediaFileType",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Byte",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "mediaFileTypeID"
+                "type": "System.Byte"
             },
             {
                 "name": "Description",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "mediaFileTypeDescription"
+                "type": "System.String"
             },
             {
                 "name": "OutputSuffix",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "outputSuffix"
+                "type": "System.String"
             },
             {
                 "name": "OutputFileExtensionId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "outputFileExtensionID"
+                "type": "System.Int32"
             },
             {
                 "name": "Reference",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "reference"
+                "type": "System.String"
             },
             {
                 "name": "IsPreview",
-                "type": "System.Boolean",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "isPreview"
+                "type": "System.Boolean"
             },
             {
                 "name": "InputMediaTypeId",
@@ -756,59 +549,42 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#mediatypeenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "inputMediaTypeID"
+                "href": "#mediatypeenummodal"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ConfigXml",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "configXml"
+                "type": "System.String"
             },
             {
                 "name": "FileExtension",
                 "anchor": "/Api/Media#FileExtension",
                 "type": "relationship",
-                "href": "#FileExtension",
-                "ObjCPropertyType": "TSFileExtension",
-                "ObjCPropertyName": "fileExtension"
+                "href": "#FileExtension"
             }
-        ],
-        "ObjCName": "TSMediaFileType"
+        ]
     },
     {
         "name": "Playlist",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "playlistID"
+                "type": "System.Int32"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "projectID"
+                "type": "System.Int32"
             },
             {
                 "name": "OwnerProfileId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "ownerProfileID"
+                "type": "System.Int32"
             },
             {
                 "name": "PrivacyTypeId",
@@ -821,67 +597,48 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#privacytypeenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "privacyTypeID"
+                "href": "#privacytypeenummodal"
             },
             {
                 "name": "Name",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "name"
+                "type": "System.String"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "IsActive",
-                "type": "System.Boolean",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "isActive"
+                "type": "System.Boolean"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "Profile",
                 "anchor": "/Api/Media#Profile",
                 "type": "relationship",
-                "href": "#Profile",
-                "ObjCPropertyType": "TSProfile",
-                "ObjCPropertyName": "profile"
+                "href": "#Profile"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Media#Project",
                 "type": "relationship",
-                "href": "#Project",
-                "ObjCPropertyType": "TSProject",
-                "ObjCPropertyName": "project"
+                "href": "#Project"
             }
-        ],
-        "ObjCName": "TSPlaylist"
+        ]
     },
     {
         "name": "Profile",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "profileID"
+                "type": "System.Int32"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "projectID"
+                "type": "System.Int32"
             },
             {
                 "name": "StatusTypeId",
@@ -895,106 +652,74 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#statustypeenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "statusTypeID"
+                "href": "#statustypeenummodal"
             },
             {
                 "name": "Name",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "name"
+                "type": "System.String"
             },
             {
                 "name": "Description",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "profileDescription"
+                "type": "System.String"
             },
             {
                 "name": "ProfileImageUrl",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "profileImageUrl"
+                "type": "System.String"
             },
             {
                 "name": "VoteCount_Overall",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "voteCount_Overall"
+                "type": "System.Int32"
             },
             {
                 "name": "Rating_Overall",
-                "type": "System.Double",
-                "ObjCPropertyName": "rating_Overall"
+                "type": "System.Double"
             },
             {
                 "name": "ViewCount_Overall",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "viewCount_Overall"
+                "type": "System.Int32"
             },
             {
                 "name": "MediaCount_Overall",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "mediaCount_Overall"
+                "type": "System.Int32"
             },
             {
                 "name": "LastMediaCreatedDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "lastMediaCreatedDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "Reference",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "reference"
+                "type": "System.String"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "PhoenixIdentity_UserId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "phoenixIDentity_UserId"
+                "type": "System.Int32"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Media#Project",
                 "type": "relationship",
-                "href": "#Project",
-                "ObjCPropertyType": "TSProject",
-                "ObjCPropertyName": "project"
+                "href": "#Project"
             }
-        ],
-        "ObjCName": "TSProfile"
+        ]
     },
     {
         "name": "Project",
         "properties": [
             {
                 "name": "PhoenixIdentity_ProjectId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "phoenixIDentity_ProjectId"
+                "type": "System.Int32"
             },
             {
                 "name": "DoDailyMediaProcessing",
-                "type": "System.Boolean",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "doDailyMediaProcessing"
+                "type": "System.Boolean"
             },
             {
                 "name": "DefaultMediaStatusTypeId",
@@ -1008,9 +733,7 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#statustypeenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "defaultMediaStatusTypeID"
+                "href": "#statustypeenummodal"
             },
             {
                 "name": "DefaultProfileStatusTypeId",
@@ -1020,9 +743,7 @@
                     "values": []
                 },
                 "type": "enumList",
-                "href": "#statustypeenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "defaultProfileStatusTypeID"
+                "href": "#statustypeenummodal"
             },
             {
                 "name": "DefaultChannelStatusTypeId",
@@ -1032,103 +753,73 @@
                     "values": []
                 },
                 "type": "enumList",
-                "href": "#statustypeenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "defaultChannelStatusTypeID"
+                "href": "#statustypeenummodal"
             },
             {
                 "name": "StorageRoot",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "storageRoot"
+                "type": "System.String"
             },
             {
                 "name": "HostingRoot",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "hostingRoot"
+                "type": "System.String"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             }
-        ],
-        "ObjCName": "TSProject"
+        ]
     },
     {
         "name": "ProjectMediaFileTypeMap",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "projectMediaFileTypeMapID"
+                "type": "System.Int32"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "projectID"
+                "type": "System.Int32"
             },
             {
                 "name": "MediaFileTypeId",
-                "type": "System.Byte",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "mediaFileTypeID"
+                "type": "System.Byte"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "MediaFileType",
                 "anchor": "/Api/Media#MediaFileType",
                 "type": "relationship",
-                "href": "#MediaFileType",
-                "ObjCPropertyType": "TSMediaFileType",
-                "ObjCPropertyName": "mediaFileType"
+                "href": "#MediaFileType"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Media#Project",
                 "type": "relationship",
-                "href": "#Project",
-                "ObjCPropertyType": "TSProject",
-                "ObjCPropertyName": "project"
+                "href": "#Project"
             }
-        ],
-        "ObjCName": "TSProjectMediaFileTypeMap"
+        ]
     },
     {
         "name": "Tag",
         "properties": [
             {
                 "name": "Id",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "tagID"
+                "type": "System.Int32"
             },
             {
                 "name": "ProjectId",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "projectID"
+                "type": "System.Int32"
             },
             {
                 "name": "EntityTypeId",
@@ -1142,43 +833,30 @@
                     ]
                 },
                 "type": "enumList",
-                "href": "#entitytypeenummodal",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "entityTypeID"
+                "href": "#entitytypeenummodal"
             },
             {
                 "name": "Name",
-                "type": "System.String",
-                "ObjCPropertyType": "NSString",
-                "ObjCPropertyName": "name"
+                "type": "System.String"
             },
             {
                 "name": "TagCount",
-                "type": "System.Int32",
-                "ObjCPropertyType": "NSNumber",
-                "ObjCPropertyName": "tagCount"
+                "type": "System.Int32"
             },
             {
                 "name": "CreateDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "createDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "ModifyDate",
-                "type": "System.DateTime",
-                "ObjCPropertyType": "NSDate",
-                "ObjCPropertyName": "modifyDate"
+                "type": "System.DateTime"
             },
             {
                 "name": "Project",
                 "anchor": "/Api/Media#Project",
                 "type": "relationship",
-                "href": "#Project",
-                "ObjCPropertyType": "TSProject",
-                "ObjCPropertyName": "project"
+                "href": "#Project"
             }
-        ],
-        "ObjCName": "TSTag"
+        ]
     }
 ]
