@@ -2,7 +2,7 @@
 //  TSPhoenix
 //	TSMedia.h
 //
-//  Created by Steve on January 14th 2014.
+//  Created by Steve on January 22nd 2014.
 //  Copyright (c) 2013 Tigerspike. All rights reserved.
 //
 
@@ -11,7 +11,6 @@
 @class TSCategory;
 @class TSParentMedia;
 @class TSProfile;
-@class TSMediaFiles;
 @class TSProject;
 
 #ifndef StatusTypeIdEnum
@@ -107,6 +106,7 @@ typedef NS_ENUM(NSUInteger, ProcessedTypeId) {
 @property (nonatomic, strong) NSNumber *replyCount_Monthly;
 @property (nonatomic, strong) NSNumber *replyCount_Overall;
 @property (nonatomic, strong) NSDate *modifyDate;
+@property (nonatomic, strong) NSArray *mediaFiles;
 
 
 
@@ -116,7 +116,6 @@ typedef NS_ENUM(NSUInteger, ProcessedTypeId) {
 @property (nonatomic, strong) TSCategory *category;
 @property (nonatomic, strong) TSParentMedia *parentMedia;
 @property (nonatomic, strong) TSProfile *profile;
-@property (nonatomic, strong) TSMediaFiles *mediaFiles;
 @property (nonatomic, strong) TSProject *project;
 
 

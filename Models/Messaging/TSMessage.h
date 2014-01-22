@@ -2,7 +2,7 @@
 //  TSPhoenix
 //	TSMessage.h
 //
-//  Created by Steve on January 14th 2014.
+//  Created by Steve on January 22nd 2014.
 //  Copyright (c) 2013 Tigerspike. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 @class TSAccount;
 @class TSProject;
-@class TSRecipients;
+
 
 #ifndef MessageTypeIdEnum
 #define MessageTypeIdEnum
@@ -66,6 +66,7 @@ typedef NS_ENUM(NSUInteger, StatusTypeId) {
 @property (nonatomic, copy) NSString *subject;
 @property (nonatomic, strong) NSDate *createDate;
 @property (nonatomic, strong) NSDate *modifyDate;
+@property (nonatomic, strong) NSArray *recipients;
 
 
 
@@ -74,7 +75,6 @@ typedef NS_ENUM(NSUInteger, StatusTypeId) {
 
 @property (nonatomic, strong) TSAccount *account;
 @property (nonatomic, strong) TSProject *project;
-@property (nonatomic, strong) TSRecipients *recipients;
 
 
 

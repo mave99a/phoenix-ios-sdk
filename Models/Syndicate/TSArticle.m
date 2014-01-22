@@ -2,7 +2,7 @@
 //  TSPhoenix
 //	TSArticle.m
 //
-//  Created by Steve on January 14th 2014.
+//  Created by Steve on January 22nd 2014.
 //  Copyright (c) 2013 Tigerspike. All rights reserved.
 //
 
@@ -45,9 +45,9 @@
             [self setValue:@(boolValue) forKey:info[@"mappedName"]];
             return;
         }
-        
+		
         // expanded array properties
-		if ([dotNetType isEqualToString:@"relationship.array"]) {
+        if ([dotNetType isEqualToString:@"relationship.array"]) {
             if (![value isKindOfClass:[NSArray class]]) {
                 NSLog(@"Warning: mapping skips array expansion %@ because the value %@ is not an array", info[@"mappedName"], value);
                 return;
@@ -72,8 +72,8 @@
             return;
         }
 		
-		// expanded properties
-		if ([dotNetType isEqualToString:@"relationship"]) {
+        // expanded properties
+        if ([dotNetType isEqualToString:@"relationship"]) {
             
             if (![value isKindOfClass:[NSDictionary class]])
                 return;
@@ -89,7 +89,7 @@
             
             [self setValue:mappedObject forKey:info[@"mappedName"]];
 			
-			return;
+		        return;
         }
 
 		
@@ -118,7 +118,7 @@
 		@"CreateDate" : @{@"type": @"System.DateTime", @"mappedType":@"NSDate", @"mappedName": @"createDate"},
 		@"ModifyDate" : @{@"type": @"System.DateTime", @"mappedType":@"NSDate", @"mappedName": @"modifyDate"},
 		@"ProjectId" : @{@"type": @"System.Int32", @"mappedType":@"NSNumber", @"mappedName": @"projectID"},
-		@"Assets" : @{@"type": @"relationship", @"mappedType":@"TSAssets", @"mappedName": @"assets"},
+		@"Assets" : @{@"type": @"relationship.array", @"mappedType":@"NSArray", @"mappedName": @"assets", @"arrayContentType": @"TSAsset"},
 		@"Project" : @{@"type": @"relationship", @"mappedType":@"TSProject", @"mappedName": @"project"}
 	};
 }
@@ -155,8 +155,7 @@
 
 + (NSArray *)expandableProperties {
   return @[
-   @"assets",
-@"project"
+   @"project"
   ];
 }
 
