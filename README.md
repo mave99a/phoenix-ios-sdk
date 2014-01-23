@@ -56,24 +56,23 @@ Why, you ask? Why have dependencies in a SDK library?
 
 The reason is simple: don't re-invent the wheel. We are already using AFNetworking for HTTP requests. YapDatabase is a solid key-value DB built on SQLite. If we roll our own networking and database, it will consume a ton of effort, and the result is not necessarily better. By leveraging the best open source components, 
 
-[AFNetworking][afnetworking], ~>1.3.3 (using 1.3.x to maintain iOS 6 compatibility)
+[AFNetworking][afnetworking], ~>2.1
 
-[afnetworking]: https://github.com/AFNetworking/AFNetworking/tree/1.x
+[afnetworking]: https://github.com/AFNetworking/AFNetworking
 
 [YapDatabase][yapdb] ~> 2.3	Database (caching) layer in Phoenix SDK.
 
 [yapdb]: https://github.com/yaptv/YapDatabase
 
-[AFOAuth2Client][afoauth2]: Provides OAuth2 with Phoenix Identity.
+[AFOAuth2Client][afoauth2]: Provides OAuth2 with Phoenix Identity. Using PhoenixPlatform's fork of this library.
 
-[afoauth2]:https://github.com/AFNetworking/AFOAuth2Client
+[afoauth2]:https://github.com/phoenixplatform/AFOAuth2Client
 
 ## Full documentation is coming soon. Here are some examples to get you started:
 
 ### Setting up
 
 In - applicationDidFinishLaunching:
-
 
     [TSPhoenixClient setUpWithBaseURL:[NSURL URLWithString:@"https://api.phoenixplatform.com.sg/"]
                              clientID:@"client_ID"
@@ -97,9 +96,9 @@ Because Phoenix has been deployed across many regions (and more coming), we make
 ### Getting the current user's profile
 
     NSString *path = @"identity/v1/users/me";
-    [[TSPhoenixClient sharedInstance] getPath:path
-                                   parameters:nil
-                                      success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [[TSPhoenixClient sharedInstance] GET:path
+                               parameters:nil
+                                  success:^(AFHTTPRequestOperation *operation, id responseObject) {
                                           NSDictionary *dict = [(AFJSONRequestOperation *)operation responseJSON];
                                           dict = dict[@"Data"][0];
                                           TSUser *user = [[TSUser alloc] initWithDictionary:dict];
