@@ -346,9 +346,5 @@
 
 @implementation AFOAuth2Client
 
-- (void)setAuthorizationHeaderWithToken:(NSString *)token {
-    // Use the "Bearer" type as an arbitrary default
-    [self setAuthorizationHeaderWithToken:token ofType:@"Bearer"];
-}
 
 @end
