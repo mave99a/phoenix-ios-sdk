@@ -342,9 +342,3 @@
 
 @end
 
-
-
-@implementation AFOAuth2Client
-
-
-@end
