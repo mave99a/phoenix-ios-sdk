@@ -181,4 +181,7 @@
 
 - (void)setAuthorizationHeaderWithToken:(NSString *)token;
 
+- (void)setAuthorizationHeaderWithToken:(NSString *)token
+                                 ofType:(NSString *)type;
+
 @end
