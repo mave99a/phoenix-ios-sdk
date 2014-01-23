@@ -29,11 +29,13 @@
     self.userCredential = [AFOAuthCredential retrieveCredentialWithIdentifier:kPhoenixUserAuthenticationCredentialKey];
     
     if (self.userCredential) {
-        [self.client setAuthorizationHeaderWithCredential:self.userCredential];
+//        [self.client setAuthorizationHeaderWithCredential:self.userCredential];
+        [self.client setAuthorizationHeaderWithToken:self.userCredential.accessToken];
         self.isUserAuthenticated = YES;
     }
     else if (self.clientCredential) {
-        [self.client setAuthorizationHeaderWithCredential:self.clientCredential];
+//        [self.client setAuthorizationHeaderWithCredential:self.clientCredential];
+        [self.client setAuthorizationHeaderWithToken:self.clientCredential.accessToken];
     }
     
     NSAssert(self.client.clientID, @"Missing Client ID");
@@ -59,8 +61,10 @@
                                                   
                                                   self.clientCredential = credential;
                                                   
-                                                  [self.oauth2Client setAuthorizationHeaderWithCredential:credential];
-                                                  [self.client setAuthorizationHeaderWithCredential:credential];
+//                                                  [self.oauth2Client setAuthorizationHeaderWithCredential:credential];
+//                                                  [self.client setAuthorizationHeaderWithCredential:credential];
+                                                  [self.oauth2Client setAuthorizationHeaderWithToken:credential.accessToken];
+                                                  [self.client setAuthorizationHeaderWithToken:credential.accessToken];
                                                   
                                                   [AFOAuthCredential storeCredential:credential
                                                                       withIdentifier:kPhoenixClientAuthenticationCredentialKey];
@@ -97,8 +101,10 @@
 #endif
                                      self.userCredential = credential;
                                      
-                                     [self.oauth2Client setAuthorizationHeaderWithCredential:credential];
-                                     [self.client setAuthorizationHeaderWithCredential:credential];
+//                                     [self.oauth2Client setAuthorizationHeaderWithCredential:credential];
+//                                     [self.client setAuthorizationHeaderWithCredential:credential];
+                                     [self.oauth2Client setAuthorizationHeaderWithToken:credential.accessToken];
+                                     [self.client setAuthorizationHeaderWithToken:credential.accessToken];
 
                                      
                                      self.isUserAuthenticated = YES;
@@ -135,8 +141,10 @@
 #endif
                                                   self.userCredential = credential;
                                                   
-                                                  [self.oauth2Client setAuthorizationHeaderWithCredential:credential];
-                                                  [self.client setAuthorizationHeaderWithCredential:credential];
+//                                                  [self.oauth2Client setAuthorizationHeaderWithCredential:credential];
+//                                                  [self.client setAuthorizationHeaderWithCredential:credential];
+                                                  [self.oauth2Client setAuthorizationHeaderWithToken:credential.accessToken];
+                                                  [self.client setAuthorizationHeaderWithToken:credential.accessToken];
                                                   
                                                   self.isUserAuthenticated = YES;
                                                   
@@ -331,5 +339,16 @@
     return _companyProject;
 }
 
+
+@end
+
+
+
+@implementation AFOAuth2Client
+
+- (void)setAuthorizationHeaderWithToken:(NSString *)token {
+    // Use the "Bearer" type as an arbitrary default
+    [self setAuthorizationHeaderWithToken:token ofType:@"Bearer"];
+}
 
 @end

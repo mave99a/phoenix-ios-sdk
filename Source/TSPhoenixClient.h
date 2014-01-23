@@ -85,7 +85,7 @@ extern NSString * const TSPhoenixKeyValueDatabaseSQLiteName;
 
 
 - (void)setAuthorizationHeaderWithCredential:(AFOAuthCredential *)credential;
-
+- (void)setAuthorizationHeaderWithToken:(NSString *)token;
 
 @property (readonly) YapDatabase *database;
 
