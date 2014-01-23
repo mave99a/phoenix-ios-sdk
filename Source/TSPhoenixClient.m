@@ -15,6 +15,7 @@
 #import "TSPhoenixIdentity.h"
 #import "TSPhoenixSyndicate.h"
 #import <AFNetworking/AFNetworking.h>
+#import <AFNetworking/UIKit+AFNetworking.h>
 #import "TSModelAbstract.h"
 
 NSString * const TSPhoenixKeyValueDatabaseSQLiteName = @"TSPhoenixStore.sqlite";
@@ -41,10 +42,12 @@ static NSInteger phoenix_projectID;
     
     self = [super initWithBaseURL:phoenix_baseURL];
     
-    [self registerHTTPOperationClass:[AFJSONRequestOperation class]];
-    [self setDefaultHeader:@"Accept" value:@"application/json"];
-    [self setDefaultHeader:@"Accept-Encoding" value:@"gzip, deflate"];
-    self.parameterEncoding = AFJSONParameterEncoding;
+    self.responseSerializer = [AFJSONResponseSerializer serializer];
+    self.requestSerializer = [AFJSONRequestSerializer serializer];
+    
+//    [self.requestSerializer setHeader:@"Accept" value:@"application/json"];
+//    [self setDefaultHeader:@"Accept-Encoding" value:@"gzip, deflate"];
+//    self.parameterEncoding = AFJSONParameterEncoding;
     self.defaultDateFormatter = [RKDotNetDateFormatter dotNetDateFormatterWithTimeZone:nil];
     
     self.identity = [[TSPhoenixIdentity alloc] initWithPhoenixClient:self];
@@ -163,7 +166,10 @@ static NSInteger phoenix_projectID;
 {
     // See http://tools.ietf.org/html/rfc6749#section-7.1
     if ([[type lowercaseString] isEqualToString:@"bearer"]) {
-        AFHTTPRequestSerializer *serializer = [AFHTTPRequestSerializer serializer];
+        AFHTTPRequestSerializer *serializer;
+        serializer = self.requestSerializer;
+        if (!serializer)
+            serializer = [AFHTTPRequestSerializer serializer];
         [serializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
         self.requestSerializer = serializer;
         
@@ -184,7 +190,7 @@ static NSInteger phoenix_projectID;
    
     if (operation.isCancelled) return;
 
-    if ([operation isKindOfClass:[AFImageRequestOperation class]]) return; // ignore image download errors
+//    if ([operation isKindOfClass:[AFImageRequestOperation class]]) return; // ignore image download errors
     
     if (operation.error) {
         NSLog(@"Network error: %@", operation.error);
@@ -239,7 +245,7 @@ static NSInteger phoenix_projectID;
                     // Restore the success / failure blocks
                     newOp.completionBlock = op.completionBlock;
                     
-                    [self enqueueHTTPRequestOperation:newOp];
+                    [self.operationQueue addOperation:newOp];
                     
                     
                 }];

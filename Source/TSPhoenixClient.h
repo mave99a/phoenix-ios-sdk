@@ -17,7 +17,7 @@
  
  This is the singleton entry point to Phoenix SDK.
  
- It is a standard AFHTTPClient which you already use and love.
+ It is a standard AFHTTPRequestOperationManager which you already use and love.
  
  Access the shared instance:
  
@@ -61,7 +61,7 @@ extern NSString * const TSPhoenixKeyValueDatabaseSQLiteName;
 /**
  Make this a property so that setting up baseURL can be deferred till runtime
  */
-//@property (nonatomic, strong) AFHTTPClient *httpClient;
+//@property (nonatomic, strong) AFHTTPRequestOperationManager *httpClient;
 
 
 /**

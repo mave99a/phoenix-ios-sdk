@@ -14,7 +14,7 @@ static NSUInteger TSPaginatorDefaultPerPage = 100;
 
 @interface TSPaginator()
 
-@property (nonatomic, readonly) AFHTTPClient *client;
+@property (nonatomic, readonly) AFHTTPRequestOperationManager *client;
 
 
 @property (nonatomic, copy) NSString *pathPattern;
@@ -33,7 +33,7 @@ static NSUInteger TSPaginatorDefaultPerPage = 100;
 @implementation TSPaginator
 
 - (id)initWithRequestPatternPath: (NSString *)patternPath
-                      httpClient: (AFHTTPClient *)client{
+                      httpClient: (AFHTTPRequestOperationManager *)client{
     self = [super init];
     
     if (self) {
@@ -125,17 +125,23 @@ static NSUInteger TSPaginatorDefaultPerPage = 100;
     path = [path stringByReplacingOccurrencesOfString:@":perPage"
                                            withString:[@(self.perPage) stringValue]];
     
-    NSURLRequest *request = [self.client requestWithMethod:@"GET"
-                                                      path:path
-                                                parameters:nil];
+    NSError *error;
+    NSURLRequest *request = [self.client.requestSerializer requestWithMethod:@"GET"
+                                                                   URLString:path
+                                                                  parameters:nil
+                             error:&error];
+    
+    if (error) {
+        NSLog(@"Request serializer error: %@", error);
+    }
     
     AFHTTPRequestOperation *op = [self.client HTTPRequestOperationWithRequest:request
                                                                       success:^(AFHTTPRequestOperation *operation, id responseObject) {
 
-                                                                          NSAssert([operation isKindOfClass:[AFJSONRequestOperation class]], @"Only JSON request is implemented");
+//                                                                          NSAssert([operation isKindOfClass:[AFJSONRequestOperation class]], @"Only JSON request is implemented");
                                                                           
-                                                                          AFJSONRequestOperation *jsonOp = (id)operation;
-                                                                          NSDictionary *responseDictionary = jsonOp.responseJSON;
+//                                                                          AFJSONRequestOperation *jsonOp = (id)operation;
+                                                                          NSDictionary *responseDictionary = responseObject;
                                                                           
                                                                           // Implement "empty response" error handling in the future
                                                                           NSParameterAssert(responseDictionary);
@@ -175,7 +181,7 @@ static NSUInteger TSPaginatorDefaultPerPage = 100;
                                                                           
                                                                           TS_BLOCK_SAFE_RUN(self.failureBlock, self, error);
                                                                       }];
-    [self.client enqueueHTTPRequestOperation:op];
+    [self.client.operationQueue addOperation:op];
     
     _requestOperation = op;
 

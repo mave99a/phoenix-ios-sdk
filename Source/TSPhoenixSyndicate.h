@@ -30,7 +30,7 @@
 
 @class TSSection, TSArticle, TSArticleInteraction;
 
-@class AFHTTPRequestOperation, AFHTTPClient;
+@class AFHTTPRequestOperation, AFHTTPRequestOperationManager;
 @class YapDatabaseConnection;
 
 @class TSCollection;
