@@ -58,7 +58,7 @@
  
  */
 - (id)initWithRequestPatternPath: (NSString *)patternPath
-                      httpClient: (AFHTTPClient *)client;
+                      httpClient: (AFHTTPRequestOperationManager *)client;
 
 
 /**

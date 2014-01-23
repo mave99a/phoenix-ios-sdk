@@ -15,11 +15,11 @@
     // Override point for customization after application launch.
     
     
-#error Fill in clientID, secret and projectID
-    [TSPhoenixClient setUpWithBaseURL:[NSURL URLWithString:@"https://api.phoenixplatform.com.sg/"]
-                             clientID:@"YOUR_CLIENT_ID"
-                         clientSecret:@"YOUR_CLIENT_SECRET"
-                            projectID:PROJECT_ID];
+//#error Fill in clientID, secret and projectID
+//    [TSPhoenixClient setUpWithBaseURL:[NSURL URLWithString:@"https://api.phoenixplatform.com.sg/"]
+//                             clientID:@"YOUR_CLIENT_ID"
+//                         clientSecret:@"YOUR_CLIENT_SECRET"
+//                            projectID:PROJECT_ID];
     
     // Authentication
     

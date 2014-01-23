@@ -8,7 +8,7 @@
 
 #import "TSPhoenixIdentity.h"
 #import "TSPaginator.h"
-#import <AFOAuth2Client/AFOAuth2Client.h>
+#import <AFOAuth2Client@phoenixplatform/AFOAuth2Client.h>
 #import "TSPhoenix.h"
 
 @interface TSPhoenixIdentity() {
@@ -29,11 +29,11 @@
     self.userCredential = [AFOAuthCredential retrieveCredentialWithIdentifier:kPhoenixUserAuthenticationCredentialKey];
     
     if (self.userCredential) {
-        [self.client setAuthorizationHeaderWithToken:self.userCredential.accessToken];
+        [self.client setAuthorizationHeaderWithCredential:self.userCredential];
         self.isUserAuthenticated = YES;
     }
     else if (self.clientCredential) {
-        [self.client setAuthorizationHeaderWithToken:self.clientCredential.accessToken];
+        [self.client setAuthorizationHeaderWithCredential:self.clientCredential];
     }
     
     NSAssert(self.client.clientID, @"Missing Client ID");
@@ -51,15 +51,15 @@
 
 - (void)authenticateClientWithSuccess:(void (^)(AFOAuthCredential *))success
                               failure:(void (^)(NSError *))failure {
-    [self.oauth2Client authenticateUsingOAuthWithPath:kIdentityTokenPath
+    [self.oauth2Client authenticateUsingOAuthWithURLString:kIdentityTokenPath
                                                 scope:nil
                                               success:^(AFOAuthCredential *credential) {
                                                   NSLog(@"Client authenticated!");
                                                   
                                                   self.clientCredential = credential;
                                                   
-                                                  [self.oauth2Client setAuthorizationHeaderWithToken:credential.accessToken];
-                                                  [self.client setAuthorizationHeaderWithToken:credential.accessToken];
+                                                  [self.oauth2Client setAuthorizationHeaderWithCredential:credential];
+                                                  [self.client setAuthorizationHeaderWithCredential:credential];
                                                   
                                                   [AFOAuthCredential storeCredential:credential
                                                                       withIdentifier:kPhoenixClientAuthenticationCredentialKey];
@@ -86,7 +86,7 @@
                          failure:(void (^)(NSError *error))failure {
     NSString *path = kIdentityTokenPath;
     
-    [self.oauth2Client authenticateUsingOAuthWithPath:path
+    [self.oauth2Client authenticateUsingOAuthWithURLString:path
                                 username:username
                                 password:password
                                    scope:nil
@@ -96,8 +96,8 @@
 #endif
                                      self.userCredential = credential;
                                      
-                                     [self.oauth2Client setAuthorizationHeaderWithToken:credential.accessToken];
-                                     [self.client setAuthorizationHeaderWithToken:credential.accessToken];
+                                     [self.oauth2Client setAuthorizationHeaderWithCredential:credential];
+                                     [self.client setAuthorizationHeaderWithCredential:credential];
 
                                      
                                      self.isUserAuthenticated = YES;
@@ -126,7 +126,7 @@
                         failure:(void (^)(NSError *error))failure {
     NSString *path = kIdentityTokenPath;
     
-    [self.oauth2Client authenticateUsingOAuthWithPath:path
+    [self.oauth2Client authenticateUsingOAuthWithURLString:path
                                          refreshToken:self.userCredential.refreshToken
                                               success:^(AFOAuthCredential *credential) {
 #ifdef DEBUG
@@ -134,8 +134,8 @@
 #endif
                                                   self.userCredential = credential;
                                                   
-                                                  [self.oauth2Client setAuthorizationHeaderWithToken:credential.accessToken];
-                                                  [self.client setAuthorizationHeaderWithToken:credential.accessToken];
+                                                  [self.oauth2Client setAuthorizationHeaderWithCredential:credential];
+                                                  [self.client setAuthorizationHeaderWithCredential:credential];
                                                   
                                                   self.isUserAuthenticated = YES;
                                                   
@@ -190,7 +190,7 @@
     
     NSString *path = [NSString stringWithFormat:kPhoenixIdentityRetrievePasswordResetTokenPath, self.client.projectID, email, forgotPasswordTemplateID];
     
-    [self.client getPath:path
+    [self.client GET:path
               parameters:nil
                  success:success
                  failure:failure];
@@ -229,7 +229,7 @@
     NSDictionary *parameters = @{@"token":token,
                                  @"newPassword":password};
     
-    [self.client putPath:path
+    [self.client PUT:path
               parameters:parameters
                  success:success
                  failure:failure];
@@ -240,10 +240,10 @@
 
     NSString *path = @"identity/v1/users/me";
     
-    [self.client getPath:path
+    [self.client GET:path
               parameters:nil
                  success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                     NSDictionary *dict = [(AFJSONRequestOperation *)operation responseJSON];
+                     NSDictionary *dict = responseObject;
                      dict = dict[@"Data"][0];
                      
                      TSUser *user = [[TSUser alloc] initWithDictionary:dict];
@@ -264,7 +264,7 @@
     self.userCredential = nil;
     [AFOAuthCredential deleteCredentialWithIdentifier:kPhoenixUserAuthenticationCredentialKey];
     
-    [self.client clearAuthorizationHeader];
+    [self.client.requestSerializer clearAuthorizationHeader];
     
     self.isUserAuthenticated = NO;
 }

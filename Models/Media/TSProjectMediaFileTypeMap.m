@@ -2,12 +2,13 @@
 //  TSPhoenix
 //	TSProjectMediaFileTypeMap.m
 //
-//  Created by Steve on January 22nd 2014.
+//  Created by Steve on January 23rd 2014.
 //  Copyright (c) 2013 Tigerspike. All rights reserved.
 //
 
 #import "TSProjectMediaFileTypeMap.h"
 #import "TSPhoenixClient.h"
+#import "NSArray+Mapping.h"
 
 @implementation TSProjectMediaFileTypeMap
 

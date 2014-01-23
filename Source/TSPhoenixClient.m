@@ -150,7 +150,24 @@ static NSInteger phoenix_projectID;
 }
 
 - (void)setAuthorizationHeaderWithToken:(NSString *)token {
-    [self setDefaultHeader:@"Authorization" value:[NSString stringWithFormat:@"Bearer %@", token]];
+    // Use the "Bearer" type as an arbitrary default
+    [self setAuthorizationHeaderWithToken:token ofType:@"Bearer"];
+}
+
+- (void)setAuthorizationHeaderWithCredential:(AFOAuthCredential *)credential {
+    [self setAuthorizationHeaderWithToken:credential.accessToken ofType:credential.tokenType];
+}
+
+- (void)setAuthorizationHeaderWithToken:(NSString *)token
+                                 ofType:(NSString *)type
+{
+    // See http://tools.ietf.org/html/rfc6749#section-7.1
+    if ([[type lowercaseString] isEqualToString:@"bearer"]) {
+        AFHTTPRequestSerializer *serializer = [AFHTTPRequestSerializer serializer];
+        [serializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
+        self.requestSerializer = serializer;
+        
+    }
 }
 
 #pragma mark - Error handling

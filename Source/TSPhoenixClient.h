@@ -8,7 +8,7 @@
 
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <MobileCoreServices/MobileCoreServices.h>
-#import "AFHTTPClient.h"
+#import <AFNetworking/AFNetworking.h>
 
 #import "TSPhoenixConstants.h"
 #import <YapDatabase/YapDatabase.h>
@@ -34,12 +34,13 @@
 
 extern NSString * const TSPhoenixKeyValueDatabaseSQLiteName;
 
-@class Project, Article, Section, Asset;
+@class Project;
+@class AFOAuthCredential;
 
 @class TSPhoenixSyndicate, TSPhoenixIdentity, TSPhoenixMedia, TSPhoenixAnalytics, TSPhoenixMessaging;
 
 
-@interface TSPhoenixClient : AFHTTPClient
+@interface TSPhoenixClient : AFHTTPRequestOperationManager
 
 /**
  * Singleton design
@@ -83,6 +84,8 @@ extern NSString * const TSPhoenixKeyValueDatabaseSQLiteName;
 //@property (copy) NSString * clientID;
 
 
+- (void)setAuthorizationHeaderWithCredential:(AFOAuthCredential *)credential;
+
 
 @property (readonly) YapDatabase *database;
 
@@ -96,7 +99,6 @@ extern NSString * const TSPhoenixKeyValueDatabaseSQLiteName;
 // Async
 - (void)saveObjectsToDatabase: (NSArray *)objects completion:(dispatch_block_t)completionBlock;
 - (void)deleteObjectsInDatabase: (NSArray *)objects completion:(dispatch_block_t)completionBlock;
-
 
 
 

@@ -20,9 +20,8 @@ Pod::Spec.new do |s|
   
   # dependencies
   
-  s.dependency 'AFNetworking', '~> 1.3.1'
-  s.dependency 'AFOAuth2Client', '~> 0.1.1'
-  s.dependency 'SOCKit', '~> 1.1'
+  s.dependency 'AFNetworking', '~> 2.1'
+  s.dependency 'AFOAuth2Client@phoenixplatform', '~> 0.1.1'
   s.dependency 'YapDatabase', '~>2.3'
   
 end

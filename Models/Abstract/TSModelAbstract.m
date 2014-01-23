@@ -7,7 +7,6 @@
 //
 
 #import "TSModelAbstract.h"
-#import <objc/runtime.h>
 
 @implementation TSModelAbstract
 

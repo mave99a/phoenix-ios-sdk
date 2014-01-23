@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AFNetworking/AFNetworking.h>
-#import <AFOAuth2Client/AFOAuth2Client.h>
+#import <AFOAuth2Client@phoenixplatform/AFOAuth2Client.h>
 #import <YapDatabase/YapDatabase.h>
 #import "TSPhoenixModuleAbastract.h"
 
