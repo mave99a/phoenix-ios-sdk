@@ -51,7 +51,8 @@
 
 - (void)authenticateClientWithSuccess:(void (^)(AFOAuthCredential *))success
                               failure:(void (^)(NSError *))failure {
-    [self.oauth2Client authenticateUsingOAuthWithURLString:kIdentityTokenPath
+    [self.oauth2Client authenticateUsingOAuthWithURLString:[[NSURL URLWithString:kIdentityTokenPath
+                                                                   relativeToURL:self.client.baseURL] absoluteString]
                                                 scope:nil
                                               success:^(AFOAuthCredential *credential) {
                                                   NSLog(@"Client authenticated!");
@@ -86,7 +87,7 @@
                          failure:(void (^)(NSError *error))failure {
     NSString *path = kIdentityTokenPath;
     
-    [self.oauth2Client authenticateUsingOAuthWithURLString:path
+    [self.oauth2Client authenticateUsingOAuthWithURLString:[[NSURL URLWithString:path relativeToURL:self.client.baseURL] absoluteString]
                                 username:username
                                 password:password
                                    scope:nil
@@ -126,7 +127,7 @@
                         failure:(void (^)(NSError *error))failure {
     NSString *path = kIdentityTokenPath;
     
-    [self.oauth2Client authenticateUsingOAuthWithURLString:path
+    [self.oauth2Client authenticateUsingOAuthWithURLString:[[NSURL URLWithString:path relativeToURL:self.client.baseURL] absoluteString]
                                          refreshToken:self.userCredential.refreshToken
                                               success:^(AFOAuthCredential *credential) {
 #ifdef DEBUG
