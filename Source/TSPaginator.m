@@ -127,7 +127,8 @@ static NSUInteger TSPaginatorDefaultPerPage = 100;
     
     NSError *error;
     NSURLRequest *request = [self.client.requestSerializer requestWithMethod:@"GET"
-                                                                   URLString:path
+                                                                   URLString:[[NSURL URLWithString:path
+                                                                                    relativeToURL:self.client.baseURL] absoluteString]
                                                                   parameters:nil
                              error:&error];
     
