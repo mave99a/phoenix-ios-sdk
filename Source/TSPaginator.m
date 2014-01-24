@@ -51,6 +51,13 @@ static NSUInteger TSPaginatorDefaultPerPage = 100;
         _loadedPages = [NSMutableSet set];
         _isMetadataLoaded = NO;
         _zeroIndexed = NO;
+        
+        // Phoenix defaults
+        // Since we're shipping paginator in Phoenix SDK
+        // Give it sensible defaults
+        _dataArrayKeyPath = @"Data";
+        _objectCountKeyPathInResponse = @"TotalRecords";
+        _zeroIndexed = YES;
     }
     
     return self;
