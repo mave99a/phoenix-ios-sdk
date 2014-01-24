@@ -109,47 +109,7 @@ Because Phoenix has been deployed across many regions (and more coming), we make
                                           // Handle error
                                       }];
 
-
-### Getting a list of subscribed sections in Syndicate
-
-    NSString *path = [NSString stringWithFormat:@"syndicate/v1/projects/%d/sections",
-                      [[TSPhoenixClient sharedInstance] projectID];
-    
-    NSArray *parameters = @[[TSPhoenixParameter pageNumberTemplateParameter],
-                            [TSPhoenixParameter pageSizeTemplateParameter],
-                            [TSPhoenixParameter sortByRankParameter],
-                            [TSPhoenixParameter sortDirectionAscendingParameter],
-                            [TSPhoenixParameter parameterWithName:@"subscribedonly"
-                                                            value:@"true"]];
-    
-    NSString *parameterString = [TSPhoenixParameter parameterStringFromParameters:parameters];
-    NSString *pattern = [path stringByAppendingString:parameterString];
-    TSPaginator *paginator = [[TSPaginator alloc] initWithRequestPatternPath:pattern
-                                                                  httpClient:self.client];
-
-    [self.client.paginators addObject:paginator];
-    
-    paginator.dataArrayKeyPath = @"Data";
-    paginator.objectCountKeyPathInResponse = @"TotalRecords";
-    paginator.zeroIndexed = YES;
-    paginator.perPage = kPhoenixResponsePageSize;
-    [paginator setObjectMappingBlock:^NSArray *(NSArray *sourceObjects) {
-        __block NSArray *destinationObjects;
-        destinationObjects = [sourceObjects mapObjectsUsingBlock:^id(id obj, NSUInteger idx) {
-            return [[TSSection alloc] initWithDictionary:obj];
-        }];
-        return destinationObjects;
-    }];
-    
-    __weak typeof(self) refToSelf = self;
-    
-    [paginator loadFirstPageWithSuccess:^(TSPaginator *paginator, NSArray *objects, NSUInteger page) {
-				// Do something about the result objects
-				// e.g. save to database
-        [self.client saveObjectsToDatabase:objects];
-    } failure:^(TSPaginator *paginator, NSError *error) {
-        // Handle error
-    }];
+More examples available in the [wiki page](https://github.com/phoenixplatform/phoenix-ios-sdk/wiki/Making-API-Requests).
 
 ## Modules
 ### TSPhoenixClient

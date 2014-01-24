@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 # warning This podspec is under development
 
   s.name         = 'TSPhoenix'
-  s.version      = '0.4.0'
+  s.version      = '0.4.1'
   s.license      = 'Tigerspike proprietaty'
   s.homepage     = 'http://phoenixplatform.com.sg'
   s.authors      =  {'Steven Zhang' => 'steven.zhang@tigerspike.com' }
