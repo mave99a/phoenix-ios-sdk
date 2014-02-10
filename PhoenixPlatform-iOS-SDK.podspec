@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
 # warning This podspec is under development
 
-  s.name         = 'TSPhoenix'
-  s.version      = '0.4.1'
+  s.name         = 'PhoenixPlatform-iOS-SDK'
+  s.version      = '0.5.0'
   s.license      = 'Tigerspike proprietaty'
   s.homepage     = 'http://phoenixplatform.com.sg'
   s.authors      =  {'Steven Zhang' => 'steven.zhang@tigerspike.com' }
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   # platform
   
   s.requires_arc = true
-  s.ios.deployment_target = '6.1'
+  s.ios.deployment_target = '6.0'
   s.library = 'sqlite3'
   
   # dependencies

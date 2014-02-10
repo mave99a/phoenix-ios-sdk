@@ -25,11 +25,11 @@ TSPhoenixClient is the Singleton entry point to SDK. It is a standard AFHTTPClie
 
 ![Architecture](images/architecture.png)
 
-## Work in progress
+## Alpha release
 
-Tigerspike Phoenix SDK (TSPhoenix) for iOS is actively being developed. 
+Tigerspike Phoenix SDK (TSPhoenix) for iOS is actively being developed. As a result, API design may change in the future. What this means is that if you have a project shipping 3-6 months down the road, you can start using the SDK today.
 
-TSPhoenix is already powering Fuse which is a newsreader app. By using the SDK, Fuse developer only need to worry about how to deliver the UI. Modelling, caching and networking are all taken care of by TSPhoenix.
+TSPhoenix is already powering Fuse which is a newsreader app. By using the SDK, Fuse developer offloads modelling, caching and networking entirely to TSPhoenix. This way, they can focus on delivering a killer user experience, and leave the data juggling to Phoenix.
 
 ## Status
 
