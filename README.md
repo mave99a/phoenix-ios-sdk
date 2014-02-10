@@ -1,3 +1,4 @@
+phoenixplatform-ios-sdk
 ## Overview
 
 Tigerspike Phoenix SDK (TSPhoenix) is an iOS SDK for [Tigerspike Phoenix Platform](http://developers.phoenixplatform.com/GettingStarted). It allows you to build iPhone / iPad apps on top of Phoenix Platform. By using the SDK instead of the HTTP APIs, you can save massive amount of development effort, interface with objective-level APIs and focus your time and energy on the UI.
