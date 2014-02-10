@@ -25,7 +25,7 @@ PODS:
   - CocoaLumberjack/Core (1.6.5.1)
   - CocoaLumberjack/Extensions (1.6.5.1):
     - CocoaLumberjack/Core
-  - TSPhoenix (0.3.2):
+  - PhoenixPlatform-iOS-SDK (0.5.1):
     - AFNetworking (~> 2.1)
     - AFOAuth2Client@phoenixplatform (~> 0.1.1)
     - YapDatabase (~> 2.3)
@@ -33,17 +33,17 @@ PODS:
     - CocoaLumberjack (~> 1.6.3)
 
 DEPENDENCIES:
-  - TSPhoenix (from `../`)
+  - PhoenixPlatform-iOS-SDK (from `../`)
 
 EXTERNAL SOURCES:
-  TSPhoenix:
+  PhoenixPlatform-iOS-SDK:
     :path: ../
 
 SPEC CHECKSUMS:
   AFNetworking: c7d7901a83f631414c7eda1737261f696101a5cd
   AFOAuth2Client@phoenixplatform: f68b41548e030fcb37fce9427aeec1c1d811b3ca
   CocoaLumberjack: 17803afbade3126a377d32b8d23367264b44ced6
-  TSPhoenix: 48404ac69177d5c7edbe75d6ee4c9d808dc79e49
+  PhoenixPlatform-iOS-SDK: cf2ccf403af93912d6b4facffd75b911cd954900
   YapDatabase: b9b58b24092557adc59e3b86a167601c7733b8e7
 
 COCOAPODS: 0.29.0

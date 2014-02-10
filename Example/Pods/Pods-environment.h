@@ -76,11 +76,11 @@
 // Please contact the author.
 // Version: 1.6.5.1.
 
-// TSPhoenix
-#define COCOAPODS_POD_AVAILABLE_TSPhoenix
-#define COCOAPODS_VERSION_MAJOR_TSPhoenix 0
-#define COCOAPODS_VERSION_MINOR_TSPhoenix 3
-#define COCOAPODS_VERSION_PATCH_TSPhoenix 2
+// PhoenixPlatform-iOS-SDK
+#define COCOAPODS_POD_AVAILABLE_PhoenixPlatform_iOS_SDK
+#define COCOAPODS_VERSION_MAJOR_PhoenixPlatform_iOS_SDK 0
+#define COCOAPODS_VERSION_MINOR_PhoenixPlatform_iOS_SDK 5
+#define COCOAPODS_VERSION_PATCH_PhoenixPlatform_iOS_SDK 1
 
 // YapDatabase
 #define COCOAPODS_POD_AVAILABLE_YapDatabase
