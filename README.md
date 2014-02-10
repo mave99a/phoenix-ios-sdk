@@ -134,7 +134,7 @@ Phoenix Syndicate module, responsible for loading and caching sections / article
 
 Please read the [Phoenix Getting Started Guide](http://developers.phoenixplatform.com/GettingStarted) to get a basic understanding of Phoenix APIs. For a step-by-step tutorial, see [Getting Started][getting-started]
 
-	pod 'TSPhoenix', :git => 'https://github.com/phoenixplatform/phoenix-ios-sdk.git', :branch => 'develop'
+	pod 'PhoenixPlatform-iOS-SDK', :git => 'https://github.com/phoenixplatform/phoenix-ios-sdk.git', :branch => 'develop'
 
 in Prefix.pch:
 
