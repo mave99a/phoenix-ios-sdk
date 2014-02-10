@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Phoenix iOS SDK : iOS SDK for Tigerspike Phoenix Platform" />
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Phoenix iOS SDK by phoenixplatform</title>
+    <title>Phoenix iOS SDK</title>
   </head>
 
   <body>
-    <header>
-      <div class="inner">
-        <h1>Phoenix iOS SDK</h1>
-        <h2>TSPhoenix</h2>
-        <a href="https://github.com/phoenixplatform/phoenix-ios-sdk" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h2>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/phoenixplatform/phoenix-ios-sdk">View on GitHub</a>
+
+          <h1 id="project_title">Phoenix iOS SDK</h1>
+          <h2 id="project_tagline">iOS SDK for Tigerspike Phoenix Platform</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/phoenixplatform/phoenix-ios-sdk/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/phoenixplatform/phoenix-ios-sdk/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
 <a name="overview" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h2>
 
-<p>Tigerspike Phoenix SDK (TSPhoenix) is an iOS SDK for <a href="http://developers.phoenixplatform.com/GettingStarted">Tigerspike Phoenix Platform</a>. By using the SDK instead of the HTTP APIs, you can save massive amount of development time, interface with objective-level APIs and focus your time and energy on the UI.</p>
+<p>Tigerspike Phoenix SDK (TSPhoenix) is an iOS SDK for <a href="http://developers.phoenixplatform.com/GettingStarted">Tigerspike Phoenix Platform</a>. It allows you to build iPhone / iPad apps on top of Phoenix Platform. By using the SDK instead of the HTTP APIs, you can save massive amount of development effort, interface with objective-level APIs and focus your time and energy on the UI.</p>
 
 <ul>
 <li>Native Objective-C APIs</li>
 <li>Native Objective-C models, with 100% coverage of Phoenix server side models</li>
-<li>Seamless integration with Cocoapods</li>
+<li>Installation via CocoaPod</li>
 <li>Lightweight: TSPhoenix is a very thin layer built-on top of AFNetworking</li>
 <li>OAuth2: log in, out, auth tokens, etc.</li>
 </ul><h2>
 <a name="design-goals" class="anchor" href="#design-goals"><span class="octicon octicon-link"></span></a>Design goals</h2>
 
 <ul>
-<li>Plug and play</li>
-<li>Allow developers to work with familiar Objective-C APIs, without having to worry about modeling / networking / caching</li>
-<li>Leverage best OSS libraries. Don't reinvent the wheel</li>
-<li>Significantly reduce the amount of glue code when working with Phoenix API</li>
+<li>Plug and play, native Objective-C API</li>
+<li>Significantly less glue code</li>
 <li>Things that will be done over and over again should be automated</li>
+<li>Modular design, louse coupling for robustness</li>
+<li>Easy things easy, complicated things possible</li>
+<li>Avoid reinventing the wheel</li>
 </ul><h2>
 <a name="architecture" class="anchor" href="#architecture"><span class="octicon octicon-link"></span></a>Architecture</h2>
 
@@ -58,22 +62,23 @@
 <p><img src="https://raw2.github.com/phoenixplatform/phoenix-ios-sdk/develop/images/architecture.png" alt="Architecture"></p>
 
 <h2>
-<a name="work-in-progress" class="anchor" href="#work-in-progress"><span class="octicon octicon-link"></span></a>Work in progress</h2>
+<a name="alpha-release" class="anchor" href="#alpha-release"><span class="octicon octicon-link"></span></a>Alpha release</h2>
 
-<p>Tigerspike Phoenix SDK (TSPhoenix) for iOS is actively being developed. </p>
+<p>Tigerspike Phoenix SDK (TSPhoenix) for iOS is actively being developed. As a result, API design may change in the future. What this means is that if you have a project shipping 3-6 months down the road, you can start using the SDK today.</p>
 
-<p>TSPhoenix is already powering Fuse which is a newsreader app. By using the SDK, Fuse developer only need to worry about how to deliver the UI. Modelling, caching and networking are all taken care of by TSPhoenix.</p>
+<p>TSPhoenix is already powering Fuse which is a newsreader app. By using the SDK, Fuse developer offloads modelling, caching and networking entirely to TSPhoenix. This way, they can focus on delivering a killer user experience, and leave the data juggling to Phoenix.</p>
 
 <h2>
 <a name="status" class="anchor" href="#status"><span class="octicon octicon-link"></span></a>Status</h2>
 
 <ul>
 <li>Installation: only Cocoapod supported at the moment</li>
+<li>Sample app: coming soon.</li>
 <li>Model generation: 100% working</li>
 <li>Model mapping JSON -&gt; Objective-C: 100% working</li>
 <li>All contributions are welcome! Please use the "Issues" page to submit feedback.</li>
 <li>Or fork and submit Pull Requests</li>
-<li>First alpha release</li>
+<li>First alpha release. </li>
 <li>Documentation is being baked</li>
 <li>Unit Testing is on the TODO list</li>
 </ul><h2>
@@ -88,11 +93,13 @@
 
 <p>Why, you ask? Why have dependencies in a SDK library?</p>
 
-<p>The reason is simple: don't re-invent the wheel. Everybody is already using AFNetworking for HTTP requests. YapDatabase is a solid key-value DB built on SQLite. If we roll our own networking and database, it will consume a ton of effort, and the result is not necessarily better. By leveraging the best open source components, </p>
+<p>The reason is simple: don't re-invent the wheel. We are already using AFNetworking for HTTP requests. YapDatabase is a solid key-value DB built on SQLite. If we roll our own networking and database, it will consume a ton of effort, and the result is not necessarily better. By leveraging the best open source components, </p>
 
-<p><a href="https://github.com/AFNetworking/AFNetworking/tree/1.x">AFNetworking</a>, ~&gt;1.3.3 (using 1.3.x to maintain iOS 6 compatibility)</p>
+<p><a href="https://github.com/AFNetworking/AFNetworking">AFNetworking</a>, ~&gt;2.1</p>
 
 <p><a href="https://github.com/yaptv/YapDatabase">YapDatabase</a> ~&gt; 2.3 Database (caching) layer in Phoenix SDK.</p>
+
+<p><a href="https://github.com/phoenixplatform/AFOAuth2Client">AFOAuth2Client</a>: Provides OAuth2 with Phoenix Identity. Using PhoenixPlatform's fork of this library.</p>
 
 <h2>
 <a name="full-documentation-is-coming-soon-here-are-some-examples-to-get-you-started" class="anchor" href="#full-documentation-is-coming-soon-here-are-some-examples-to-get-you-started"><span class="octicon octicon-link"></span></a>Full documentation is coming soon. Here are some examples to get you started:</h2>
@@ -127,9 +134,9 @@
 <a name="getting-the-current-users-profile" class="anchor" href="#getting-the-current-users-profile"><span class="octicon octicon-link"></span></a>Getting the current user's profile</h3>
 
 <pre><code>NSString *path = @"identity/v1/users/me";
-[[TSPhoenixClient sharedInstance] getPath:path
-                               parameters:nil
-                                  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+[[TSPhoenixClient sharedInstance] GET:path
+                           parameters:nil
+                              success:^(AFHTTPRequestOperation *operation, id responseObject) {
                                       NSDictionary *dict = [(AFJSONRequestOperation *)operation responseJSON];
                                       dict = dict[@"Data"][0];
                                       TSUser *user = [[TSUser alloc] initWithDictionary:dict];
@@ -141,48 +148,7 @@
                                   }];
 </code></pre>
 
-<h3>
-<a name="getting-a-list-of-subscribed-sections-in-syndicate" class="anchor" href="#getting-a-list-of-subscribed-sections-in-syndicate"><span class="octicon octicon-link"></span></a>Getting a list of subscribed sections in Syndicate</h3>
-
-<pre><code>NSString *path = [NSString stringWithFormat:@"syndicate/v1/projects/%d/sections",
-                  [[TSPhoenixClient sharedInstance] projectID];
-
-NSArray *parameters = @[[TSPhoenixParameter pageNumberTemplateParameter],
-                        [TSPhoenixParameter pageSizeTemplateParameter],
-                        [TSPhoenixParameter sortByRankParameter],
-                        [TSPhoenixParameter sortDirectionAscendingParameter],
-                        [TSPhoenixParameter parameterWithName:@"subscribedonly"
-                                                        value:@"true"]];
-
-NSString *parameterString = [TSPhoenixParameter parameterStringFromParameters:parameters];
-NSString *pattern = [path stringByAppendingString:parameterString];
-TSPaginator *paginator = [[TSPaginator alloc] initWithRequestPatternPath:pattern
-                                                              httpClient:self.client];
-
-[self.client.paginators addObject:paginator];
-
-paginator.dataArrayKeyPath = @"Data";
-paginator.objectCountKeyPathInResponse = @"TotalRecords";
-paginator.zeroIndexed = YES;
-paginator.perPage = kPhoenixResponsePageSize;
-[paginator setObjectMappingBlock:^NSArray *(NSArray *sourceObjects) {
-    __block NSArray *destinationObjects;
-    destinationObjects = [sourceObjects mapObjectsUsingBlock:^id(id obj, NSUInteger idx) {
-        return [[TSSection alloc] initWithDictionary:obj];
-    }];
-    return destinationObjects;
-}];
-
-__weak typeof(self) refToSelf = self;
-
-[paginator setCompletionBlockWithSuccess:^(TSPaginator *paginator, NSArray *objects, NSUInteger page) {
-            // Do something about the result objects
-            // e.g. save to database
-    [self.client saveObjectsToDatabase:objects];
-} failure:^(TSPaginator *paginator, NSError *error) {
-    // Handle error
-}];
-</code></pre>
+<p>More examples available in the <a href="https://github.com/phoenixplatform/phoenix-ios-sdk/wiki/Making-API-Requests">wiki page</a>.</p>
 
 <h2>
 <a name="modules" class="anchor" href="#modules"><span class="octicon octicon-link"></span></a>Modules</h2>
@@ -210,14 +176,12 @@ __weak typeof(self) refToSelf = self;
 <h2>
 <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
 
-<p>Please read the <a href="http://developers.phoenixplatform.com/GettingStarted">Phoenix Getting Started Guide</a> to get a basic understanding of Phoenix APIs.</p>
+<p>Please read the <a href="http://developers.phoenixplatform.com/GettingStarted">Phoenix Getting Started Guide</a> to get a basic understanding of Phoenix APIs. For a step-by-step tutorial, see <a href="https://github.com/phoenixplatform/phoenix-ios-sdk/wiki/Getting-Started">Getting Started</a></p>
 
-<p>To integrate the SDK:</p>
-
-<pre><code>pod 'TSPhoenix', :git =&gt; 'https://github.com/phoenixplatform/phoenix-ios-sdk.git', :branch =&gt; 'develop'
+<pre><code>pod 'PhoenixPlatform-iOS-SDK', :git =&gt; 'https://github.com/phoenixplatform/phoenix-ios-sdk.git', :branch =&gt; 'develop'
 </code></pre>
 
-<p>and then in Prefix.pch:</p>
+<p>in Prefix.pch:</p>
 
 <pre><code>#import &lt;TSPhoenix/TSPhoenix.h&gt;
 </code></pre>
@@ -262,25 +226,30 @@ __weak typeof(self) refToSelf = self;
 <p>This <a href="https://github.com/yaptv/YapDatabase/wiki/Why-did-we-create-YapDatabase">page</a> sums it up perfectly on why we need a key-value database for TSPhoenix.</p>
 
 <p>In the past few months, we put YapDatabase under stress, went though many version upgrades, changed the model multiple times. YapDB handled everything without breaking a sweat.</p>
-        </section>
 
-        <aside id="sidebar">
-          <a href="https://github.com/phoenixplatform/phoenix-ios-sdk/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/phoenixplatform/phoenix-ios-sdk/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+<h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
-          <p class="repo-owner"><a href="https://github.com/phoenixplatform/phoenix-ios-sdk"></a> is maintained by <a href="https://github.com/phoenixplatform">phoenixplatform</a>.</p>
+<ul>
+<li>Xcode 5</li>
+<li>iOS 7.0 SDK</li>
+<li>Deployment target &gt;= iOS 6.1</li>
+</ul><h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
 
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+<p>We're following this <a href="http://nvie.com/posts/a-successful-git-branching-model/">Git branching approach</a>. If you'd like to send us a pull request, please follow the same model.</p>
+      </section>
     </div>
 
-  
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Phoenix iOS SDK maintained by <a href="https://github.com/phoenixplatform">phoenixplatform</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
   </body>
 </html>
