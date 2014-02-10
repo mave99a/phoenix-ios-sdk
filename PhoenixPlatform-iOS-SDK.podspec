@@ -9,7 +9,6 @@ Pod::Spec.new do |s|
   s.summary      = 'TSPhoenix is a framework providing access to Tigerspike Phoenix Rest APIs at http://phoenixplatform.com.sg'
   s.source       =  { :git => 'https://github.com/phoenixplatform/phoenix-ios-sdk.git', :tag => '0.5.1' }
   s.source_files = 'Source/*.{h,m}', 'Models/**/*.{h,m}', 'Source/Categories/*.{h,m}'
-  s.resources	 = 'Resources/*'
   s.frameworks   = 'SystemConfiguration', 'MobileCoreServices', 'Security'
   
   # platform
