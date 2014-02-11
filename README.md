@@ -1,4 +1,3 @@
-phoenixplatform-ios-sdk
 ## Overview
 
 Tigerspike Phoenix SDK (TSPhoenix) is an iOS SDK for [Tigerspike Phoenix Platform](http://developers.phoenixplatform.com/GettingStarted). It allows you to build iPhone / iPad apps on top of Phoenix Platform. By using the SDK instead of the HTTP APIs, you can save massive amount of development effort, interface with objective-level APIs and focus your time and energy on the UI.
@@ -26,7 +25,7 @@ TSPhoenixClient is the Singleton entry point to SDK. It is a standard AFHTTPClie
 
 ![Architecture](images/architecture.png)
 
-## Alpha release
+## Beta release
 
 Tigerspike Phoenix SDK (TSPhoenix) for iOS is actively being developed. As a result, API design may change in the future. What this means is that if you have a project shipping 3-6 months down the road, you can start using the SDK today.
 
@@ -40,7 +39,7 @@ TSPhoenix is already powering Fuse which is a newsreader app. By using the SDK, 
 - Model mapping JSON -> Objective-C: 100% working
 - All contributions are welcome! Please use the "Issues" page to submit feedback.
 - Or fork and submit Pull Requests
-- First alpha release. 
+- Beta release
 - Documentation is being baked
 - Unit Testing is on the TODO list
 

@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.version      = '0.5.1'
   s.license      = 'GPL'
   s.homepage     = 'http://phoenixplatform.com.sg'
-  s.authors      =  {'Steven Zhang' => 'steven.zhang+phoenixsdk@tigerspike.com' }
+  s.authors      =  {'Tigerspike Products' => 'steven.zhang+phoenixsdk@tigerspike.com' }
   s.summary      = 'TSPhoenix is a framework providing access to Tigerspike Phoenix Rest APIs at http://phoenixplatform.com.sg'
   s.source       =  { :git => 'https://github.com/phoenixplatform/phoenix-ios-sdk.git', :tag => '0.5.1' }
   s.source_files = 'Source/*.{h,m}', 'Models/**/*.{h,m}', 'Source/Categories/*.{h,m}'
